@@ -74,26 +74,17 @@
 - nombre: Unidades
   items:
    - name: Inicio
-     url: /cloud
+     url: /cloud2
    - name: Unidad 1
-     url: /cloud/curso/u1
+     url: /cloud2/curso/u1
    - name: Unidad 2
-     url: /cloud/curso/u2
+     url: /cloud2/curso/u2
    - name: Unidad 3
-     url: /cloud/curso/u3
+     url: /cloud2/curso/u3
    - name: Unidad 4
-     url: /cloud/curso/u4
+     url: /cloud2/curso/u4
    - name: Unidad 5
-     url: /cloud/curso/u5
+     url: /cloud2/curso/u5
    - name: Unidad 6
-     url: /cloud/curso/u6
-   - name: Unidad 7
-     url: /cloud/curso/u7
-   - name: Unidad 8
-     url: /cloud/curso/u8
-   - name: Unidad 9
-     url: /cloud/curso/u9
-   - name: Unidad 10
-     url: /cloud/curso/u10
-   - name: Foro
-     url: https://github.com/iesgn/cloud/issues
+     url: /cloud2/curso/u6
+   
