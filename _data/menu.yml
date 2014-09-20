@@ -1,0 +1,99 @@
+- nombre: Unidad 1
+  items:
+   - name: Cloud Computing
+     url: /cloud/curso/u1
+   - name: OpenStack
+     url: /cloud/curso/u1/openstack
+   - name: OpenShift
+     url: /cloud/curso/u1/openshift  
+- nombre: Unidad 2
+  items:
+   - name: DevOps
+     url: /cloud/curso/u2
+   - name: Git
+     url: /cloud/curso/u2/git
+   - name: Vagrant
+     url: /cloud/curso/u2/vagrant
+   - name: Ansible
+     url: /cloud/curso/u2/ansible
+- nombre: Unidad 3
+  items:
+   - name: Entornos
+     url: /cloud/curso/u3
+   - name: DevStack
+     url: /cloud/curso/u3/devstack
+   - name: RDO
+     url: /cloud/curso/u3/rdo
+   - name: OpenStack-ansible
+     url: /cloud/curso/u3/openstack-ansible
+   - name: Prácticas
+     url: /cloud/curso/u3/practicas
+ 
+- nombre: Unidad 4
+  items:
+   - name: OpenStack Grizzly
+     url: /cloud/curso/u4
+   - name: Práctica Linux
+     url: /cloud/curso/u4/practica_linux
+   - name: Práctica Windows
+     url: /cloud/curso/u4/practica_windows
+
+- nombre: Unidad 5
+  items:
+- nombre: Unidad 6
+  items:
+- nombre: Unidad 7
+  items:
+- nombre: Unidad 8
+  items:
+  - name: Redes
+    url: /cloud/curso/u8
+  - name: Open vSwitch
+    url: openvswitch
+  - name: Red privada
+    url: red-privada
+  - name: Red exterior
+    url: red-exterior
+- nombre: Unidad 9
+  items:
+  - name: OpenShift
+    url: index
+  - name: OpenShift online
+    url: online
+  - name: rhc
+    url: rhc
+  - name: Avanzado
+    url: avanzado
+- nombre: Unidad 10
+  items:
+  - name: Educación
+    url: index
+  - name: Tareas
+    url: tareas
+
+- nombre: Unidades
+  items:
+   - name: Inicio
+     url: /cloud
+   - name: Unidad 1
+     url: /cloud/curso/u1
+   - name: Unidad 2
+     url: /cloud/curso/u2
+   - name: Unidad 3
+     url: /cloud/curso/u3
+   - name: Unidad 4
+     url: /cloud/curso/u4
+   - name: Unidad 5
+     url: /cloud/curso/u5
+   - name: Unidad 6
+     url: /cloud/curso/u6
+   - name: Unidad 7
+     url: /cloud/curso/u7
+   - name: Unidad 8
+     url: /cloud/curso/u8
+   - name: Unidad 9
+     url: /cloud/curso/u9
+   - name: Unidad 10
+     url: /cloud/curso/u10
+   - name: Foro
+     url: https://github.com/iesgn/cloud/issues
