@@ -9,8 +9,7 @@ menu:
 El cloud computing o computacion en la nube es una nuevo paradigma que permite
 ofrecer servicios de computación a través de Internet. Este curso está orientado
 a conocer las principales características del cloud computing, mediante la
-utilización de una nube privada de infraestructura con OpenStack y una nube
-pública de plataforma con OpenShift.
+utilización de una nube pública de infraestructura con OpenStack.
 
 <!-- La actividad formativa combina sesiones presenciales con no presenciales. Las -->
 <!-- sesiones presenciales se realizarán en Antequera (Málaga) Las sesiones no presenciales, -->
