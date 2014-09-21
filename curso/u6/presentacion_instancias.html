@@ -1,0 +1,274 @@
+---
+layout: presentacion
+title: Instancias
+tema: solarized
+---
+<section>
+  <h1>OpenStack</h1>
+  <h3>Trabajo con Instancias</h3>
+  <p>
+    <small><a href="http://albertomolina.wordpress.com">Alberto Molina
+	Coballes</a> / <a
+			  href="http://twitter.com/alberto_molina">@alberto_molina</a> y <a
+											    href="http://josedomingo.org">José Domingo Muñoz
+	Rodríguez</a> / <a
+			   href="http://twitter.com/Pledin_JD">@Pledin_JD</a> </small>
+  </p>
+  <p><small>
+      <a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="../../img/cc_by_sa.png"
+								    width="100px" border="0"/></a></small></p>
+  <p><small>
+      Theme
+      by <a href="http://lab.hakim.se/reveal-js/#/">reveal.js</a>
+    </small>
+  </p>
+</section>
+<section>
+	<ol>
+	  <li>Terminología de OpenStack</li>
+	  <li>Instancias, imágenes e instantáneas con Horizon</li>
+	  <li>Instancias, imágenes e instantáneas con nova cli</li>
+	  <li>Funcionamiento interno de las instancias</li>
+	</ol>
+
+</section>
+<section>
+  <section>
+    <h2>Conceptos previos (I)</h2>
+    <ul>
+      <li><strong>Imagen</strong>: Imagen de sistema operativo preconfigurado que se
+	utiliza como base para crear instancias. Dentro del cloud habrá
+	diferentes imágenes para cada tipo de instacia que se quiera
+	utilizar.</li>
+      <li><strong>Instancia</strong>: Instancia de una imagen que se crea a
+	demanda del usuario en uno de los nodos del cloud.</li>
+      <li><strong>Sabor</strong>: Define para una instancia el número de CPUs
+	virtuales, la RAM, si dispone o no de discos efímeros, etc.</li> 
+    </ul>
+  </section>
+  <section>
+    <h2>Conceptos previos (II)</h2>
+    <ul>
+      <li><strong>IP fija</strong>: Direccion IP con la que se crean una
+	instancia en una red y que se utiliza para comunicacion
+	interna. La dirección IP 
+	fija no cambia durante la vida de la instancia.</li>
+      <li><strong>IP flotante</strong>: Direccion IP asociada a una
+	instancia en un momento dado para poder acceder a ella desde fuera. Una
+	IP flotante puede asignarse a otra instancia diferente cuando se estime
+	oportuno.</li>
+      <li><strong>Grupo de seguridad</strong>: Reglas de cortafuegos que
+	controlan el 
+	acceso a las instancias.</li>
+      <li><strong>Par de claves ssh</strong>: Par de claves RSA pública/privada
+	utilizadas para acceder por ssh a las instancias desde fuera del 
+	cloud.</li>
+    </ul>
+  </section>
+</section>
+<section>
+  <section>
+    <h2>Instancias con Horizon</h2>
+  </section>
+  <section>
+    <ul>
+      <li>Utilizar instancias creadas a partir de la imagen cirros</li>
+      <li>Subir una imagen de Ubuntu y crear una instancia</li>
+      <li>Modificar la configuración de la instancia Ubuntu y crear una
+      instantánea</li> 
+      <li>Crear una nueva imagen a partir de la instantánea y comprobar su
+      estado</li>
+      <!-- <li>Redimensionar una instancia???</li> -->
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>Instancias con OpenStack CLI</h2>
+    <ul>
+      <li>Cada componente de OpenStack tiene su propio cliente de línea de
+      comandos con toda las funcionalidades</li>
+      <li>Existe un cliente "unificado" (nova) que permite utilizar las
+      funcionalidades básicas de los componentes principales</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Configuración del entorno</h2>
+    <ul>
+      <li>Obtenemos el fichero openrc de Horizon <small>(Acceso y seguridad->Acceso a la API->Descargar archivo RC de OpenStack)</small></li>
+      <li>Instalamos en el equipo el cliente de línea de comandos de OpenStack
+      (con este método instalamos la última versión):
+	<pre><code>
+# apt-get install python-pip
+# pip install python-novaclient
+	</code></pre></li>
+      <li>Iniciamos la sesión del usuario:
+	<pre><code>
+$ source proy-usuario22.sh
+	</code></pre></li>
+      <li>Comprobamos que funciona correctamente:
+	<pre><code>
+$ nova flavor-list
+        </code></pre></li>
+    </ul>
+  </section>
+<!-- <section> -->
+<!-- 	<h2>Imágenes</h2> -->
+<!-- 	<pre><code> -->
+<!-- # Listar imágenes -->
+<!-- $ nova image-list -->
+
+<!-- # Detalles de una imagen -->
+<!-- $ nova image-show cirros-0.3.1-x86_64-uec -->
+
+<!-- #### ESto no se puede hacer con Nova !!!! -->
+<!-- # Crear una imagen -->
+<!-- $ glance image-create --name ubuntu12.04 --disk-format=raw\ -->
+<!--                       --container-format=bare --is-public=True\ -->
+<!--                       --file=precise-server-cloudimg-amd64-disk1.img -->
+
+<!-- # Borrar una imagen -->
+<!-- $ glace delete ubuntu12.04 -->
+<!-- 	</code></pre> -->
+<!-- </section> -->
+<!-- <section> -->
+<section>
+	<h2>Instancias (1)</h2>
+	<pre><code>
+#Listar de imágenes
+$ nova image-list
+
+# Listar sabores
+$ nova flavor-list
+
+# Listar las redes que tenemos definidas
+$ nova net-list
+
+# Listar grupos de seguridad
+$ nova secgroup-list
+
+# Listar claves ssh
+$ nova keypair-list
+	</code></pre>
+</section>
+<section>
+	<h2>Instancias (2)</h2>
+	<pre><code>
+# Creamos una instancia
+$ nova boot --flavor FLAVOR_ID --image IMAGE_ID
+            --security-groups SEC_GROUP --key-name KEY_NAME \
+	    --nic net-id=NET_ID \
+	    INSTANCE_NAME
+
+# Ejemplo
+$ nova boot --flavor m1.tiny --image cirros-0.3.1-x86_64-uec \
+            --security-groups default --key-name mis_claves 
+            --nic net-id=d8d4d80e-923f-47fc-ac88-b9079328080b \
+            instancia_prueba
+	</code></pre>
+</section>
+
+<section>
+	<h2>Instancias (3)</h2>
+	<pre><code>
+# Pausar instancia
+$ nova pause INSTANCE_NAME 
+$ nova unpause INSTANCE_NAME 
+
+# Suspender/resumir
+$ nova suspend INSTANCE_NAME
+$ nova resume INSTANCE_NAME
+
+# Reiniciar
+$ nova reboot --hard SERVER
+
+# Borrar
+$ nova delete INSTANCE_NAME
+
+# Acceder por consola
+$ nova get-vnc-console INSTANCE_NAME novnc
+	</code></pre>
+</section>
+<!-- <section> -->
+<!-- 	<h2>Cambiar tamaño de la instancias???</h2> -->
+<!-- 	<pre><code> -->
+<!-- # Cambiar el flavor de una instancia -->
+<!-- $ nova resize instancia_prueba 4 --poll -->
+
+<!-- # Confirmar el cambio de tamaño -->
+<!-- $ nova resize-confirm 84c6e57d-a6b1-44b6-81eb-fcb36afd31b5 -->
+
+<!-- # Revertir el cambio de tamaño -->
+<!-- $ nova resize-revert 84c6e57d-a6b1-44b6-81eb-fcb36afd31b5 -->
+<!-- 	</code></pre> -->
+<!-- </section> -->
+<section>
+	<h2>IPs Flotantes</h2>
+	<pre><code>
+# Listar el pool de ip flotantes
+$ nova floating-ip-pool-list
+
+# Listar las ip flotantes que asignadas al proyecto
+$ nova floating-ip-list
+
+# Asignar una IP flotante al proyecto
+$ nova floating-ip-create
+
+# Asociar una IP flotante a una instancia
+$ nova floating-ip-associate instancia_prueba 172.24.4.227
+
+# Desasociar una IP flotante de una instancia
+$ nova floating-ip-disassociate instancia_prueba 172.24.4.227
+	</code></pre>
+</section>
+<section>
+  <h2>Grupos de seguridad</h2>
+  <pre><code>
+# Listar grupos de seguridad
+$ nova secgroup-list
+
+# Crear un grupo de seguridad
+$ nova secgroup-create cortafuegos
+
+# Listar reglas de un grupo de seguridad
+$ nova secgroup-list-rules default
+
+# Añadir una regla a un grupo de seguridad
+$ nova secgroup-add-rule default tcp 22 22 0.0.0.0/0
+	</code></pre>
+</section>
+<section>
+	<h2>Claves SSH</h2>
+	<pre><code>
+# Crear un par de claves ssh
+$ nova keypair-add mi_claves > mi_claves.pem
+$ chmod 600 mi_clave.pem
+
+# Listar las claves ssh
+$ nova keypair-list
+	</code></pre>
+</section>
+<section>
+  <h2>Instantáneas</h2>
+  <pre><code>
+# Crear una instantánea de una instancia
+$ nova image-create --poll instancia_prueba snapshot_prueba
+
+# Listar instantáneas (e imágenes)
+$ nova image-list
+
+# Para crear una nueva instancia se puede usar esta instantánea como cualquier
+# otra imagen
+  </code></pre>
+</section>
+</section>
+
+<section>
+  <h2>Conceptos avanzados</h2>
+  <ul>
+    <li>¿Dónde se ubican las imágenes?</li>
+    <li>¿Cómo se clona la imagen al disco de la instancia?</li>
+    <li>¿En qué directorio se encuentran definidas las máquinas
+      virtuales?</li>
+  </ul>
+</section>

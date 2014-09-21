@@ -1,0 +1,140 @@
+---
+layout: presentacion
+title: Hardware
+tema: solarized
+---
+<section>
+  <h1>Hardware</h1>
+  <h3>Características para utilizar OpenStack</h3>
+  <p>
+    <small><a href="http://albertomolina.wordpress.com">Alberto Molina
+	Coballes</a> / <a
+			  href="http://twitter.com/alberto_molina">@alberto_molina</a> y <a
+											    href="http://josedomingo.org">José Domingo Muñoz
+	Rodríguez</a> / <a
+			   href="http://twitter.com/Pledin_JD">@Pledin_JD</a> </small>
+  </p>
+  <p><small>
+      <a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="../../img/cc_by_sa.png"
+								    width="100px" border="0"/></a></small></p>
+  <p><small>
+      Theme
+      by <a href="http://lab.hakim.se/reveal-js/#/">reveal.js</a>
+    </small>
+  </p>
+</section>
+<section>
+  <p>OpenStack puede funcionar perfectamente en equipos y dispositivos
+  convencionales, aunque también soporta gran cantidad de dispositivos más
+  especializados</p>
+</section>
+<section>
+  <h2>Redes. Tipos de redes</h2>
+  <ul>
+    <li>Pueden utilizarse redes básicas <strong>Gigabit Ethernet</strong></li>
+    <li>Es habitual utilizar combinaciones de varias interfaces de red Gigabit
+    Ethernet en modo <strong>"bonding"</strong> para eliminar cuellos de
+    botella</li>
+    <li>En caso necesario, bien por el tamaño del cloud, bien por la utilización
+    de modos de almacenamiento distribuido, se puede optar por utilizar redes
+    <strong>10GbE</strong></li>
+    <li>Alternativamente a la utilización de redes 10GbE, principalmente en la
+      red de almacenamiento, se puede optar por utilizar <strong>Fibre
+      Channel</strong></li>
+    <li>También está
+      soportado <a href="http://www.storagereview.com/mellanox_announces_openstack_infiniband_and_ethernet_interconnect_solutions">Infiniband</a>,
+      aconsejable para conseguir altas prestaciones</li>
+  </ul>
+</section>
+<section>
+  <h2>Redes. Dispositivos de interconexión</h2>
+  <ul>
+    <li>La opción más sencilla es utilizar switches convencionales que
+ simplemente conecten los nodos del cloud. Toda la configuración de redes
+ virtuales puede hacerse por software</li>
+    <li>Otra opción es utilizar dispositivos de mayor categoría que trabajen
+ de forma coordinada con el software y controladores específicos para conseguir
+ mayor rendimiento y control, como en el caso  de algunos dispositivos
+ de <a href="http://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-727737.html">Cisco</a>
+ o <a href="http://www.juniper.net/techpubs/en_US/release-independent/junos/topics/topic-map/openstack-neutron-plugin.html">Juniper</a></li>
+    <li>Para centros de datos y clouds de mayor tamaño hay que estudiar la
+ posibilidad de realizar un cambio íntegro de arquitectura de red,
+ hacia <a href="http://blog.movingonesandzeros.net/2013/05/cisco-nexus-part-2-design-basics.html">spine-leaf</a></li>
+  </ul>
+</section>
+<section>
+  <h2>Servidores</h2>
+  <ul>
+    <li>El nodo controlador no necesita características especiales</li>
+    <li>Para los nodos de computación será necesario utilizar procesadores con
+    <a href="http://en.wikipedia.org/wiki/Hardware-assisted_virtualization">extensiones
+    de virtualización</a>, Intel o AMD</li>
+    <li>La cantidad de RAM de los nodos de computación condicionará el número de
+    instancias a ejecutar en cada nodo</li>
+    <li>En los nodos de computación es necesario disponer de procesadores
+    multicore y en el caso de Intel Hyper-Threading, por ejemplo:
+    <ul>
+    <li>AMD
+    Opteron <a href="http://www.amd.com/en-gb/products/server/6000/6200#">Interlagos</a>
+    o <a href="http://www.amd.com/en-gb/products/server/6000/6300#">Abu-Dhabi</a></li>
+    <li>Intel
+    Xeon <a href="http://ark.intel.com/products/codename/29902/#@Server">Ivy
+    Bridge</a>
+    o <a href="http://ark.intel.com/products/codename/42174/haswell#@Server">Haswell</a></li>
+    </ul>
+    </li>
+    <li>El nodo de red conecta todas las redes virtuales con el exterior y por
+    tanto debe tener interfaces de red ajustadas al tamaño del cloud para no
+    provocar cuellos de botella</li>
+  </ul>
+</section>
+<section>
+  <h2>Almacenamiento. Unidades</h2>
+  <ul>
+    <li>SATA HD, SAS HD y SSD:
+      <ul>
+	<li>SATA HD (7200 ó 10000 rpm): Hasta 4 TiB de almacenamiento, bus de 3
+	  Gbps y hasta 200 IOPS</li>
+	<li>SAS HD (10000 ó 15000 rpm): Hasta 900 GiB de almacenamiento, bus de 6
+	  Gbps y hasta 500 IOPS</li>
+	<li>SSD: Ya hay unidades SSD en el mercado de 1 ó 2 TiB, bus de 3 ó 6
+	Gbps y hasta 100.000 IOPS (!)</li>
+      </ul>
+    </li>
+    <li>A igual tamaño, los SSD son bastante más caros</li>
+    <li>Las tasas de transferencia secuencial son del mismo orden, pero las
+    aleatorias son mucho mayores en SSD</li>
+    <li>Enterprise SAS o SATA son más fiables todavía</li>
+    <li>SSD consumen mucho menos</li>
+  </ul>
+</section>
+<section>
+  <h2>Almacenamiento</h2><h2>Equipos específicos</h2>
+  <ul>
+    <li>Es habitual en centros de datos utilizar equipos específicos para
+    el almacenamiento.</li>
+    <li>Una gran parte de los fabricantes de estos dispositivos (NetApp, EMC,
+    etc.) pertenecen a la OpenStack Foundation y por tanto sus dispositivos
+    están soportados o van a estarlo en OpenStack</li>
+    <li>Pueden utilizarse estos dispositivos
+    para <a href="https://wiki.openstack.org/wiki/CinderSupportMatrix">almacenamiento
+    de volúmenes con cinder</a> y/o almacenamiento distribuido o no de los
+    sistemas de ficheros de las instancias</li>
+    <li>La mayor parte de estos dispositivos no incluyen soporte de
+    almacenamiento de objetos directamente.</li>
+  </ul>
+</section>
+<section>
+  <h2>Almacenamiento. Servidores</h2>
+  <ul>
+    <li>De forma alternativa a lo anterior, puede optarse por utilizar
+    servidores en los que se instala algún sistema operativo y se configura el
+    almacenamiento por software</li>
+    <li>En esos casos se suelen utilizar servidores con chasis con varias bahías
+    para discos duros extraíbles en caliente y un backplane que permita
+    conectarlos todos a la placa base</li>
+    <li>Puede optarse por utilizar controladoras RAID hardware o configurar el
+    RAID por software (en ese caso es necesario que la controladora de disco
+    soporte el modo JBOD)</li>
+  </ul>
+</section>

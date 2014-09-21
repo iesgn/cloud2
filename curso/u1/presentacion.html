@@ -1,0 +1,237 @@
+---
+layout: presentacion
+title: Introducción al Cloud Computing
+tema: solarized
+---
+
+<section>
+	    <h1>Introducción al Cloud Computing</h1>
+	    <p>
+	      <small><a href="http://albertomolina.wordpress.com">Alberto Molina
+	      Coballes</a> / <a
+	      href="http://twitter.com/alberto_molina">@alberto_molina</a> y <a
+	      href="http://josedomingo.org">José Domingo Muñoz
+	      Rodríguez</a> / <a
+	      href="http://twitter.com/Pledin_JD">@Pledin_JD</a> </small>
+	    </p>
+	    <p><small>
+		<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="../../img/cc_by_sa.png"
+		width="100px" border="0"/></a></small></p>
+	  </section>
+	  <section>
+	    <section>
+	    <h2>Cloud Computing. Características</h2>
+	    <ul>
+	      <li>Servicio disponible de forma automática y a demanda</li>
+	      <li>Accesible a través de la red</li>
+	      <li>Modelo multi-tenancy
+		<ul>
+		  <li>Se comparten los recursos con otros usuarios</li>
+		  <li>Debe garantizarse aislamiento y seguridad entre
+		  usuarios</li>
+		</ul>
+	      </li>
+	      <li>Los recursos se agrupan en <em>pools</em></li>
+	      <li>Elasticidad</li>
+	      <li>Pago por uso</li>
+	    </ul>
+	    <br/>
+	    <p>
+	      <small>Fuente: <a href="http://csrc.nist.gov/publications/nistpubs/800-145/SP800-145.pdf">The NIST Definition of Cloud Computing</a></small></p>
+	    </section>
+	  </section>
+	  <section>
+	    <section>
+	      <h2>... as a Service (...aaS)</h2>
+	      <ul>
+		<li>Modelo de negocio no basado en la venta de licencias o
+		hardware</li>
+		<li>Oferta de servicios con caracterísicas de cloud</li>
+		<li>Habitualmente se definen tres capas o niveles: SaaS, PaaS e
+		IaaS</li>
+	    </section>
+	    <section>
+	      <h3>Software as a Service (SaaS)</h3>
+	      <p>Aplicación como servicio en la nube</p>
+	      <ul>
+		<li>El usuario utiliza una aplicación a través de la web en
+		lugar de tenerla instalada en el propio equipo.
+		  Aviso: No todas las aplicaciones web son SaaS, deben cumplir
+		con las características.</li>
+		<li>Utilizado por cualquier usuario</li>
+		<li>Ya lo usamos, pero se prevé que se use cada vez más</li>
+		<li>Ejemplos: Servicios de Google, Office365</li>
+	      </ul>
+	    </section>
+	    <section>
+	      <h3>Platform as a Service (PaaS)</h3>
+	      <p>Plataforma de desarrollo web en la nube</p>
+	      <ul>
+		<li>Utilizado por desarrolladores de software</li>
+		<li>Se proporciona toda la plataforma de desarrollo y despliegue
+		de una aplicación al desarrollador</li>
+		<li>Ejemplos: Google App Engine, Windows Azure, Heroku,
+		Openshift, CloudFoundry
+	      </ul>
+	    </section>
+	    <section>
+	      <h3>Infrastructure as a Service (IaaS)</h3>
+	      <p>Infraestructura como servicio en la nube</p>
+	      <ul>
+		<li>Utilizado principalmente por administradores de
+		sistemas</li>
+		<li>Se proporciona principalmente capacidad de cómputo, redes y
+		diversos modos de almacenamiento</li>
+		<li>Ejemplos: Amazon Web Services, Joyent, Windows Azure,
+		Rackspace Cloud Servers, Google Compute Engine</li>
+	    </section>
+	    <section>
+	      <a href="http://ad-hoc.net/blogs/wp-content/uploads/2010/12/IaaS-PaaS-SaaS.png"><img src="http://ad-hoc.net/blogs/wp-content/uploads/2010/12/IaaS-PaaS-SaaS.png"
+	      alt="iaas-paas-saas"/></a>
+	      <p>Fuente: <a href="http://ad-hoc.net/blogs/2010/12/la-nube-iaas-paas-saas-itaa-un-breve-repaso-de-conceptos/">ad-hoc.net/blogs</a></p>
+	      </section>
+	  </section>
+	  <section>
+	    <h2>Tipos de despliegues</h2>
+	    <ul>
+	      <li>Público: Una empresa ofrece servicios a terceros, encargándose
+	      de toda la gestión del Cloud.</li>
+	      <li>Privado: Una organización configura sus propios recursos de
+	      forma mucho más flexible en una nube. En inglés también se
+	      denomina "On premise cloud"</li>
+	      <li>Híbrido: Se utilizan recursos de la nube privada o de una o
+		varias nubes públicas en función de las características de cada
+		caso o las necesidades puntuales que haya. Normalmente utilizan
+		una API común que permita una buena integración.</li>
+	    </ul>
+	  </section>
+	  <section>
+	  <section>
+	    <h2>PaaS Público</h2>
+	    <p>Una empresa ofrece este servicio a terceros, proporcionando:</p>
+	    <ul>
+	      <li>Sencillez de mantenimiento ya que se encarga de la
+	      instalación, configuración y actualización de la plataforma</li>
+	      <li>El desarrollador solo se preocupa de su aplicación</li>
+	      <li>Limitado por el software del proveedor. Por ejemplo: Google
+	      App Engine solo tiene soporte para Python y Java</li>
+	      <li>En algunos casos es necesario hacer adaptaciones de código
+	      para la plataforma</li>
+	    </ul>
+	  </section>
+	  <section>
+	    <h2>¿Para qué usar PaaS?</h2>
+	    <ul>
+	      <li>La tecnología de PaaS viene a competir fuertemente con el
+	      hosting tradicional, frente al que tiene importantes
+	      ventajas.</li>
+	      <li>El usuario típico de PaaS es un desarrollador o pequeña
+	      empresa que desea tener una aplicación web escalable y en pago por
+	      uso y además no tiene el tiempo o los conocimientos técnicos de
+	      sistemas para hacerlo por su cuenta.</li>
+	      <li>Es muy adecuado para aplicaciones web que utilicen servidores
+	      de aplicaciones y middleware muy extendidos (PHP, Ruby on Rails,
+	      Django, etc.), pero no suele valer para cosas que se salgan de la
+	      norma.</li>
+	  </section>
+	  <section>
+	    <h2>Algunos ejemplos</h2>
+	    <ul>
+	      <li><a href="https://www.blossom.io/">Blossom</a> en Google App
+	      Engine</li>
+	      <li><a href="https://www.thelevelup.com/">LevelUp</a> en
+	      Heroku</li>
+	    </ul>
+	  </section>
+	  </section>
+	  <section>
+	    <section>
+	      <h2>IaaS público</h2>
+		<p>Una empresa ofrece este servicio a terceros,
+		proporcionando:</p>
+		<ul>
+		  <li>Control completo sobre la instancia, pudiendo instalar
+		  cualquier software</li>
+		  <li>El administrador es el encargado de la configuración,
+		  actualización y mantenimiento de todo el software de la
+		  instancia.</li>
+		  <li>Finalmente la seguridad, el aislamiento, la
+		    confidencialidad de los datos y la disponibilidad de los
+		    servicios dependen del proveedor de IaaS</li>
+		  <li>Usuario puede quedar cautivo del proveedor (<em>Vendor
+		      lock-in</em>)</li>		  
+		</ul>
+	    </section>
+	    <section>
+	      <h2>¿Para qué usar IaaS?</h2>
+	      <ul>
+		<li>Viene a competir fuertemente con servidores dedicados,
+		virtuales o físicos</li>
+		<li>También es una tecnología a considerar en clustering</li>
+		<li>Típicamente usada por cualquier empresa con departamento de
+		sistemas para gestionar sus propios servidores a medida
+		<li>Además se han incluído nuevas tecnologías de
+		  almacenamiento y redes</li>
+		<li>Lo que no pueden ofrecer los servidores dedicados o los
+		clusters tradicionales es ELASTICIDAD</li>
+	      </ul>
+	    </section>
+	    <section>
+	    <h2>Amazon Web Services</h2>
+	    <ul>
+	      <li>Pionero y gran dominador en IaaS pública</li>
+	      <li>Gran variedad de servicios: EC2, S3, Glacier, CloudFormation,
+	      RDS y un largo etcétera</li>
+	      <li>SDKs: 
+		<ul>
+		  <li>Android</li>
+		  <li>iOS</li>
+		  <li>Java</li>
+		  <li>JavaScript</li>
+		  <li>.NET</li>
+		  <li>PHP</li>
+		  <li>Python</li>
+		  <li>Ruby</li>
+		  </ul>
+		</li>
+	      <li>APIs son estándares de facto</li>
+	      <li>Lleva la iniciativa en IaaS</li>
+	    </ul>
+	  </section>
+	  <section>
+	    <h2>Ejemplo de servicio en IaaS público</h2>
+	    <h3>Servicio web de vídeo bajo demanda</h3>
+	    <blockquote>Problema: Requitos de hardware muy variables con grandes picos y
+	    valles</blockquote>
+	    <p>Alto coste en infraestructura tradicional</p>
+	    <br/>
+	    <blockquote>Solución: Clúster con un número de nodos variable en el
+	    tiempo y que se ajuste a la demanda</blockquote>
+	    <ul>
+	      <li>Se incluyen balanceadores para repartir la carga</li>
+	      <li>Se crean de forma automática nuevos servidores cuando se
+	      precisa</li>
+	      <li>Cuando baja la demanda, se eliminan los servidores que
+	      sobren.</li>
+	    </ul>
+	    <br/>
+	  </section>
+	  </section>
+	  <section>
+	  <section>
+	    <h2>Evolución de la infraestructura</h2>
+	    <p>En los siguientes diagramas se representan de forma muy simple
+	    las principales diferencias entre la estructura clásica de máquinas
+	    físicas o virtuales y la infraestructura en nube.</p> 
+	  </section>
+          <section>
+	    <img src="img/mf.png" alt="Máquinas físicas"/>
+	  </section>
+          <section>
+	    <img src="img/mv.png" alt="Máquinas virtuales"/>
+	  </section>
+          <section>
+	    <img src="img/iaas.png" alt="IaaS"/>
+	  </section>
+	  </section>
+	  

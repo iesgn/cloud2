@@ -1,0 +1,100 @@
+---
+layout: presentacion
+title: OpenShift
+tema: solarized
+---
+<section>
+  <h1>OpenShift</h1>
+  <h3>Introducción y uso</h3>
+  <p>
+    <small><a href="http://albertomolina.wordpress.com">Alberto Molina
+	Coballes</a> / <a
+			  href="http://twitter.com/alberto_molina">@alberto_molina</a> y <a
+											    href="http://josedomingo.org">José Domingo Muñoz
+	Rodríguez</a> / <a
+			   href="http://twitter.com/Pledin_JD">@Pledin_JD</a> </small>
+  </p>
+  <p><small>
+      <a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="../../img/cc_by_sa.png"
+								    width="100px" border="0"/></a></small></p>
+  <p><small>
+      Theme
+      by <a href="http://lab.hakim.se/reveal-js/#/">reveal.js</a>
+    </small>
+  </p>
+</section>
+<section>
+  <h2>Conceptos previos</h2>
+  <ul>
+    <li>OpenShift es la Plataforma como servicio (PaaS) de cloud computing de
+    Red Hat.</li> 
+    <li><strong>Gear</strong>: Es un contenedor dentro de una máquina virtual
+      con unos recursos limitados para que pueda ejecutar sus aplicaciones un
+      usuario de OpenShift.
+
+      Al utilizar una cuenta gratuita  se pueden crear como máximo tres gears de
+      tipo "small", cada uno de ellos puede utilizar un máximo de 512MB de RAM,
+      100MB de swap y 1GB de espacio en disco.</li> 
+    <li><strong>Cartridge</strong>: Son paquetes de software preparados para
+    ejecutarse en un gear. En principio sobre cada gear pueden desplegarse
+    varios cartridges (php, ruby, jboss, MySQL, django, ...) Por ejemplo para
+    una aplicación como joomla necesitaremos los cartridges de PHP y MySQL.</li> 
+  </ul>
+</section>
+
+<section>
+  <h2>Conceptos previos (2)</h2>
+  <ul>	
+    <li>OpenShift Online: Nube pública que nos permite trabajar con
+    OpenShift.</li>
+    <LI>rhc: Cliente escrito en Ruby que nos permite trabajar con
+    OpenShift desde la línea de comandos.</li>
+  </ul>
+</section>
+<section>
+  <h2>Demo 1</h2>
+  <h3>Instalación de Drupal con un cartridge predefinido</h3>
+  <ul>
+    <li>Acceso a OpenShift Online</li>
+    <li>Importación de las claves ssh públicas</li>
+    <li>Creación de una aplicación</li>
+    <li>Instalación del cartridge Drupal</li>
+  </ul>
+</section>
+<section>
+  <h2>Demo 2</h2>
+  <h3>Instalación de Wordpress</h3>
+  <ul>
+    <li>Creación de una aplicación</li>
+    <li>Instalación del cartridge php y mysql</li>
+    <li>Uso de git para subir la aplicación wordpress</li>
+  </ul>
+</section>
+<section>
+  <h2>Demo 3</h2>
+  <h3>Utilización de un web framework</h3>
+  <ul>
+    <li>Creación de una aplicación</li>
+    <li>Instalación del cartridge python2.6</li>
+    <li>Uso de git para subir el framework bottle</li>
+    <li>Implantación de una aplicación web python</li>
+    <li>¿Integración continua? Jenkins</li>
+  </ul>
+</section>
+<section>
+  <h2>Demo 4</h2>
+  <h3>Utilización de rhc</h3>
+  <ul>
+    <li>Instalación de rhc</li>
+    <li>Configuración del entorno con rhc</li>
+    <li>Funciones disponibles con rhc</li>
+  </ul>
+</section>
+<section>
+  <h2>OpenShift por dentro</h2>
+  <ul>
+    <li>Acceso por ssh</li>
+    <li>Procesos asociados a cada gear</li>
+    <li>Direccionamiento interno</li>
+    <li>Análisis de los registros (logs)</li>
+</section>

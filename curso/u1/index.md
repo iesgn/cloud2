@@ -1,6 +1,6 @@
 ---
 layout: blog
-tittle: Introducción al Cloud Computing. OpenStack.
+tittle: Introducción al Cloud Computing. OpenStack y OpenShift.
 menu:
   - Unidad 1
 ---
