@@ -43,16 +43,15 @@ tecnologías de Cloud Computing en el currículo de los ciclos formativos.
 
 ###Calendario
 
-(Provisional. Hay que cerrar fechas concretas)
 (Provisional. Pendiente de cerrar nº unidades)
 
 |Fecha|Contenido|
 |:---:|---------|
 |30/10/2014|**Sesión 1**<br/>Unidad 1: Introducción al Cloud Computing. OpenStack|
-|4/11/2014|**Sesión 2**<br/>Unidad 2: Utilización de OpenStack|
-|13/11/2014|**Sesión 3**<br/>Unidad 3: Utilización de OpenStack|
-|18/11/2014|**Sesión 4**<br/>Unidad 4: Utilización de OpenStack|
-|27/11/2014|**Sesión 5**<br/>Unidad 5: OpenStack. APIs|
+|6/11/2014|**Sesión 2**<br/>Unidad 2: Utilización de OpenStack|
+|11/11/2014|**Sesión 3**<br/>Unidad 3: Utilización de OpenStack|
+|20/11/2014|**Sesión 4**<br/>Unidad 4: Utilización de OpenStack|
+|25/11/2014|**Sesión 5**<br/>Unidad 5: OpenStack. APIs|
 |2/12/2014|**Sesión 6**<br/>Unidad 6: Uso en educación y en empresas|
 
 ###Licencia
