@@ -4,47 +4,18 @@
      url: /cloud2/curso/u1
    - name: OpenStack
      url: /cloud2/curso/u1/openstack
-   - name: OpenShift
-     url: /cloud2/curso/u1/openshift  
 - nombre: Unidad 2
-  items:
-   - name: DevOps
-     url: /cloud2/curso/u2
-   - name: Git
-     url: /cloud2/curso/u2/git
-   - name: Vagrant
-     url: /cloud2/curso/u2/vagrant
-   - name: Ansible
-     url: /cloud2/curso/u2/ansible
 - nombre: Unidad 3
-  items:
-   - name: Entornos
-     url: /cloud2/curso/u3
-   - name: DevStack
-     url: /cloud2/curso/u3/devstack
-   - name: RDO
-     url: /cloud2/curso/u3/rdo
-   - name: OpenStack-ansible
-     url: /cloud2/curso/u3/openstack-ansible
-   - name: Prácticas
-     url: /cloud2/curso/u3/practicas
- 
 - nombre: Unidad 4
-  items:
-   - name: OpenStack Grizzly
-     url: /cloud2/curso/u4
-   - name: Práctica Linux
-     url: /cloud2/curso/u4/practica_linux
-   - name: Práctica Windows
-     url: /cloud2/curso/u4/practica_windows
+  # items:
+  #  - name: OpenStack Grizzly
+  #    url: /cloud2/curso/u4
+  #  - name: Práctica Linux
+  #    url: /cloud2/curso/u4/practica_linux
+  #  - name: Práctica Windows
+  #    url: /cloud2/curso/u4/practica_windows
 
 - nombre: Unidad 5
-  items:
-- nombre: Unidad 6
-  items:
-- nombre: Unidad 7
-  items:
-- nombre: Unidad 8
   items:
   - name: Redes
     url: /cloud2/curso/u8
@@ -54,17 +25,7 @@
     url: red-privada
   - name: Red exterior
     url: red-exterior
-- nombre: Unidad 9
-  items:
-  - name: OpenShift
-    url: index
-  - name: OpenShift online
-    url: online
-  - name: rhc
-    url: rhc
-  - name: Avanzado
-    url: avanzado
-- nombre: Unidad 10
+- nombre: Unidad 6
   items:
   - name: Educación
     url: index
@@ -87,13 +48,5 @@
      url: /cloud2/curso/u5
    - name: Unidad 6
      url: /cloud2/curso/u6
-   - name: Unidad 7
-     url: /cloud2/curso/u7
-   - name: Unidad 8
-     url: /cloud2/curso/u8
-   - name: Unidad 9
-     url: /cloud2/curso/u9
-   - name: Unidad 10
-     url: /cloud2/curso/u10
    - name: Foro
      url: https://github.com/iesgn/cloud2/issues
