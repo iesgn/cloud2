@@ -1,6 +1,6 @@
 ---
 layout: blog
-tittle: Introducción al Cloud Computing. OpenStack y OpenShift.
+tittle: Introducción al Cloud Computing con OpenStack
 menu:
   - Unidad 1
 ---
@@ -15,9 +15,6 @@ menu:
 * Conocer el proyecto de software libre OpenStack. Importante proyecto para
 proporcionar IaaS tanto en clouds públicos como privados.
 * Conocer las características principales de OpenStack.
-* Conocer el proyecto de software libre OpenShift. Proyecto de Software libre de
-la empresa Red Hat para proporcionar PaaS tanto en clouds públicos como privados.
-* Conocer las características principales de OpenShift.
 
 ###Contenidos
 
