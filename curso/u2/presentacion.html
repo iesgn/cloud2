@@ -5,7 +5,7 @@ tema: sky
 ---
 
 <section>
-	    <h2>Introducción al uso de OpenStack (Portal)</h2>
+	    <h2>Introducción al uso de OpenStack (StackOps Portal)</h2>
 	    <p>
 	      <small><a href="http://albertomolina.wordpress.com">Alberto Molina
 	      Coballes</a> / <a
@@ -41,28 +41,24 @@ tema: sky
 	    </section>
 
 
-
-
-
-
-
 	    <section>
-	    <h3>Introducción a Horizon</h3>
+	    <h3>Introducción a StackOps Portal</h3>
 	    <ul>
-			<li>Horizon es el panel de control web (dashboard) de OpenStack</li>
-			<li>Es una aplicación web desarrollada en Django</li>
-			<li>Implementa las funcionalidades básicas de los componentes principales de OpenStack: Nova, Glance, Swift, etc.</li>
-			<li>Ideal para que usuarios noveles utilicen OpenStack</li>
-			<li>Como todos los componentes de OpenStack está sometido a un fuerte desarrollo, por lo que cambia bastante con cada versión.</li>
-			<li>Aquí utilizamos Horizon de OpenStack Grizzly (2013.1)</li>
+			<li>El panel de control web (dashboard) de OpenStack por defecto se llama Horizon</li>
+			<li>La empresa StackOps nos ofrece un cloud híbrido que actualmente trabaja con OpenStack Icehouse</li>
+			<li>La herramienta de gestion de la plataforma se llama StackOps Portal. Esta aplicación web se encuentra disponible en la url <a href="https://cloud.stackops.net">https://cloud.stackops.net</a></li>
+			<li>Implementa las funcionalidades básicas de los componentes principales de OpenStack: Nova, Glance, Neutron, Cinder, etc.</li>
+			
 	    </ul>
 		</section>
 		<section>
-	    <h3>Acceso a horizon</h3>
+	    <section>
+		<h3>Acceso a StackOps Portal</h3>
 	    <ul>
 			<li>Acceso mediante usuario/contraseña</li>
-			<li>Dos roles predefinidos: admin y member</li>
-			<li>Un usuario con el rol member puede:<li>
+			<li> A día de hoy puede acceder a la zona Sur de Europa.</li>
+			<li>Un usuario puede gestionar múltiples Virtual Datacenters, pero lo normal es que un usuario solo tenga un tenant o Virtual Datacenter que gestionar. </li>
+			<li>Un usuario puede:<li>
 			<ul>
 				<li>Crear instancias</li>
 				<li>Modificar el estado de sus instancias</li>
@@ -74,7 +70,16 @@ tema: sky
 			</ul>
 		</ul>
 		</section>
-
+		<section>
+			<h3>Acceso a StackOps Portal</h3>
+			<img src="img/img1.png"/>
+		</section>
+		<section>
+			<h3>Acceso a StackOps Portal</h3>
+			<img src="img/img2.png"/>
+		</section>
+		</section>
+		
 	    <section>
 	    <section>
 	    <h2>Creación de una instancia</h2>

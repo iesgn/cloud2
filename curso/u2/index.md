@@ -7,13 +7,13 @@ menu:
 ###Objetivos
 
 * Introducir los conceptos fundamentales para utilizar OpenStack.
-* Introducir los conceptos fundamentales para el uso de la aplicación web Portal.
-* Trabajar con instancias, imágenes y snapshots desde la aplicación web Portal.
-* Introducir herramientas específicas de la aplicación web Portal.
+* Introducir los conceptos fundamentales para el uso de la aplicación web StackOps Portal.
+* Trabajar con instancias, imágenes y snapshots desde la aplicación web StackOps Portal.
+* Introducir herramientas específicas de la aplicación web StackOps Portal.
 
 ### Presentación
 
-* [Presentación uso de Openstack.Portal](presentacion)
+* [Presentación uso de Openstack. StackOps Portal](presentacion)
 
 ###Video
 
