@@ -1,3 +1,0 @@
-[webservers]
-nodo1 ansible_ssh_host=10.1.1.101 ansible_ssh_user=vagrant
-

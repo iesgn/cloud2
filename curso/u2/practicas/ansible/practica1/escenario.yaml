@@ -1,2 +1,0 @@
-- include: playbooks/common.yaml
-- include: playbooks/webservers.yaml
