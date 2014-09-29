@@ -2,18 +2,18 @@
 layout: blog
 tittle: OpenStack. Instancias.
 menu:
-  - Unidad 6
+  - Unidad 2
 ---
 ###Objetivos
 
-* Recordar los conceptos fundamentales que entran en juego en el trabajo con OpenStack.
-* Trabajar con instancias, imágenes y snapshots desde la aplicación web Horizon.
-* Trabajar con instancias, imágenes y snapshots desde la aplicación nova.
-* Introducir conceptos avanzados sobre el funcionamiento interno de OpenStack cuando se trabaja con instancias.
+* Introducir los conceptos fundamentales para utilizar OpenStack.
+* Introducir los conceptos fundamentales para el uso de la aplicación web Portal.
+* Trabajar con instancias, imágenes y snapshots desde la aplicación web Portal.
+* Introducir herramientas específicas de la aplicación web Portal.
 
-### Contenidos
+### Presentación
 
-* [Presentación: Instancias](presentacion_instancias)
+* [Presentación uso de Openstack.Portal](presentacion)
 
 ###Video
 
