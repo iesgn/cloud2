@@ -17,11 +17,16 @@ menu:
 
 ###Video
 
-* 
+* Trabajar con imagen e instancia Cirros
+* Crear una instancia a partir de la imagen Debian (Asinar IP flotante, acceso a la instancia)
+* Trabajar con SnapShots/Backup
+* Introudcción a las herramientas espécificas de StackOps Portal
 
 
 ###Enlaces interesantes
 
-* [Ayuda de StackOps Portal](https://docs.stackops.net/index-es.html)
+* [Imágenes en SyackOps Portal]()
 * [Get images - Openstack](http://docs.openstack.org/image-guide/content/ch_obtaining_images.html)
+* [Administrar Servidor Virtuales (Instancias en StackOps Portal](https://docs.stackops.net/virtual-servers-plugin-es.html)
+* [Gestor de Seguridad en StackOps Portal](https://docs.stackops.net/security-plugin-es.html)
 
