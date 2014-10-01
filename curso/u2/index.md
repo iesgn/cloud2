@@ -1,6 +1,6 @@
 ---
 layout: blog
-tittle: OpenStack. Instancias.
+tittle: Utilización de OpenStack (1)
 menu:
   - Unidad 2
 ---

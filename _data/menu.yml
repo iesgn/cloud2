@@ -5,6 +5,16 @@
    - name: OpenStack
      url: /cloud2/curso/u1/openstack
 - nombre: Unidad 2
+  items:
+   - name: Inicio
+     url: /cloud2/curso/u2
+   - name: Práctica Linux
+     url: /cloud2/curso/u2/practica_linux
+   - name: Práctica Windows
+     url: /cloud2/curso/u2/practica_windows
+   - name: Tarea
+     url: /cloud2/curso/u2/tarea
+
 - nombre: Unidad 3
 - nombre: Unidad 4
   # items:
