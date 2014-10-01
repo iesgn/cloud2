@@ -18,9 +18,9 @@ menu:
 ###Video
 
 * Trabajar con imagen e instancia Cirros
-* Crear una instancia a partir de la imagen Debian (Asinar IP flotante, acceso a la instancia)
+* Crear una instancia a partir de la imagen Debian (Asignar IP flotante, acceso a la instancia)
 * Trabajar con SnapShots/Backup
-* Introudcción a las herramientas espécificas de StackOps Portal
+* Introducción a las herramientas espécificas de StackOps Portal
 
 
 ###Enlaces interesantes

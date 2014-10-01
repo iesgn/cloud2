@@ -16,5 +16,5 @@ menu:
 
 4. Crea un snapshot, llámalo "LinuxApache_TuNombre", para ello en el menú desplegable de acciones de la instancia de la que quiere realizarse una instantánea se selecciona la acción **Almacenamiento**->**Backups e Instantáneas**.
 
-5. Una vez finalizada la creación del snapshot, crea una instancia a partir de ella, asígnale una IP flotante y comprueba desde un navegador que ya tiene el servidor web instalado.
+	5. Una vez finalizada la creación del snapshot, crea una instancia a partir de ella, asígnale una IP flotante y comprueba desde un navegador que ya tiene el servidor web instalado.
 
