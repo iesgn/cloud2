@@ -2,7 +2,7 @@
 layout: blog
 tittle: Utilización de OpenStack (1)
 menu:
-  - Unidad 4
+  - Unidad 2
 ---
 ## Práctica: Trabajar con Instancias GNU/Linux
 
