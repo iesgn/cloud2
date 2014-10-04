@@ -16,6 +16,15 @@
      url: /cloud2/curso/u2/tarea
 
 - nombre: Unidad 3
+  items:
+   - name: Inicio
+     url: /cloud2/curso/u2
+   - name: Práctica Insyancia
+     url: /cloud2/curso/u2/practica_linux
+   - name: Práctica Volumen
+     url: /cloud2/curso/u2/practica_windows
+   - name: Tarea
+     url: /cloud2/curso/u2/tarea
 - nombre: Unidad 4
   # items:
   #  - name: OpenStack Grizzly
