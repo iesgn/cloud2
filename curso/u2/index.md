@@ -13,9 +13,9 @@ menu:
 
 ### Presentación
 
-* [Presentación uso de Openstack. StackOps Portal](presentacion)
+* [Presentación uso de Openstack. StackOps Portal (1)](presentacion)
 
-###Video
+###Videos
 
 * Trabajar con imagen e instancia Cirros
 * Crear una instancia a partir de la imagen Debian (Asignar IP flotante, acceso a la instancia)
@@ -25,7 +25,7 @@ menu:
 
 ###Enlaces interesantes
 
-* [Imágenes en SyackOps Portal]()
+* [Imágenes en SytackOps Portal](https://docs.stackops.net/virtual-images-plugin-es.html)
 * [Get images - Openstack](http://docs.openstack.org/image-guide/content/ch_obtaining_images.html)
 * [Administrar Servidor Virtuales (Instancias en StackOps Portal](https://docs.stackops.net/virtual-servers-plugin-es.html)
 * [Gestor de Seguridad en StackOps Portal](https://docs.stackops.net/security-plugin-es.html)
