@@ -20,7 +20,7 @@ menu:
 * Gestión avanzada de instancias: redimensión y rescate.
 * Creación de volúmenes, asociación a instancias.
 * Creación de instancia ejecutadas sobre volúmenes.
-* Gestión avanzada de volúmenes: redimensión e instantaneas.
+* Instantaneas de volúmenes
 
 ###Enlaces interesantes
 
