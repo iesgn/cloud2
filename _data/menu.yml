@@ -18,13 +18,13 @@
 - nombre: Unidad 3
   items:
    - name: Inicio
-     url: /cloud2/curso/u2
+     url: /cloud2/curso/u3
    - name: Práctica Instancia
-     url: /cloud2/curso/u2/practica_instancia
+     url: /cloud2/curso/u3/practica_instancia
    - name: Práctica Volumen
-     url: /cloud2/curso/u2/practica_volumen
+     url: /cloud2/curso/u3/practica_volumen
    - name: Tarea
-     url: /cloud2/curso/u2/tarea
+     url: /cloud2/curso/u3/tarea
 - nombre: Unidad 4
   # items:
   #  - name: OpenStack Grizzly
