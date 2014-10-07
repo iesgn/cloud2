@@ -74,7 +74,7 @@ Los pasos que tenemos que realizar son los siguientes:
 	* Según el sabor que hayamos elegido tendremos uno o dos discos duros del tamaño del sabor seleccionado, que podemos comprobar ejecutando: *sudo fdisk -l*
 	* También podemos comprobar la RAM que tiene la máquina ejecutando el comando *free*.
 
-12. si quieres hacer prácticas con intancias generadas con otras imágenes, puedes encontrar la manera de acceder a ellas en los siguientes artículos:
+12. Si quieres hacer prácticas con intancias generadas con otras imágenes, puedes encontrar la manera de acceder a ellas en los siguientes artículos:
 
 * [Centos 6.4 and 6.5 default username and password](https://stackops.zendesk.com/hc/en-us/articles/201923327-Centos-6-4-and-6-5-default-username-and-password)
 * [CoreOS default username and password](https://stackops.zendesk.com/hc/en-us/articles/201565975-CoreOS-default-username-and-password)

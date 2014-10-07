@@ -12,12 +12,12 @@ menu:
 
 2. Comprueba que el disco se ha conectado a la máquina, formatea el disco, móntalo y crea un fichero de texto.
 
-		# fdisk -l
-		# mkfs.ext4 /dev/vdb
-		# mount /dev/vdb /mnt
+		# sudo fdisk -l
+		# sudo mkfs.ext4 /dev/vdb
+		# sudo mount /dev/vdb /mnt
 		# cd /mnt
-		# touch fichero.txt
-		# umount /mnt
+		# sudo touch fichero.txt
+		# sudo umount /mnt
 
 3. Desasocia el disco de la instancia.
 
