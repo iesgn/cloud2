@@ -20,9 +20,9 @@
    - name: Inicio
      url: /cloud2/curso/u2
    - name: Práctica Instancia
-     url: /cloud2/curso/u2/practica_linux
+     url: /cloud2/curso/u2/practica_instancia
    - name: Práctica Volumen
-     url: /cloud2/curso/u2/practica_windows
+     url: /cloud2/curso/u2/practica_volumen
    - name: Tarea
      url: /cloud2/curso/u2/tarea
 - nombre: Unidad 4
