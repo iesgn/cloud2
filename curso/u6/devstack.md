@@ -33,3 +33,23 @@ Vamos a realizar la instalación de OpenStack IceHouse utilizando el entrono de 
 3. Y ya podemos comenzar la instalación:
 
 		~/devstack$	./stack.sh
+
+4. Una vez terminada la instalación, para acceder a la aplicación web Horizon:
+
+	* Accedemos a la URL *http://localhost*.
+    * Usuario de prueba: **demo** con contraseña **devstack**.
+    * Usuario de administración: **admin** con contraseña **devstack**.
+    * El usuario **demo** debe trabajar en el proyecto *"demo"*, no en uno que se llama *"invisible_to_admin"*.
+
+5. Estamos trabajando en un entorno de pruebas, por lo tento si terminamos de trabajar con Openstack y apagamos el ordenador, la próxima vez que queramos trabajar con él los servicios no estarán arrancados. Por lo tanto si queremos seguir trabajando con la sesión anterior, tendremos que ejecutar la siguiente instrucción:
+
+		$ cd devstack
+		~/devstack$	./rejoin-stack.sh
+
+	Si comprobamos que no funciona bien, tendremos que volver a instalar devstack (aunque esta segunda vez la instalación será mucho más rápida) aunque perderemos todos los cambios realizados (instancias, imágenes, grupos de seguridad,...):
+
+		$ cd devstack
+		~/devstack$	./stack.sh
+
+
+
