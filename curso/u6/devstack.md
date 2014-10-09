@@ -30,3 +30,6 @@ Vamos a realizar la instalación de OpenStack IceHouse utilizando el entrono de 
 
 		~/devstack$ wget https://raw.githubusercontent.com/iesgn/cloud2/gh-pages/curso/u6/local.conf
 
+3. Y ya podemos comenzar la instalación:
+
+		~/devstack$	./stack.sh
