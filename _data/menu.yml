@@ -46,6 +46,8 @@
     url: red-exterior
 - nombre: Unidad 6
   items:
+  - name: Instalación
+    url: entornos
   - name: Educación
     url: index
   - name: Tareas
