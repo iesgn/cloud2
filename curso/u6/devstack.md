@@ -51,5 +51,15 @@ Vamos a realizar la instalación de OpenStack IceHouse utilizando el entrono de 
 		$ cd devstack
 		~/devstack$	./stack.sh
 
+####Máquina virtualbox con devstack
+
+Si el proceso de instalación da algún problema, podemos probar OpenStack usando una máquina virtual de VirtualBox con devtack instalada. Es una máquina virtual con un interfaz de red tipo NAT, por lo tanto sólo se puede trabajar con openstack desde la misma máquina.
+
+* Bájate el fichero [ova]().
+* Importa la máquina a virtualbox. La máquina está configurada con 3GB de RAM; modifica este parámetro según tus necesidades.
+* Para acceder usa el usuario y contraseña: *usuario*.
+* Lo primero que tienes que hacer es acceder al directorio *devstack* y ejecutar el script de instalación (stack.sh).
+* Puede ser una buena idea que suspendas la máquina (Guardar el estado) y así poder seguir trabajando en otro momento.
+
 
 
