@@ -44,12 +44,12 @@ Vamos a realizar la instalación de OpenStack IceHouse utilizando el entrono de 
 5. Estamos trabajando en un entorno de pruebas, por lo tento si terminamos de trabajar con Openstack y apagamos el ordenador, la próxima vez que queramos trabajar con él los servicios no estarán arrancados. Por lo tanto si queremos seguir trabajando con la sesión anterior, tendremos que ejecutar la siguiente instrucción:
 
 		$ cd devstack
-		~/devstack$	./rejoin-stack.sh
+		~/devstack$ ./rejoin-stack.sh
 
 	Si comprobamos que no funciona bien, tendremos que volver a instalar devstack (aunque esta segunda vez la instalación será mucho más rápida) aunque perderemos todos los cambios realizados (instancias, imágenes, grupos de seguridad,...):
 
 		$ cd devstack
-		~/devstack$	./stack.sh
+		~/devstack$ ./stack.sh
 
 ####Máquina virtualbox con devstack
 
