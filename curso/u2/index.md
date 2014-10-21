@@ -15,9 +15,9 @@ menu:
 
 * [Presentación uso de Openstack. StackOps Portal (1)](presentacion)
 
-###Videos
+###Contenidos
 
-* Trabajar con imagen e instancia Cirros
+* [Trabajar con imagen e instancia Cirros](demo1)
 * Crear una instancia a partir de la imagen Debian (Asignar IP flotante, acceso a la instancia)
 * Trabajar con Snapshots/Backup
 * Introducción a las herramientas espécificas de StackOps Portal
