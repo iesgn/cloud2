@@ -37,4 +37,19 @@ sección **Administrador de Seguridad** -> **LLaves** -> **Crear nuevo par de cl
     	* Se selecciona uno o más grupos de seguridad para aplicar en el servidor a la hora de gestionar el tráfico en la red. 
     	![instancia](img/demo2_5.png)
 
+4. Al cabo de unos segundos podemos ver que nuestra instancia ha sido creada, que tiene asignada una IP fija, y que podemos realizar diferentes acciones sobre ella:
 
+![instancia](img/demo2_6.png)
+
+![instancia](img/acciones.png)
+
+5. Por último para poder acceder a la instancia desde el exterior tenemos que asignar a la instancia una IP flotante, una IP Pública, para ello:
+
+	* Elegimos la opción **IP públicas** en el apartado **Administrador de seguridad** y asignamos una nueva IP.
+	* Desde esa misma pantalla o desde la **Adminstración de servidores**, asignamos esa nueva IP a la instancia que acabamos de crear.
+	![ip](img/demo2_7.png)	
+	* ecuerda que una vez que la IP pública no está asignada a una instancia se puede liberar.
+
+6. Ya estamos en disposición de acceder a la instancia:
+
+![ip](img/demo2_8.png)	
