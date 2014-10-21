@@ -39,11 +39,11 @@ sección **Administrador de Seguridad** -> **LLaves** -> **Crear nuevo par de cl
 
 4. Al cabo de unos segundos podemos ver que nuestra instancia ha sido creada, que tiene asignada una IP fija: 
 
-![instancia](img/demo2_6.png)
+	![instancia](img/demo2_6.png)
 
 	Además podemos realizar diferentes acciones sobre ella:
 
-![instancia](img/acciones.png)
+	![instancia](img/acciones.png)
 
 5. Por último para poder acceder a la instancia desde el exterior tenemos que asignar a la instancia una IP flotante, una IP Pública, para ello:
 
