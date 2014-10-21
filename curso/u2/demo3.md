@@ -27,10 +27,13 @@ En cualquier momento puedo crear una instantánea de una instancia, con lo que s
 	![snapshot](img/demo3_4.png)
 	* Y por último podemos acceder a la nueva instancia (a la que le hemos asignado una nueva IP pública y a la que hemos asociado la clave SSH mi_clave.pem), y comprobar que tiene el fichero que creamos en la instancia anterior:
 
-	$ ssh -i mi_clave.pem debian@185.45.72.104
-	debian@servidor-debian2:~$ ls
-	fichero_prueba.txt
-	
+
+		$ ssh -i mi_clave.pem debian@185.45.72.103
+		debian@servidor-debian:~$ touch fichero_prueba.txt
+
+		$ ssh -i mi_clave.pem debian@185.45.72.104
+		debian@servidor-debian2:~$ ls	
+		fichero_prueba.txt
 
 ### Backups
 
