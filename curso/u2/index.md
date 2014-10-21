@@ -29,4 +29,5 @@ menu:
 * [Get images - Openstack](http://docs.openstack.org/image-guide/content/ch_obtaining_images.html)
 * [Administrar Servidor Virtuales (Instancias en StackOps Portal](https://docs.stackops.net/virtual-servers-plugin-es.html)
 * [Gestor de Seguridad en StackOps Portal](https://docs.stackops.net/security-plugin-es.html)
+* [Pay as you go - Pago por uso](https://docs.stackops.net/payasyougo-es.html)
 
