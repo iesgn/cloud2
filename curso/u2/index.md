@@ -20,7 +20,7 @@ menu:
 * [Trabajar con imagen e instancia Cirros](demo1)
 * [Crear una instancia a partir de la imagen Debian (Asignar IP flotante, acceso a la instancia)](demo2)
 * [Trabajar con Snapshots/Backup](demo3)
-* Introducción a las herramientas espécificas de StackOps Portal
+* [Introducción a las herramientas espécificas de StackOps Portal](demo4)
 
 
 ###Enlaces interesantes
