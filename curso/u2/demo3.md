@@ -13,7 +13,7 @@ En cualquier momento puedo crear una instantánea de una instancia, con lo que s
 
 1. Vamos a acceder a la instancia y vamos a realizar un cambio sobre ella, lo mas sencillo es crear un fichero de texto.
 
-		$ ssh -i smr.pem debian@185.45.72.103
+		$ ssh -i mi_clave.pem debian@185.45.72.103
 		debian@servidor-debian:~$ touch fichero_prueba.txt
 
 2. A continuación vamos a realizar un snapshot a la instancia, con lo que se nos creará una nueva imagen desde la que podremos crear nuevas instancias.
@@ -25,9 +25,10 @@ En cualquier momento puedo crear una instantánea de una instancia, con lo que s
 	![snapshot](img/demo3_3.png)
 	* A continuación podemos crear una nueva instancia a a partir de esta instantánea:
 	![snapshot](img/demo3_4.png)
-	* Y por último podemos acceder a la nueva instancia (a la que le hemos asignado una nueva IP pública y a la que hemos asocuiado la clave SSH smr.pem), y comprobar que tiene el fichero que creamos en la instancia anterior:
-	
-		$ ssh -i smr.pem debian@185.45.72.104
+	* Y por último podemos acceder a la nueva instancia (a la que le hemos asignado una nueva IP pública y a la que hemos asociado la clave SSH mi_clave.pem), y comprobar que tiene el fichero que creamos en la instancia anterior:
+
+
+		$ ssh -i mi_clave.pem debian@185.45.72.104
 		debian@servidor-debian2:~$ ls
 		fichero_prueba.txt
 
