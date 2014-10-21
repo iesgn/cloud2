@@ -34,5 +34,33 @@ La primera demostración que vamos a realizar es la creación de una instancia a
 
 	![Subir imagen](img/demo1_1.png)
 
-4. Una vez subida la imagen, podemos crear una nueva instancia, para ello nos vamos al apartado **Administrador de Servidores**,  
+4. Una vez subida la imagen, podemos crear una nueva instancia, para ello nos vamos al apartado **Administrador de Servidores**, y creamos una nueva instancia con la opción **Crear Nueva Instancia**, con los siguientes datos:
 
+	![Crear instancia](img/demo1_2.png)
+
+5. Y al cabo de unos momentos, podemos comprobar que la instancia está corriendo:
+
+	![instancia](img/demo1_3.png)
+
+6. Ahora podemos realizar distintas operaciones sobre la instancia y podemos acceder a ella utilizando la **Consola Remota**, teniendo en cuenta que como es una imagen de prueba tenemos definido el nombre de usuario y la contraseña: *cirros* y *cubswin:)*.
+
+	![instancia](img/demo1_4.png)
+
+7. Si queremos acceder desde el exterior a la instancia tenemos que asignarle una IP flotante, en StackOps se llaman **IP Pública**, abrir el puerto 22 en el cortafuegos para acceder por SSH y utilizar un cliente SSH para acceder a ella:
+
+	* En el apartado **Administrador de seguridad**, **IP públicas**, asignamos una nueva IP:
+
+		![flotante](img/demo1_5.png)
+
+	* Asociamos la IP pública que hemos reservado a la instancia que hemos creado:
+
+		![flotante](img/demo1_8.png)	
+		![flotante](img/demo1_7.png)	
+
+	* En el apartado **Administrador de seguridad**, **Cortafuegos**, añadimos una nueva regla para abrir el puerto 22 TCP:
+
+		![cortafuegos](img/demo1_6.png)
+
+	* Por último ya podemos usar un cliente SSH para acceder a la instancia:
+
+	![ssh](img/demo1_9.png)	
