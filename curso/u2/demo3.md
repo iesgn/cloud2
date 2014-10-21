@@ -31,6 +31,7 @@ En cualquier momento puedo crear una instantánea de una instancia, con lo que s
 	$ ssh -i mi_clave.pem debian@185.45.72.104
 	debian@servidor-debian2:~$ ls
 	fichero_prueba.txt
+	```
 
 ### Backups
 
