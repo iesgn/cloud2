@@ -31,3 +31,11 @@ En cualquier momento puedo crear una instantánea de una instancia, con lo que s
 		$ ssh -i smr.pem debian@185.45.72.104
 		debian@servidor-debian2:~$ ls
 		fichero_prueba.txt
+
+### Backups
+
+StackOps también nos ofrece la opción de Backup que nos permite programa la creación de snapshots cada cierto tiempo.
+
+	![snapshot](img/demo3_4.png)
+
+El campo **Rotación** es el número de snapshots creados a partir de este backup que se desean mantener.
