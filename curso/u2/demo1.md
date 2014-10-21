@@ -49,18 +49,11 @@ La primera demostración que vamos a realizar es la creación de una instancia a
 7. Si queremos acceder desde el exterior a la instancia tenemos que asignarle una IP flotante, en StackOps se llaman **IP Pública**, abrir el puerto 22 en el cortafuegos para acceder por SSH y utilizar un cliente SSH para acceder a ella:
 
 	* En el apartado **Administrador de seguridad**, **IP públicas**, asignamos una nueva IP:
-
 		![flotante](img/demo1_5.png)
-
 	* Asociamos la IP pública que hemos reservado a la instancia que hemos creado:
-
 		![flotante](img/demo1_8.png)	
 		![flotante](img/demo1_7.png)	
-
 	* En el apartado **Administrador de seguridad**, **Cortafuegos**, añadimos una nueva regla para abrir el puerto 22 TCP:
-
 		![cortafuegos](img/demo1_6.png)
-
 	* Por último ya podemos usar un cliente SSH para acceder a la instancia:
-
 	![ssh](img/demo1_9.png)	
