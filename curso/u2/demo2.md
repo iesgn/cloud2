@@ -37,9 +37,11 @@ sección **Administrador de Seguridad** -> **LLaves** -> **Crear nuevo par de cl
     	* Se selecciona uno o más grupos de seguridad para aplicar en el servidor a la hora de gestionar el tráfico en la red. 
     	![instancia](img/demo2_5.png)
 
-4. Al cabo de unos segundos podemos ver que nuestra instancia ha sido creada, que tiene asignada una IP fija, y que podemos realizar diferentes acciones sobre ella:
+4. Al cabo de unos segundos podemos ver que nuestra instancia ha sido creada, que tiene asignada una IP fija: 
 
 ![instancia](img/demo2_6.png)
+
+	Además podemos realizar diferentes acciones sobre ella:
 
 ![instancia](img/acciones.png)
 
