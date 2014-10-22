@@ -170,7 +170,7 @@ $ nova image-list
 
 <section>
   <section>
-    <h2>Volúmenes con OpenStack CLI</h2>
+    <h3>Volúmenes con OpenStack CLI</h3>
   </section>
   <section>
     <h2>Volúmenes</h2>
@@ -187,14 +187,28 @@ $ nova volume-detach SERVIDOR_ID VOLUMEN_ID
 $ nova volume-snapshot-create [opciones] VOLUMEN_ID
     </code></pre>
   </section>
-  <section>
-  <h2>Redimensionar volúmenes</h2>
-  <p>Para hacer esta operación necesitamos el cliente cinder.</p>
-    <pre><code>
-# pip install python-cinderclient
 
-#Redimensionar un volumen
-$ cinder extend ID_VOLUME NEW_SIZE
+</section>
+
+<section>
+    <h3>Redes con OpenStack CLI</h3>
+  </section>
+  <section>
+    <h2>Instalación de python-neutronclient</h2>
+  </section>
+  <section>
+    <h2>Redes</h2>
+    <pre><code>
+#Listar redes
+$ nova net-list
+#Listar subredes
+$ nova subnet-list
+#Listar routers
+$ nova router-list
+# Establecer puerta de enlace de un router
+$ neutron router-gateway-set ROUTER_ID EXTERNAL_NETWORK_ID
+# Conectar un router a una red privada
+$ neutron router-interface-add ROUTER_ID SUBNET_ID
     </code></pre>
   </section>
 </section>
