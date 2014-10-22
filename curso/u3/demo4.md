@@ -1,4 +1,4 @@
---
+---
 layout: blog
 tittle: Utilización de OpenStack (2)
 menu:
