@@ -1,6 +1,6 @@
 ---
 layout: blog
-tittle: Entornos de pruebas para OpenStack
+tittle: Instalación de OpenStack
 menu:
   - Unidad 3
 ---
