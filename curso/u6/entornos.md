@@ -5,7 +5,7 @@ menu:
   - Unidad 6
 ---
 
-## Instalación y configuración de OpenStack
+## Instalación y administración de OpenStack
 
 Vamos a presentar diferentes formas de instalar OpenStack en un entorno de pruebas en nuestro ordenador.  Las distintas opciones que tenemos disponibles son las siguientes:
 

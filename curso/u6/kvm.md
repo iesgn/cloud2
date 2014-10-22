@@ -1,6 +1,6 @@
 ---
 layout: blog
-tittle: Cloud Computing en Educación y en la Empresa
+tittle: Administración de OpenStack
 menu:
   - Unidad 6
 ---

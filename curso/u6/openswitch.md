@@ -1,9 +1,11 @@
 ---
 layout: blog
-tittle: Cloud Computing en Educación y en la Empresa
+tittle: Administración de OpenStack
 menu:
   - Unidad 6
 ---
+
+## OpenSwitch
 
 En las unidades anteriores se han visto dos elementos fundamentales para
 configurar la infraestructura como servicio, esto es máquinas virtuales y
