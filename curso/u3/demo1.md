@@ -25,6 +25,8 @@ Para terminar la operación se puede **Confirmar la redimensión**, o **Revertir
 
 ![redimension](img/demo1_3.png)
 
+Para más información puedes ver este [vídeo](https://www.youtube.com/watch?v=p-kNbawLd2U) de StackOps.
+
 ### Rescatar una instancia
 
 Un usuario puede poner una máquina virtual en modo de rescate, de esta forma se puede acceder al servidor con una nueva contraseña y corregir cualquier sistema de fichero o errores de configuración.
@@ -42,3 +44,5 @@ Cuando un usuario se pone en modo de rescate, se activa el siguiente proceso :
 Después de resolver los problemas de un servidor en modo rescate, se puede detener este modo. Cuando se detiene el rescate del servidor, la imagen reparado se restaura a su estado de funcionamiento con su contraseña original.
 
 ![rescatar](img/demo1_5.png)
+
+Para más información puedes ver este [vídeo](https://www.youtube.com/watch?v=gTQaES8ri-Q) de StackOps.
