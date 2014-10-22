@@ -17,7 +17,7 @@ menu:
 
 ###Videos
 
-* Gestión avanzada de instancias: redimensión y rescate.
+* [Gestión avanzada de instancias: redimensión y rescate.](demo1)
 * Creación de volúmenes, asociación a instancias.
 * Creación de instancia ejecutadas sobre volúmenes.
 * Instantaneas de volúmenes
