@@ -1,6 +1,6 @@
 ---
 layout: blog
-tittle: Utilización de OpenStack (2): Instancias y volúmenes
+tittle: Utilización de OpenStack (2). Instancias y volúmenes
 menu:
   - Unidad 3
 ---
