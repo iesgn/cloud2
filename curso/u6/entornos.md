@@ -16,7 +16,7 @@ Para introudcirte en la configuración de OpenStack te invitamos que consultes l
 
 * [Administración de instancias](kvm)
 * [Administración del almacenamiento](lvm-iscsi)
-* [Administración de Red](openswitch.md)
+* [Administración de Red](openswitch)
 
 Y veas los siguientes vídeos:
 
