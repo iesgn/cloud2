@@ -34,22 +34,22 @@
   #  - name: Práctica Windows
   #    url: /cloud2/curso/u4/practica_windows
 
-- nombre: Unidad 5
-  items:
-  - name: Redes
-    url: /cloud2/curso/u8
-  - name: Open vSwitch
-    url: openvswitch
-  - name: Red privada
-    url: red-privada
-  - name: Red exterior
-    url: red-exterior
+#- nombre: Unidad 5
+#  items:
+#  - name: Redes
+#    url: /cloud2/curso/u8
+#  - name: Open vSwitch
+#    url: openvswitch
+#  - name: Red privada
+#    url: red-privada
+#  - name: Red exterior
+#    url: red-exterior
 - nombre: Unidad 6
   items:
+  - name: Inicio
+    url: index
   - name: Instalación
     url: entornos
-  - name: Educación
-    url: index
   - name: Tareas
     url: tareas
 
@@ -69,5 +69,5 @@
      url: /cloud2/curso/u5
    - name: Unidad 6
      url: /cloud2/curso/u6
-   - name: Foro
-     url: https://github.com/iesgn/cloud2/issues
+#   - name: Foro
+#     url: https://github.com/iesgn/cloud2/issues
