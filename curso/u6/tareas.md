@@ -2,13 +2,12 @@
 layout: blog
 tittle: Cloud Computing en Educación
 menu:
-  - Unidad 10
+  - Unidad 6
 ---
 
-### Tareas
+### Tarea final
 
-
-**OpenStack**: Realiza un documento donde describas los pasos necesarios para desarrollar el siguiente escenario en Openstack:
+Realiza un documento donde describas los pasos necesarios para desarrollar el siguiente escenario en StackOps:
 
 * Crea una red interna con direccionamiento 192.168.0.0/24.
 * Crea un router que conecta la red interna con la red pública.
