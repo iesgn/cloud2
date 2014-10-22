@@ -15,17 +15,17 @@ Veamos los pasos que tenemos que realizar:
 
 1. Creamos un nuevo disco a partir de una imagen de un sistema operativo Ubuntu 14.04 Server.
 
-![volumen](img/demo4_1.png)
+	![volumen](img/demo4_1.png)
 
 2. Ahora creamos una nueva instancia cuyo origen será el disco que hemos creado.
 
-![volumen](img/demo4_2.png)
+	![volumen](img/demo4_2.png)
 
 3. Vamos a acceder a la instancia y vamos a realizar un cambio por ejemplo vamos a instalar un servidor web.
 
-![volumen](img/demo4_3.png)
+	![volumen](img/demo4_3.png)
 
 4. Terminamos esta instancia (el volumen no se va a destruir) y creamos una nueva instancia a partir del mismo volumen (le vamos a asignar otra IP pública para que apreciemos que estamos accediendo a otra instancia). Vamos a comprobar que el servidor apache2 ya está instalado.
 
-![volumen](img/demo4_4.png)
+	![volumen](img/demo4_4.png)
 

@@ -13,15 +13,15 @@ En esta demostración vamos a realizar cambios sobre un volumen asociado a una i
 
 1. Partimos de un escenario donde tenemos corriendo una instancia con Linux Debian, que tiene asociado un volumen. Vamos a formatear el volumen, lo vamos a montar y vamos a crear un fichero en él.
 
-![volumen](img/demo3_1.png)
+	![volumen](img/demo3_1.png)
 
-![volumen](img/demo3_2.png)
+	![volumen](img/demo3_2.png)
 
 2. Desasociamos el volumen de la instancia y creamos una instantánea del mismo con la opción **Imagen del volumen** en el **Gestor de discos**:
 
-![volumen](img/demo3_3.png) 
+	![volumen](img/demo3_3.png) 
 
-![volumen](img/demo3_4.png)
+	![volumen](img/demo3_4.png)
 
 	Se mostrará un formulario donde el usuario deberá proporcionar la siguiente información:
 
@@ -48,16 +48,16 @@ En esta demostración vamos a realizar cambios sobre un volumen asociado a una i
 
 3. Podemos observar en **Catálogo de imágenes** encontramos una nueva imagen de volumen, que podremos utilizar posteriormente para crear nuevos discos.
 
-![volumen](img/demo3_6.png)
+	![volumen](img/demo3_6.png)
 
 4. Como hemos dicho creamos un nuevo disco a partir de esta imagen.
 
-![volumen](img/demo3_7.png)
+	![volumen](img/demo3_7.png)
 
 5. Y asociamos este nuevo disco a otra instancia que tenemos corriendo con Linux Debian.
 
-![volumen](img/demo3_8.png)
+	![volumen](img/demo3_8.png)
 
 6. Por último montamos ese nuevo disco en la nueva instancia, y comprobamos que las modificaciones que habíamos hecho en el disco anterior se conserva en este nuevo.
 
-![volumen](img/demo3_9.png)
+	![volumen](img/demo3_9.png)
