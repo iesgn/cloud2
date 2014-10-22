@@ -8,8 +8,9 @@ menu:
 
 * Gestión avanzada de instancias: redimensión y rescate.
 * Introducir los conceptos fundamentales para el uso de volúmenes.
-* Trabajar con volúmenes, asignación de volúmenes a instancias, instancias ejecutadas sobre volúmenes.
+* Trabajar con volúmenes, asignación de volúmenes a instancias.
 * Gestión avanzada de volúmenes: instantáneas.
+* Creción de instancias ejecutadas sobre volúmenes.
 
 ### Presentación
 
@@ -19,8 +20,8 @@ menu:
 
 * [Gestión avanzada de instancias: redimensión y rescate.](demo1)
 * [Creación de volúmenes, asociación a instancias.(Video)](https://www.youtube.com/watch?v=bVukNnvhabc)
+* [Instantaneas de volúmenes](demo3)
 * Creación de instancia ejecutadas sobre volúmenes.
-* Instantaneas de volúmenes
 
 ###Enlaces interesantes
 
