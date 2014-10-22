@@ -29,6 +29,8 @@ menu:
   de la familia de informática.
 * Presentar las salidas profesionales que en los próximos años va a ofrecer las
   tecnologías relacionadas con el Cloud Computing.
+* Presentar distintas posibilidades para la instalación de un entorno de prueba de OpenStack.
+* Hacer una introducción a la configuración de OpenStack.
 
 ### Contenidos
 
@@ -37,8 +39,5 @@ menu:
 * [IaaS en los estudios de Informática](presentacion_iaas_educacion.html)
 * [Implantación de una nube privada en un centro educativo](presentacion_implantacion.html)
 * [Alternativas al cloud privado de IaaS](presentacion_iaas_publico)
-
-<!-- ### Enlaces relacionados -->
-
-<!-- * [Cloud Computing en la formación TIC](http://www.gonzalonazareno.org/cloud/material/cloud_en_la_educacion.pdf) -->
+* [Instalación y configuración de OpenStack](entornos)
 
