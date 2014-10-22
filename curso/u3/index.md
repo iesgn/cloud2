@@ -15,7 +15,7 @@ menu:
 
 * [Presentación uso de Openstack. StackOps Portal (2)](presentacion)
 
-###Videos
+###Contenidos
 
 * [Gestión avanzada de instancias: redimensión y rescate.](demo1)
 * Creación de volúmenes, asociación a instancias.
