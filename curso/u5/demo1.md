@@ -96,7 +96,6 @@ El objetivo de esta demostración es la creación de una instancia usando el cli
 		+--------------------------------------+--------------+------+
 		| d15e0eb6-c892-4717-8be1-b3e85795e8c9 | ext-net      | -    |
 		| d5d686b5-32fb-4e45-8809-98df3ee5ef3e | 00000061-net | -    |
-		| dd5925f9-c01a-4645-afdc-ba22d21e27ec | mi_red       | -    |
 		+--------------------------------------+--------------+------+
 
 5. Ya podemos crear nuestra instancia. Vamos a crear una instancia *instancia_nova*) Ubuntu 14.04, con un sabor ssd.XXXS, el grupo de seguridad y las claves ssh que hemos creado anteriormente y conectado a la red 00000061-net.
