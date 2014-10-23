@@ -29,10 +29,10 @@
   items:
    - name: Inicio
      url: /cloud2/curso/u4
-  #  - name: Práctica Linux
-  #    url: /cloud2/curso/u4/practica_linux
-  #  - name: Práctica Windows
-  #    url: /cloud2/curso/u4/practica_windows
+   - name: Prácticas
+     url: /cloud2/curso/u4/practica
+   - name: Tarea
+     url: /cloud2/curso/u4/tarea
 
 - nombre: Unidad 5
   items:
