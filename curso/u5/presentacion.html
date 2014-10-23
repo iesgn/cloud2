@@ -211,6 +211,10 @@ $ neutron net-list
 $ neutron subnet-list
 #Listar routers
 $ neutron router-list
+# Crear una nueva red
+$ neutron net-create NOMBRE_RED
+# Crear una subred
+$ neutron subnet-create NOMBRE_RED CIDR
 # Establecer puerta de enlace de un router
 $ neutron router-gateway-set ROUTER_ID EXTERNAL_NETWORK_ID
 # Conectar un router a una red privada
