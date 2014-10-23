@@ -19,7 +19,7 @@ menu:
 ###Contenidos
 
 * [Creación de red y subred](demo1)
-* [Creación de una nueva onstancia en la nueva red](demo2)
+* [Creación de una nueva instancia en la nueva red](demo2)
 * [Balanceadore de carga](http://youtu.be/Gc1hXiz86kU)
 
 ###Enlaces interesantes
