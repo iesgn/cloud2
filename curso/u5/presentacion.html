@@ -206,10 +206,11 @@ $ nova volume-snapshot-create [opciones] VOLUMEN_ID
     <pre><code>
 #Listar redes
 $ nova net-list
+$ neutron net-list
 #Listar subredes
-$ nova subnet-list
+$ neutron subnet-list
 #Listar routers
-$ nova router-list
+$ neutron router-list
 # Establecer puerta de enlace de un router
 $ neutron router-gateway-set ROUTER_ID EXTERNAL_NETWORK_ID
 # Conectar un router a una red privada

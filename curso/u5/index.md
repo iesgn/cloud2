@@ -18,8 +18,8 @@ menu:
 ###Contenidos
 
 * [Creación de una instancia con la aplicación nova.](demo1)
-* Creación de un volumen y asociación a una instancia con la aplicación nova.
-* Creación de redes y routers con la aplicación nova.
+* [Creación de un volumen y asociación a una instancia con la aplicación nova.](demo2)
+* [Creación de redes y routers con la aplicación nova.](demo3)
 
 ###Enlaces interesantes
 
