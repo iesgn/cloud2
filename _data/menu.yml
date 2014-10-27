@@ -54,7 +54,7 @@
 - nombre: Unidades
   items:
    - name: Inicio
-     url: /cloud
+     url: /cloud2
    - name: Unidad 1
      url: /cloud2/curso/u1
    - name: Unidad 2
