@@ -8,7 +8,7 @@ menu:
 
 En la última demostración vamos acrea una nueva red y un nuevo router y vamos a crear una instancia conectada a esta nueva red. Será necesario tener instalado el cliente neutron (*python-neutronclient*). Veamos los pasos que tenemos que seguir:
 
-1. En primer lugar vamos las redes, subredes y routers que tenemos creado en nuestro proyecto.
+1. En primer lugar vamos a ver las redes, subredes y routers que tenemos creado en nuestro proyecto.  
 
 		$ neutron net-list
 		+--------------------------------------+--------------+-----------------------------------------------------+
@@ -18,7 +18,7 @@ En la última demostración vamos acrea una nueva red y un nuevo router y vamos 
 		| d5d686b5-32fb-4e45-8809-98df3ee5ef3e | 00000061-net | 4751dc7e-6b54-4284-ba02-6c1a44deb076 10.0.15.64/26  |
 		+--------------------------------------+--------------+-----------------------------------------------------+
 
-	
+
 		$ neutron subnet-list
 		+--------------------------------------+-----------------+----------------+---------------------------------------------------+
 		| id                                   | name            | cidr           | allocation_pools                                  |
@@ -96,7 +96,7 @@ En la última demostración vamos acrea una nueva red y un nuevo router y vamos 
 		| e0e4b108-ac13-4827-86fd-a8ea325057cc |                 | 192.168.0.0/24 | {"start": "192.168.0.2", "end": "192.168.0.254"}  |
 		+--------------------------------------+-----------------+----------------+---------------------------------------------------+
 
-		$ neutron router-interface-add mi_router e0e4b108-ac13-4827-86fd-a8ea325057cc 
+		$ neutron router-interface-add mi_router e0e4b108-ac13-4827-86fd-a8ea325057cc
 		Added interface f7fa31da-c95e-4336-a3c7-e95ea5a13f6f to router mi_router.
 
 4. Ya podemos crear una nueva instancia conectada a la nueva red y asignarle una ip pública.
@@ -171,6 +171,5 @@ En la última demostración vamos acrea una nueva red y un nuevo router y vamos 
 		+-------------+-----------+----------+---------+
 		| 185.45.73.4 | -         | -        | ext-net |
 		+-------------+-----------+----------+---------+
-		
-		$ nova floating-ip-associate otra_instancia 185.45.73.4
 
+		$ nova floating-ip-associate otra_instancia 185.45.73.4
