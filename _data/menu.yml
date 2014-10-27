@@ -4,6 +4,10 @@
      url: /cloud2/curso/u1
    - name: OpenStack
      url: /cloud2/curso/u1/openstack
+   - name: Tarea
+     url: /cloud2/curso/u1/stackops
+
+
 - nombre: Unidad 2
   items:
    - name: Inicio
