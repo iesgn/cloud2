@@ -12,4 +12,4 @@ menu:
 
 3. Utilizando el cliente neutron crea el siguiente escenario de red.
 
-	![red](http://iesgn.github.io/curso/u4/img/red4.png)
+	![red](http://iesgn.github.io/cloud2/curso/u4/img/red4.png)
