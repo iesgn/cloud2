@@ -7,16 +7,16 @@ menu:
 ## Tarea: StackOps
 
 
-### Introducción a StackOps Portal
+### Introducción a StackOps CirrusFlex
 
 * El panel de control web (dashboard) de OpenStack por defecto se llama Horizon
 * La empresa StackOps nos ofrece un cloud público que actualmente trabaja con OpenStack Icehouse
-* La herramienta de gestión de la plataforma se llama StackOps Portal. Esta aplicación web se encuentra disponible en la url https://cloud.stackops.net
+* La herramienta de gestión de la plataforma se llama StackOps CirrusFlex. Esta aplicación web se encuentra disponible en la url https://cloud.stackops.net
 * Implementa las funcionalidades básicas de los componentes principales de OpenStack: Nova, Glance, Neutron, Cinder, etc.
 
 ### Tarea
 
-1. Accede a OpenStack Portal con el nombre de usuario y contraseña que te han proporcionado en el curso.
+1. Accede a OpenStack CirrusFlex con el nombre de usuario y contraseña que te han proporcionado en el curso.
 2. Entrega un documento donde expliques brevemente los siguientes conceptos:
 
 	* El pago por uso, explica el concepto de "pago por uso", indica los conceptos por los que nos van a cobrar en stackOps. Comprueba en el apartado **Facturación y pagos** el crédito que tienes. Para [más información lee el tutorial: [Pay as you go - Pago por uso](https://docs.stackops.net/payasyougo-es.html).
