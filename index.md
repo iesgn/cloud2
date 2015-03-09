@@ -11,11 +11,7 @@ ofrecer servicios de computación a través de Internet. Este curso está orient
 a conocer las principales características del cloud computing, mediante la
 utilización de una nube pública de infraestructura con OpenStack.
 
-<!-- La actividad formativa combina sesiones presenciales con no presenciales. Las -->
-<!-- sesiones presenciales se realizarán en Antequera (Málaga) Las sesiones no presenciales, -->
-<!-- en las que se realizarán prácticas de OpenStack y OpenShift, se desarrollarán a -->
-<!-- través de Google Hangout, que permite que cualquier participante pueda ver cada -->
-<!-- sesión las veces que desee y en el horario que estime oportuno.  -->
+El objetivo general del curso es la formación del profesorado en la instalación, configuración y administración de servicios virtuales con Openstack, de modo que permita al profesorado la inclusión de estas competencias al alumnado.
 
 Los ponentes, [José Domingo Muñoz Rodríguez](http://josedomingo.org) y
 [Alberto Molina Coballes](http://albertomolina.wordpress.com), profesores de la
@@ -33,6 +29,7 @@ tecnologías de Cloud Computing en el currículo de los ciclos formativos.
 * Plantear para cada centro las posibilidades económicas o técnicas de
   implantación o uso de tecnologías de cloud computing 
 
+
 ###Contenidos
 * Introducción al cloud computing.
 * Utilización del software para IaaS OpenStack: instancias, almacenamiento y
@@ -42,16 +39,17 @@ tecnologías de Cloud Computing en el currículo de los ciclos formativos.
 
 ###Calendario
 
-(Provisional. Pendiente de cerrar nº unidades)
 
 |Fecha|Contenido|
 |:---:|---------|
-|30/10/2014|**Sesión 1**<br/>Unidad 1: Introducción al Cloud Computing. OpenStack|
-|6/11/2014|**Sesión 2**<br/>Unidad 2: Utilización de OpenStack|
-|11/11/2014|**Sesión 3**<br/>Unidad 3: Utilización de OpenStack|
-|20/11/2014|**Sesión 4**<br/>Unidad 4: Utilización de OpenStack|
-|25/11/2014|**Sesión 5**<br/>Unidad 5: OpenStack. APIs|
-|2/12/2014|**Sesión 6**<br/>Unidad 6: Uso en educación y en empresas|
+|9/04/2015|**Sesión presencial**<br/>Unidad 1: Introducción al cloud computing, openstack y stackops.|
+|13/04/2015|**Sesión online**<br/>Unidad 2: Instancias 1|
+|16/04/2015|**Sesión online**<br/>Unidad 3: Instancias 2|
+|20/04/2015|**Sesión online**<br/>Unidad 4: Volúmenes|
+|23/04/2015|**Sesión online**<br/>Unidad 5: Redes 1|
+|27/04/2015|**Sesión online**<br/>Unidad 6: Redes 2|
+|30/04/2015|**Sesión online**<br/>Unidad 7: APIS|
+|4/05/2015|**Sesión online**<br/>Unidad 8: Cloud computing en la educación y en la empresa. Tarea final|
 
 ###Licencia
 
