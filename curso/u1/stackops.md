@@ -1,6 +1,6 @@
 ---
 layout: blog
-tittle: Introducción al Cloud Computing. OpenStack y OpenShift.
+tittle: Introducción a StackOps Cirrusflex
 menu:
   - Unidad 1
 ---
