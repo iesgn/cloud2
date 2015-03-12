@@ -51,7 +51,7 @@ tecnologías de cloud computing en el currículo de los ciclos formativos.
 |20/04/2015|**Sesión online**<br/>Unidad 4: Volúmenes|
 |23/04/2015|**Sesión online**<br/>Unidad 5: Redes 1|
 |27/04/2015|**Sesión online**<br/>Unidad 6: Redes 2|
-|30/04/2015|**Sesión online**<br/>Unidad 7: APIS|
+|30/04/2015|**Sesión online**<br/>Unidad 7: Utilización de línea de comandos|
 |4/05/2015|**Sesión online**<br/>Unidad 8: Cloud computing en la educación y en la empresa. Tarea final|
 
 ###Licencia
