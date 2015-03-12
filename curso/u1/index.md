@@ -8,10 +8,10 @@ menu:
 
 ###Objetivos
 * Conocer las principales características del Cloud Computing.
-* Conocer las capas principales: capa de infraestructura (IaaS) y plataforma (PaaS)
-* Conocer los distintos tipos de Cloud Computing: públicos, privados o híbridos
-* Conocer diversos usos de tecnologías de Cloud Computing 
-* Conocer algunos proveedores de Cloud Computing de IaaS o PaaS
+* Conocer las capas principales, principalmente la capa de infraestructura (IaaS).
+* Conocer los distintos tipos de Cloud Computing: públicos, privados o híbridos.
+* Conocer diversos usos de tecnologías de Cloud Computing.
+* Conocer algunos proveedores de Cloud Computing de IaaS.
 * Conocer el proyecto de software libre OpenStack. Importante proyecto para
 proporcionar IaaS tanto en clouds públicos como privados.
 * Conocer las características principales de OpenStack.
@@ -30,17 +30,8 @@ IaaS:
 * [HP Cloud Services](https://www.hpcloud.com/)
 * [Google Compute Engine](https://cloud.google.com/products/compute-engine/)
 
-PaaS:
-
-* [Google App Engine](https://developers.google.com/appengine/)
-* [Red Hat OpenShift](https://www.openshift.com/)
-* [Heroku](http://www.heroku.com/)
-* [Microsoft Windows Azure](http://www.windowsazure.com/)
-* [Cloud Foundry](http://cloudfoundry.org/index.html)
-
 Software libre para implantar IaaS:
 
-* [Eucalyptus](http://www.eucalyptus.com)
 * [OpenNebula](http://www.opennebula.org)
 * [CloudStack](http://cloudstack.apache.org/)
 * [OpenStack](http://www.openstack.org)
