@@ -22,6 +22,7 @@ menu:
 * Trabajo con claves ssh
 * [Trabajar con imagen e instancia Cirros](demo1)
 * [Crear una instancia a partir de la imagen Debian (Asignar IP flotante, acceso a la instancia)](demo2)
+* Gestión de la instancia
 * Crear una instantanea a partir de una imagen Windows
 * Uso en el aula
 * Propuesta de ejercicios
