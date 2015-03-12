@@ -7,19 +7,19 @@ menu:
 ###Objetivos
 
 * Introducir los conceptos fundamentales para utilizar OpenStack.
-* Introducir los conceptos fundamentales para el uso de la aplicación web StackOps Cirrusflex.
-* Trabajar con instancias, imágenes y snapshots.
-* Gestión avanzada de instancias: redimensión y rescate.
+* Introducir los conceptos fundamentales para el uso de StackOps Cirrusflex.
+* Trabajar con instancias, imágenes e instantáneas.
+* Redimensión y rescate de instancias.
 
 ### Presentación
 
-* [Presentación uso de Openstack. Instancias](presentacion)
+* [Presentación: Utilización de Openstack. Instancias](presentacion)
 
 ###Contenidos
 
 #### Sesión 1
 
-* Trabajo con claves ssh
+* Trabajar con claves ssh
 * [Trabajar con imagen e instancia Cirros](demo1)
 * [Crear una instancia a partir de la imagen Debian (Asignar IP flotante, acceso a la instancia)](demo2)
 * Gestión de la instancia
