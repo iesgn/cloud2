@@ -4,6 +4,8 @@ title: Administración de infraestructura en la nube con OpenStack
 menu:
   - Unidades
 ---
+# Administración de infraestructura en la nube con OpenStack
+
 ### Descripción del curso
 
 El cloud computing o computacion en la nube es una nuevo paradigma que permite
