@@ -16,7 +16,7 @@ El objetivo general del curso es la formación del profesorado en el despliegue,
 configuración y administración de servidores virtuales en la nube, de modo que
 permita al profesorado la inclusión de estas competencias al alumnado. 
 
-Los ponentes, [José Domingo Muñoz Rodríguez](http://josedomingo.org) y
+Los ponentes, [José Domingo Muñoz Rodríguez](http://www.josedomingo.org) y
 [Alberto Molina Coballes](http://albertomolina.wordpress.com), profesores de la
 Familia Profesional de Informática en el IES Gonzalo Nazareno, tienen amplia
 experiencia en cloud computing y han participado hasta la fecha en varios
