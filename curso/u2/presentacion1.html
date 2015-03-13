@@ -1,0 +1,70 @@
+---
+layout: presentacion
+title: Utilización de Openstack. Instancias
+tema: white
+---
+
+<section>
+  <h2>Utilización de Openstack. Instancias</h2>
+  <p>
+    <small><a href="http://albertomolina.wordpress.com">Alberto Molina
+ 	Coballes</a> / <a
+ 			  href="http://twitter.com/alberto_molina">@alberto_molina</a> y <a
+ 											    href="http://josedomingo.org">José Domingo Muñoz
+	Rodríguez</a> / <a
+			   href="http://twitter.com/Pledin_JD">@Pledin_JD</a> </small>
+  </p>
+  <p><small>
+      <a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="../../img/cc_by_sa.png"
+								    width="100px" border="0"/></a></small></p>
+</section>
+
+<section>  
+  <section>
+    <h2>Conceptos previos (1)</h2>
+    <ul>
+      <li>Imagen: Imagen de sistema preconfigurado que se utiliza como
+      base para crear instancias. Dentro del cloud podemos encontrar
+      diferentes imágenes para cada tipo de instacia que se quiera
+      utilizar.</li> 
+      <li>Instancia (servidor): Clon de una imagen que se crea a
+      demanda del usuario en uno de los  nodos del cloud.</li> 
+      <li>Un sabor o flavor (Tipo de instancia) define para una
+      instancia el número de CPUs virtuales, la RAM, si dispone o no
+      de discos efímeros, etc.</li> 
+    </ul>
+  </section>
+  <section>
+    <h2>Conceptos previos (2)</h2>
+    <ul>
+      <li>IP fija: Dirección IP con la que se crean las instancias y
+      que se utiliza para comunicación interna.</li>  
+      <li>IP flotante (IP pública): Dirección IP que puede asociarse a
+      diferentes instancias con el fin de acceder a ellas desde
+      fuera.</li> 
+      <li>Grupo de seguridad (Cortafuegos): Reglas de cortafuegos
+      (iptables) que controlan el acceso a las instancias mediante la
+      dirección IP flotante.</li> 
+      <li>Par de claves ssh (llaves): Utilizadas para acceder por ssh
+      a las instancias desde fuera del cloud</li> 
+    </ul>
+  </section>
+  <section>
+    <h2>Conceptos previos (III)</h2>
+    <a href="img/openstack-diagram.png"><img src="img/openstack-diagram_2.png"/></a>
+  </section>  
+</section>
+
+<section data-background="#FFCC99">
+  <section>
+    <h2>Índice de la sesión</h2>
+    <ul>
+      <li>Trabajo con claves ssh</li>
+      <li>Creación de instancias</li>
+      <li>Operaciones sobre la instancia</li>
+      <li>Administración de imágenes</li>
+      <li>Aplicación didáctica</li>
+      <li>Ejercicios</li>
+    </ul>
+  </section>
+</section>
