@@ -2,14 +2,14 @@
 layout: blog
 tittle: Utilización de OpenStack. Instancias
 menu:
-  - Unidad 2
+  - Unidades
 ---
 ###Objetivos
 
 * Introducir los conceptos fundamentales para utilizar OpenStack.
 * Introducir los conceptos fundamentales para el uso de StackOps Cirrusflex.
 * Trabajar con instancias, imágenes e instantáneas.
-* Redimensión y rescate de instancias.
+* Redimensionar y rescatar instancias.
 
 ###Contenidos
 
@@ -17,6 +17,7 @@ menu:
 
 * [Presentación: Sesión 1](presentacion1)
 * [Trabajo con claves ssh](claves_ssh)
+* [Pasos previos](previos)
 * [Creación de instancias](instancias1)
 * [Operaciones sobre la instancia](instancias2)
 * [Administración de imágenes](imagenes)

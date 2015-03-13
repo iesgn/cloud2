@@ -59,17 +59,17 @@
   items:
    - name: Inicio
      url: /cloud2
-   - name: Unidad 1
+   - name: Introducción
      url: /cloud2/curso/u1
-   - name: Unidad 2
+   - name: Instancias
      url: /cloud2/curso/u2
-   - name: Unidad 3
+   - name: Volúmenes
      url: /cloud2/curso/u3
-   - name: Unidad 4
+   - name: Redes
      url: /cloud2/curso/u4
-   - name: Unidad 5
+   - name: CLI
      url: /cloud2/curso/u5
-   - name: Unidad 6
+   - name: Utilización
      url: /cloud2/curso/u6
 #   - name: Foro
 #     url: https://github.com/iesgn/cloud2/issues
