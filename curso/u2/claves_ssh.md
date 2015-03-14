@@ -17,23 +17,22 @@ utilizar acceso con pares de claves pública/privada.
 
 La forma más simple de acceder por ssh es utilizando la contraseña del usuario
 en el equipo remoto:
-<pre>
-usuario@cliente:~$ ssh usuario@10.0.1.8
-The authenticity of host '10.0.1.8 (10.0.1.8)' can't be established.
-ECDSA key fingerprint is 53:b8:8c:c7:52:32:39:ca:7c:79:92:d3:48:92:5b:da.
-Are you sure you want to continue connecting (yes/no)? yes
-Warning: Permanently added '10.0.1.8' (ECDSA) to the list of known hosts.
-usuario@10.0.1.8's password:
-Linux wheezy 3.2.0-4-amd64 #1 SMP Debian 3.2.35-2 x86_64
 
-The programs included with the Debian GNU/Linux system are free software;
-the exact distribution terms for each program are described in the
-individual files in /usr/share/doc/*/copyright.
-
-Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
-permitted by applicable law.
-usuario@servidor:~$
-</pre>
+    usuario@cliente:~$ ssh usuario@10.0.1.8
+	The authenticity of host '10.0.1.8 (10.0.1.8)' can't be established.
+	ECDSA key fingerprint is 53:b8:8c:c7:52:32:39:ca:7c:79:92:d3:48:92:5b:da.
+	Are you sure you want to continue connecting (yes/no)? yes
+	Warning: Permanently added '10.0.1.8' (ECDSA) to the list of known hosts.
+	usuario@10.0.1.8's password:
+	Linux wheezy 3.2.0-4-amd64 #1 SMP Debian 3.2.35-2 x86_64
+	
+	The programs included with the Debian GNU/Linux system are free software;
+	the exact distribution terms for each program are described in the
+	individual files in /usr/share/doc/*/copyright.
+	
+	Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+	permitted by applicable law.
+	usuario@servidor:~$
 
 Vamos a explicar los pasos que se han dado en la conexión anterior:
 
@@ -60,7 +59,8 @@ Una forma muy cómoda de evitar las limitaciones del caso anterior es utilizar u
 par de claves pública/privada cifradas con el algoritmo RSA (también es posible
 utilizar DSA), por lo que en primer lugar generamos el par de claves RSA en el
 equipo cliente, dejamos los valores por defecto para la ubicación y nombres de
-las claves y no definimos frase de paso: 
+las claves y no definimos frase de paso:
+
     usuario@cliente:~$ ssh-keygen
 	Generating public/private rsa key pair.
 	Enter file in which to save the key (/home/usuario/.ssh/id_rsa):
@@ -85,6 +85,7 @@ las claves y no definimos frase de paso:
 
 Si hacemos ahora un listado de los ficheros del directorio ~/.ssh, aparecerán
 tres ficheros:
+
     usuario@cliente:~$ ls -l ~/.ssh/
 	total 12
 	-rw------- 1 usuario usuario 1675 feb  7 20:28 id_rsa
@@ -152,7 +153,8 @@ ahora ponemos una frase de paso y modificamos el nombre:
 
     usuario@cliente:~$ ssh-keygen
 	Generating public/private rsa key pair.
-	Enter file in which to save the key (/home/usuario/.ssh/id_rsa): /home/usuario/.ssh/id_rsa2
+	Enter file in which to save the key (/home/usuario/.ssh/id_rsa):
+	/home/usuario/.ssh/id_rsa2
 	Enter passphrase (empty for no passphrase): <--- TECLEAMOS LA FRASE DE PASO
 	Enter same passphrase again: <--- TECLEAMOS LA FRASE DE PASO
 	Your identification has been saved in /home/usuario/.ssh/id_rsa2.
@@ -189,7 +191,7 @@ Comprobamos ahora de nuevo el acceso con la clave pública, pero ahora se nos
 pide la frase de paso para poder utilizar la clave privada: 
 
     usuario@cliente:~$ ssh -i ~/.ssh/id_rsa2 usuario@10.0.1.8
-	Enter passphrase for key '/home/usuario/.ssh/id_rsa2': <--- AHORA SE NOS PIDE LA FRASE DE PASO, NO LA CONTRASEÑA
+	Enter passphrase for key '/home/usuario/.ssh/id_rsa2': <--- FRASE DE PASO, NO CONTRASEÑA
 	Linux wheezy 3.2.0-4-amd64 #1 SMP Debian 3.2.35-2 x86_64
 	
 	The programs included with the Debian GNU/Linux system are free software;
