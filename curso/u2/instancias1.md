@@ -7,21 +7,24 @@ menu:
 
 ## Crear una instancia a partir de una imagen
 
-El objetivo de esta demostración es la creación de una instancia GNU/Linux a
-partir de una de las imágenes disponibles. Para ello accedemos al apartado
-**Administrador de Servidores**, tenemos que indicar los siguientes datos: 
+El objetivo de esta sección es mostrar es la creación de una instancia GNU/Linux
+a partir de una de las imágenes disponibles. Para ello accedemos al apartado
+**Administrador de Servidores** > **Crear instancia** y a continuación tenemos
+que indicar los siguientes datos:
 
-* El primer panel es utilizado para Indicar el flavor y la imagen que se
-aplicarán al servidor. Los valores a Introducir son:
-  * Nombre : El nombre que pondremos al servidor virtual.
+* El primer panel es utilizado para indicar el tipo de instancia y la imagen que
+se aplicarán al servidor. Los valores a introducir son:
+  * Nombre : El nombre que pondremos al servidor virtual o instancia.
   * Tipo de Fuente : Indica si vamos a crear el servidor a partir de una
-  imagen (*image*), una instantánea (*snapshot*) o un volumen (*volume*).
+  imagen (*image*), una instantánea (*snapshot*) o un volumen (*volume*). En
+  este caso será a partir de una imagen, veremos el resto de casos más
+  adelante.
   * Fuente : Indicamos la imagen virtual, la instantánea o el volumen concreto
   que queremos utilizar para instalar el sistema operativo de nuestro
   servidor. Las características de la fuente se muestran en la parte central
   del panel.
-  * Tipo de Instancia : Se debe elegir el nombre del tipo de sabor o sabor a
-  aplicar en la creación, las características del sabor elegido se muestran en
+  * Tipo de Instancia : Se debe elegir el nombre del tipo de instancia o sabor a
+  aplicar en la creación, las características del sabor elegido se muestran en 
   el mismo panel en la parte central.
 
 
@@ -37,7 +40,7 @@ nuestro servidor, es decir donde nuestro servidor virtual tendrá una IP fija.
 
 * En el Tercer panel se gestionan temas de seguridad. Los datos a indicar son:
   * Clave Pública: Se selecciona una clave pública de una lista de claves
-  públicas creadas previamente en el plugin de Administrador de Seguridad. 
+  públicas creadas previamente en el Administrador de Seguridad. 
   * Se selecciona uno o más grupos de seguridad para aplicar en el servidor a la
   hora de gestionar el tráfico en la red.
 
@@ -54,9 +57,8 @@ sido creada, que tiene asignada una IP fija:
 ![instancia](img/demo2_6.png)
 
 
-* Por último para poder acceder a la instancia desde el exterior tenemos que
-asignar a la instancia una IP flotante, una IP Pública, para ello: 
-
+* Por último, para poder acceder a la instancia desde el exterior tenemos que
+asignar a la instancia una IP flotante, una IP Pública, para ello:
   * Elegimos la opción **IP públicas** en el apartado **Administrador de
   seguridad** y asignamos una nueva IP. 
   * Desde esa misma pantalla o desde la **Adminstración de servidores**,
@@ -66,8 +68,9 @@ asignar a la instancia una IP flotante, una IP Pública, para ello:
 ![ip](img/demo2_7.png)	
 
 
-* Recuerda que una vez que la IP pública no está asignada a una instancia se puede liberar.
-* El último paso es simplemente acceder a la instancia utilizando la clave
+* Recuerda que una vez que la IP pública no está asignada a una instancia se
+puede liberar.
+* El último paso es simplemente acceder a la instancia utilizando la clave 
 privada correspondiente a la clave pública que se ha inyectado en la
 instancia:
 
