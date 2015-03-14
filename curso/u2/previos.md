@@ -2,7 +2,7 @@
 layout: blog
 tittle: Pasos previos
 menu:
-  - Unidad 2
+  - Unidadades
 ---
 
 ## Pares de claves ssh
