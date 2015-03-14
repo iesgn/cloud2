@@ -5,7 +5,7 @@ menu:
   - Unidad 2
 ---
 
-## Crear un par de claves
+## Pares de claves ssh
 
 Puesto que estamos en un entorno de recursos compartidos y es bastante habitual
 que la misma imagen pueda ser instanciada por distintos usuarios, no es
@@ -33,16 +33,15 @@ que simplemente queremos aprender a utilizar este entorno.
 Para crear nuestro par de claves vamos a la sección **Administrador de
 Seguridad** -> **LLaves** -> **Crear nuevo par de claves**:
 
-	Al crearse el par de claves, el sistema almacena la clave pública del
-	usuario y envía al usuario la clave privada. 
+Al crearse el par de claves, el sistema almacena la clave pública del usuario y envía al usuario la clave privada.
 	
 
-	![ssh](img/demo2_1.png)
+![ssh](img/demo2_1.png)
 
 
-	Nos descargamos la clave privada, almacenándola en nuestro (normalmente
-	en el directorio ~/.ssh) y le asignamos los permisos adecuados para que
-	ningún otro usuario pueda leerla (tanto 0400 como 0600 serían válidos):
+Nos descargamos la clave privada, almacenándola en nuestro (normalmente en el
+directorio ~/.ssh) y le asignamos los permisos adecuados para que ningún otro
+usuario pueda leerla (tanto 0400 como 0600 serían válidos):
 
 <pre>
 $ mv Descargas/mi_clave.pem ~/.ssh
@@ -53,11 +52,9 @@ $ chmod 0600 ~/.ssh/mi_clave.pem
 
 Toda instancia que se crea en OpenStack tiene asociado uno o varios grupos de
 seguridad, que consisten en un conjunto de reglas de iptables que actúan como un
-cortafuegos que se aplica sobre las interfaces de red con las que se conecta a
-la red o redes que se definan. Es importante destacar que este cortafuegos se
-aplica a nivel de la interfaz de red, no se trata por tanto de un cortafuegos
-perimetral y por tanto las reglas también afectan a las instancias que estén en
-el mismo segmento de red.
+cortafuegos. Es importante destacar que este cortafuegos se aplica a nivel de la
+interfaz de red, no se trata por tanto de un cortafuegos perimetral y por tanto
+las reglas también afectan a las instancias que estén en el mismo segmento de red.
 
 La configuración por defecto más habitual en todos los entornos de OpenStack es
 que la instancia tiene abierto todo el tráfico de salida, pero cerrado todo el
@@ -87,7 +84,7 @@ al puerto 22:
 Procedemos de igual forma para permitir todo el tráfico ICMP
 
 
-### IPs flotantes / IPs públicas
+## IPs flotantes / IPs públicas
 
 Cuando se crea una instancia se le asigna por DHCP una dirección IP que es la
 misma durante toda la vida de la instancia, por lo que paradójicamente recibe el
@@ -98,7 +95,7 @@ instancia lo que se denomina una IP flotante, o en el caso de Cirrusflex, una IP
 pública. Esta IP flotante o pública permite mediante el mecanismo de Destination
 NAT o DNAT acceder a la instancia ubicada en una red local desde Internet.
 
-#### Reservar una IP flotante
+### Reservar una IP flotante
 
 Elegimos la opción **IP públicas** en el apartado **Administrador de seguridad**
 y asignamos una nueva IP que podremos observar que está en el rango de
