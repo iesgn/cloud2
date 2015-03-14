@@ -2,7 +2,7 @@
 layout: blog
 tittle: Utilización de OpenStack (1)
 menu:
-  - Unidadades
+  - Unidades
 ---
 
 ## Crear una instancia a partir de una imagen y acceder a ella
