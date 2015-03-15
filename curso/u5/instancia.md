@@ -5,23 +5,16 @@ menu:
   - Unidades
 ---
 
-El objetivo de esta demostración es la creación de una instancia usando el clinete nova. Partimo de un escenario donde tenemos instalado el cliente (paquete *python-covaclient*) y vamos a ver los distintos pasos que tenemos que realizar:
+El objetivo de esta demostración es la creación de una instancia usando el cliente nova. Partimos de un escenario donde tenemos instalado el cliente (paquete *python-covaclient*) y tenemso cargado el fichero de credenciales.
 
-1. Lo primero es bajarnos el fichero de credenciales y ejecutarlo en nuestro ordenador:
+Vamos a ver todos los pasos que necesitamos para crear una instancia:
 
-	![credenciales](img/demo1_1.png)
-
-	Y la instalamoes en nuestro ordenador:
-		
-		$ source values.sh
-		Please enter your Password:
-
-2. A continuación vamos a crear un par de claves ssh que me permitan acceder a la instancia:
+1. A continuación vamos a crear un par de claves ssh que me permitan acceder a la instancia:
 		
 		$ nova keypair-add clave_acceso > ~/.ssh/clave-acceso.pem
 		$ chmod 400 ~/.ssh/clave-acceso.pem
 
-3. Ahora vamos acrear un grupo seguridad (cortafuegos) donde vamos a crear una regla que nos permita el acceso por ssh.
+2. Ahora vamos acrear un grupo seguridad (cortafuegos) donde vamos a crear una regla que nos permita el acceso por ssh.
 
 		$ nova secgroup-create gr_seguridad "Reglas de seguridad"
 		+--------------------------------------+--------------+---------------------+
@@ -36,7 +29,7 @@ El objetivo de esta demostración es la creación de una instancia usando el cli
 		| tcp         | 22        | 22      | 0.0.0.0/0 |              |
 		+-------------+-----------+---------+-----------+--------------+
 
-4. Antés de crear la instancia vamos a ver las imágnes, flavor y redes que tenemos disponibles.
+3. Antes de crear la instancia vamos a ver las imágenes, flavor y redes que tenemos disponibles.
 
 		$ nova image-list
 		+--------------------------------------+--------------------------------------------------------+--------+--------+
@@ -97,7 +90,7 @@ El objetivo de esta demostración es la creación de una instancia usando el cli
 		| d5d686b5-32fb-4e45-8809-98df3ee5ef3e | 00000061-net | -    |
 		+--------------------------------------+--------------+------+
 
-5. Ya podemos crear nuestra instancia. Vamos a crear una instancia *instancia_nova*) Ubuntu 14.04, con un sabor ssd.XXXS, el grupo de seguridad y las claves ssh que hemos creado anteriormente y conectado a la red 00000061-net.
+4. Ya podemos crear nuestra instancia. Vamos a crear una instancia *instancia_nova*) Ubuntu 14.04, con un sabor ssd.XXXS, el grupo de seguridad y las claves ssh que hemos creado anteriormente y conectado a la red 00000061-net.
 
 		$ nova boot --flavor ssd.XXXS --image 44288012-b805-455f-a21f-74ab36c46362 --security-groups gr_seguridad --key-name clave_acceso --nic net-id=d5d686b5-32fb-4e45-8809-98df3ee5ef3e instancia_nova
 		+--------------------------------------+---------------------------------------------------------------------------------+
@@ -130,7 +123,7 @@ El objetivo de esta demostración es la creación de una instancia usando el cli
 		| updated                              | 2014-10-23T07:26:22Z                                                            |
 		| user_id                              | 7a15970a225d41babb750da8a6f5e8d2                                                |
 		+--------------------------------------+---------------------------------------------------------------------------------+
-6. Para acceder a la instancia, necesitamos asignarle una ip pública, para ello reservamos una nueva ip flotante y la asignamos a la instancia.
+5. Para acceder a la instancia, necesitamos asignarle una ip pública, para ello reservamos una nueva ip flotante y la asignamos a la instancia.
 
 		$ nova floating-ip-pool-list
 		+---------+
@@ -148,7 +141,7 @@ El objetivo de esta demostración es la creación de una instancia usando el cli
 
 		$ nova floating-ip-associate instancia_nova 185.45.72.68
 
-7. Y ya podemos acceder a la instancia:
+6. Y ya podemos acceder a la instancia:
 
 		$ ssh -i ~/.ssh/clave-acceso.pem ubuntu@185.45.72.68
 		Welcome to Ubuntu 14.04 LTS (GNU/Linux 3.13.0-24-generic x86_64)		
