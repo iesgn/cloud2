@@ -1,33 +1,9 @@
 ---
 layout: blog
-tittle: Utilización de OpenStack (2)
+tittle: Rescate de instancias
 menu:
-  - Unidad 3
+  - Unidades
 ---
-
-##Gestión avanzada de instancias: redimensión y rescate.
-
-### Redimensión de instancias
-
-Esta acción sirve para cambiar las características hardware del servidor, a través de asociar un flavor diferente al mismo. Para Realizar estas operaciones el usuario deberá seleccionar el servidor y elegir la opción de **Redimensionar**.
-
-Para terminar la operación se puede **Confirmar la redimensión**, o **Revertir la redimensión**. Para realizar estas operaciones el usuario deberá seleccionar el servidor en estado de VERIFY_RESIZE.
-
-* Hemos creado una instancia con un flavor ssd.XXXS, y la vamos a redimensionar:
-
-![redimension](img/demo1_1.png)
-
-* Elegimos otro flavor.
-
-![redimension](img/demo1_2.png)
-
-* Terminamos confirmando o revirtiendo la redimensión
-
-![redimension](img/demo1_3.png)
-
-Para más información puedes ver este [vídeo](https://www.youtube.com/watch?v=p-kNbawLd2U) de StackOps.
-
-### Rescatar una instancia
 
 Un usuario puede poner una máquina virtual en modo de rescate, de esta forma se puede acceder al servidor con una nueva contraseña y corregir cualquier sistema de fichero o errores de configuración.
 Se puede poner un servidor en modo rescate a un servidor que no permite acceder al sistema debido a diferentes errores. Cuándo se pone un servidor en modo rescate no se puede acceder a él hasta que este cambia de ACTIVE a RESCUE, esto proceso puede tardar un poco.
