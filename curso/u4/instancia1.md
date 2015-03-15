@@ -1,11 +1,9 @@
 ---
 layout: blog
-tittle: Utilización de OpenStack (3), redes
+tittle: Creación de una nueva instancia en la nueva red
 menu:
-  - Unidad 4
+  - Unidades
 ---
-
-## Demostración 2: Creación de una nueva instancia en la nueva red
 
 Una vez creado nuestra nueva red, conectada a un nuevo router vamos a crear una instancia en la nueva red y vamos a comprobar que se le puede asociar una ip flotante, además vamos a comprobar que podemos hacer ping a otra instancia que está conectada a la otra red.
 
