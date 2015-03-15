@@ -17,16 +17,16 @@ menu:
 #### Sesión 1
 
 * [Presentación](presentacion)
-* [Creación de red privada y una subred asociada](red1)
-* [Crear un router, conectarlo a la red externa y a la red anterior](router1)
+* [Creación de una red privada y una subred asociada](red1)
+* [Creación de un router, conectarlo a la red externa y a la red anterior](router1)
 * [Creación de una nueva instancia en la nueva red](instancia1)
 * [Aplicación didáctica](aula1)
 * [Ejercicios](ejercicios1)
 
-#### Sesión 1
+#### Sesión 2
 
 * [Presentación: Sesión 2](presentacion2)
-* [Crear un router y conectarlo entre dos redes internas](router2)
+* [Creación de un router y conectarlo entre dos redes internas](router2)
 * [Creación de una nueva instancia en la nueva red](red2)
 * [Balanceador de carga](balanceador)
 * [Aplicación didáctica](aula2)
