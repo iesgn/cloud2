@@ -18,6 +18,8 @@ menu:
 * [Creación de volúmenes, asociación a instancias.(Vídeo)](https://www.youtube.com/watch?v=bVukNnvhabc)
 * [Instantáneas de volúmenes.](instantaneas)
 * [Creación de instancia ejecutadas sobre volúmenes.](instancias_volumen)
+* [Aplicación didáctica](aula)
+* [Ejercicios](ejercicios)
 
 ###Enlaces interesantes
 
