@@ -16,12 +16,23 @@ El objetivo general del curso es la formación del profesorado en el despliegue,
 configuración y administración de servidores virtuales en la nube, de modo que
 permita al profesorado la inclusión de estas competencias al alumnado. 
 
+El curso está alojado en el
+[Aula Virtual de Formación del Profesorado de la Consejería de Educación](http://educacionadistancia.juntadeandalucia.es/profesorado/course/view.php?id=880). Cada
+sesión online lleva asociada una ponencia previamente grabada en vídeo sobre la
+que versará la atención directa de los tutores a los participantes a través de
+foro y chat. El horario de atención se establecerá de común acuerdo en la
+primera sesión presencial. El profesor/a particiapnte que no pueda estar
+presente en la sesión online, puede realizar sus consultas en diferido
+posteriormente.
+
 Los ponentes, [José Domingo Muñoz Rodríguez](http://www.josedomingo.org) y
 [Alberto Molina Coballes](http://albertomolina.wordpress.com), profesores de la
-Familia Profesional de Informática en el IES Gonzalo Nazareno, tienen amplia
+Familia Profesional de Informática en el
+[IES Gonzalo Nazareno](http://informatica.gonzalonazareno.org), tienen amplia
 experiencia en cloud computing y han participado hasta la fecha en varios
 seminarios y jornadas sobre el tema a nivel local y estatal. Ambos participaron
-durante el curso 2011-12 en un proyecto de innovación para incluir las
+durante el curso 2011-12 en un
+[proyecto de innovación](http://www.gonzalonazareno.org/cloud) para incluir las
 tecnologías de cloud computing en el currículo de los ciclos formativos.
 
 ###Objetivos
