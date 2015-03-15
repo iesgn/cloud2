@@ -19,9 +19,9 @@ Instalamos en el equipo el cliente de línea de comandos de OpenStack (con este 
 
 Una vez que tenemos instalados los clientes, tenemos que autentificarnos en el sistema, para ello, tenemos que bajar el fichero de credenciales y ejecutarlo en nuestro ordenador:
 
-	![credenciales](img/demo1_1.png)
+![credenciales](img/demo1_1.png)
 
-	Y la instalamoes en nuestro ordenador:
+Y la cargamos en nuestro ordenador:
 		
 		$ source values.sh
 		Please enter your Password:
