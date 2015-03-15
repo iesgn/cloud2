@@ -2,7 +2,7 @@
 layout: blog
 tittle: Utilización de OpenStack. Volúmenes
 menu:
-  - Unidadades
+  - Unidades
 ---
 ###Objetivos
 
