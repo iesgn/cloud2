@@ -41,7 +41,7 @@ ejemplo vamos a usar la **Subida por navegador**, donde vamos a indicar los
 siguientes datos:
 	
   * Nombre : Nombre que asignaremos a la nueva imagen.
-  * Fichero de Imagen : Indicamos la ruta completa del fichero donde está la imagen.
+  * Fichero de Imagen : Indicamos la ruta completa al fichero donde está la imagen.
   * Formato de disco : Seleccionamos el formato de la imagen. Los formatos
   soportados son : 
     * qcow2 : Soportado por el emulador QEMU que puede expandirse de forma
@@ -69,7 +69,7 @@ conocida como CirrOS que se utiliza para pruebas en entornos de IaaS.
   * Instalamos el paquete qemu-utils
   * Obtenemos la información de la imagen de CirrOS descargada:
 
-    :~/Descargas$ qemu-img info cirros-0.3.3-x86_64-disk.img
+:~/Descargas$ qemu-img info cirros-0.3.3-x86_64-disk.img
     image: cirros-0.3.3-x86_64-disk.img
     file format: qcow2
     virtual size: 39M (41126400 bytes)
