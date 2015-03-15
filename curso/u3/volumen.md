@@ -13,17 +13,17 @@ Los pasos para crear un nuevo volumen son los siguientes:
 
 Accedemos al apartado *Gestor de discos* y a la opción *Crear Volumen*:
 
-	![volumen](img/vol1.png)
+![volumen](img/vol1.png)
 
 A continuación hay que  introducir la siguiente información:
 
-	* Nombre del Volumen: Proporcionamos el nombre que queremos asignar a nuestro volumen.
-    * Tamaño: Indicamos el tamaño en gigabytes que tendrá el nuevo disco.
-    * Tipo: De la lista desplegable indicamos de qué tipo será el volumen a crear. Por ejemplo si queremos que sea tipo SATA, SSD, entre otros.
-    * Imagen: Parámetro opcional. Este campo se indica si se quiere crear un disco de arranque que contendrá la configuración de la imagen indicada.
-    * Descripción: Parámetro opcional. Una breve descripción acerca del disco.
+* Nombre del Volumen: Proporcionamos el nombre que queremos asignar a nuestro volumen.
+* Tamaño: Indicamos el tamaño en gigabytes que tendrá el nuevo disco.
+* Tipo: De la lista desplegable indicamos de qué tipo será el volumen a crear. Por ejemplo si queremos que sea tipo SATA, SSD, entre otros.
+* Imagen: Parámetro opcional. Este campo se indica si se quiere crear un disco de arranque que contendrá la configuración de la imagen indicada.
+* Descripción: Parámetro opcional. Una breve descripción acerca del disco.
 
-    Si el volumen no está asociado a una instancia lo podemos eliminar.
+Si el volumen no está asociado a una instancia lo podemos eliminar.
 
 ### Asociar un volumen a una instancia
 
