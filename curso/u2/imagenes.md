@@ -50,8 +50,8 @@ siguientes datos:
     fichero sin extensión entonces probablemente se trate de un formato raw. 
     * iso : Un formato de ficheros para datos contenidos en un disco óptico,
     como por ejemplo un CD-ROM.
-    * vmdk : Formato de disco común, soportado por muchos monitores de
-    servidores virtuales, en particular VMware 
+    * vmdk : Formato de disco común, soportado por muchos hipervisores, en
+  * particular VMware.  
     * aki : Una imagen kernel de Amazon EC2.
     * ari: Una imagen de disco en RAM de Amazon EC2.
     * ami : Una imagen de máquina Amazon, que precisa de una imagen aki y
@@ -65,18 +65,20 @@ conocida como CirrOS que se utiliza para pruebas en entornos de IaaS.
   * Abrimos en el navegador la URL
   [http://download.cirros-cloud.net/0.3.3/](http://download.cirros-cloud.net/0.3.3/)
   * Descargamos en nuestro equipo la imagen
-  [http://download.cirros-cloud.net/0.3.3/cirros-0.3.3-x86_64-disk.img](cirros-0.3.3-x86_64-disk.img)
+  [cirros-0.3.3-x86_64-disk.img](http://download.cirros-cloud.net/0.3.3/cirros-0.3.3-x86_64-disk.img)
   * Instalamos el paquete qemu-utils
   * Obtenemos la información de la imagen de CirrOS descargada:
 
+<pre>
 :~/Descargas$ qemu-img info cirros-0.3.3-x86_64-disk.img
-    image: cirros-0.3.3-x86_64-disk.img
-    file format: qcow2
-    virtual size: 39M (41126400 bytes)
-    disk size: 16M
-    cluster_size: 65536
-    Format specific information:
-    compat: 0.10
+image: cirros-0.3.3-x86_64-disk.img
+file format: qcow2
+virtual size: 39M (41126400 bytes)
+disk size: 16M
+cluster_size: 65536
+Format specific information:
+compat: 0.10
+</pre>
 
 En el que podemos ver que se trata de una imagen en formato qcow2 con un disco
 virtual de tan solo 39 MB.
