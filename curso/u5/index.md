@@ -16,7 +16,7 @@ menu:
 * [Presentación](presentacion)
 * [Creación de una instancia con la aplicación nova.](instancia)
 * [Creación de un volumen y asociación a una instancia con la aplicación nova.](volumen)
-* [Creación de redes y routers con la aplicación nova.](red)
+* [Creación de redes y routers con la aplicación neutron.](red)
 * [Aplicación didáctica](aula)
 * [Ejercicios](ejercicios)
 

@@ -1,10 +1,9 @@
 ---
 layout: blog
-tittle: Utilización de OpenStack (4). APIS
+tittle: Creación de redes y routers con la aplicación neutron
 menu:
-  - Unidad 5
+  - Unidades
 ---
-##Creación de redes y routers con la aplicación nova.
 
 En la última demostración vamos acrea una nueva red y un nuevo router y vamos a crear una instancia conectada a esta nueva red. Será necesario tener instalado el cliente neutron (*python-neutronclient*). Veamos los pasos que tenemos que seguir:
 
