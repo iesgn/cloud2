@@ -11,10 +11,10 @@ que impartimos sino que además es una poderosa herramienta didáctica.
 
 La nube de infraestructura ofrece la posibilidad de crear escenarios completos,
 poder compartirlos y modificarlos de forma sencilla y rápida y es muy adecuada
-para la realización de todo tipo de prácticas de casi cualquier tipo. Podríamos
-incluso denominar la utilización de IaaS en el aula como una herramienta de
-tercera generación, siendo las dos primeras la utilización de equipos físicos y
-máquinas virtuales.
+para la realización de prácticas de casi cualquier tipo. Podríamos incluso
+denominar la utilización de IaaS en el aula como una herramienta de tercera
+generación, siendo las dos primeras la utilización de equipos físicos y máquinas
+virtuales.
 
 ## Primera fase
 
