@@ -15,7 +15,7 @@ menu:
 ###Contenidos
 
 * [Presentación](presentacion)
-* [Creación de volúmenes, asociación a instancias.(Vídeo)](https://www.youtube.com/watch?v=bVukNnvhabc)
+* [Creación de volúmenes, asociación a instancias.](volumen)
 * [Instantáneas de volúmenes.](instantaneas)
 * [Creación de instancia ejecutadas sobre volúmenes.](instancias_volumen)
 * [Aplicación didáctica](aula)
@@ -23,4 +23,5 @@ menu:
 
 ###Enlaces interesantes
 
+* [Creación de volúmenes, asociación a instancias.(Vídeo)](https://www.youtube.com/watch?v=bVukNnvhabc)
 * [Administrador de Discos Virtuales](https://docs.stackops.net/block-storage-plugin-es.html)
