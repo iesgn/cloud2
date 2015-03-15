@@ -2,7 +2,7 @@
 layout: blog
 tittle: Utilización de OpenStack (3). Redes
 menu:
-  - Unidad 4
+  - Unidades
 ---
 ###Objetivos
 
@@ -10,19 +10,31 @@ menu:
 * Creación de red y subred.
 * Creación de routers
 * Conexión de redes y routeres. Puertos.
-* Balanceadores de carga. Elasticidad.
-
-### Presentación
-
-* [Presentación uso de Openstack. StackOps Portal (3)](presentacion)
+* Introducción a los balanceadores de carga. Elasticidad.
 
 ###Contenidos
 
-* [Creación de red y subred](demo1)
-* [Creación de una nueva instancia en la nueva red](demo2)
-* [Balanceadore de carga](http://youtu.be/Gc1hXiz86kU)
+#### Sesión 1
+
+* [Presentación](presentacion)
+* [Creación de red privada y una subred asociada](red1)
+* [Crear un router, conectarlo a la red externa y a la red anterior](router1)
+* [Creación de una nueva instancia en la nueva red](instancia1)
+* [Aplicación didáctica](aula1)
+* [Ejercicios](ejercicios1)
+
+#### Sesión 1
+
+* [Presentación: Sesión 2](presentacion2)
+* [Crear un router y conectarlo entre dos redes internas](router2)
+* [Creación de una nueva instancia en la nueva red](red2)
+* [Balanceador de carga](balanceador)
+* [Aplicación didáctica](aula2)
+* [Ejercicios](ejercicios2)
+
 
 ###Enlaces interesantes
 
 * [Administrador de Redes definidas por Software](https://docs.stackops.net/sdn-plugin-es.html)
-* [Balanceador de Carga](https://docs.stackops.net/lbaas-plugin-es.html)
+* [Balanceador de carga](https://docs.stackops.net/lbaas-plugin-es.html)
+* [Balanceadores de carga. Vídeo.](http://youtu.be/Gc1hXiz86kU)
