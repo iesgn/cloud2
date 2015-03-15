@@ -83,6 +83,8 @@ compat: 0.10
 En el que podemos ver que se trata de una imagen en formato qcow2 con un disco
 virtual de tan solo 39 MB.
 
+  * Subimos la imagen a Cirrusflex
+  
 También es posible crear una imagen de cualquier sistema operativo creando una
 máquina virtual con una serie de requisitos, pero es un tema que va más allá de
 los objetivos de este curso de introducción al uso de IaaS, pero que un lector
