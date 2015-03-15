@@ -9,7 +9,7 @@ menu:
 * Introducir los conceptos fundamentales para el uso de las redes.
 * Creación de red y subred.
 * Creación de routers
-* Conexión de redes y routeres. Puertos.
+* Conexión de redes y routers. Puertos.
 * Introducción a los balanceadores de carga. Elasticidad.
 
 ###Contenidos
