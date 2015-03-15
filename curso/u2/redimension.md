@@ -5,8 +5,6 @@ menu:
   - Unidad 1
 ---
 
-### Redimensión de instancias
-
 Esta acción sirve para cambiar las características hardware del servidor, a través de asociar un flavor diferente al mismo. Para Realizar estas operaciones el usuario deberá seleccionar el servidor y elegir la opción de **Redimensionar**.
 
 Para terminar la operación se puede **Confirmar la redimensión**, o **Revertir la redimensión**. Para realizar estas operaciones el usuario deberá seleccionar el servidor en estado de VERIFY_RESIZE.
