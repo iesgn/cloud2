@@ -31,10 +31,10 @@ Esta acción sirve para proporcionar almacenamiento secundario (extra) a una ins
     
 A continuación se mostrará un formulario donde indicaremos la siguiente información:
 
-    * Selecciona instancia: Parámetro obligatorio. Se muestra una lista con las instancias existentes. 
-    * Dispositivo disponible: Dentro del sistema de fichero indica el path que le corresponderá al volumen.
-    * Selección manual: Si de la lista que se muestra en Dispositivo disponible no queremos colocar el volumen en ninguno de los path proporcionados podemos indicar el path donde queremos colocarlo. Al seleccionar esta opción se habilitará el campo de Selecciona bajo /dev/.
-    * Selecciona bajo /dev/: En este campo indicamos el path que le corresponderá al volumen dentro del servidor virtual. Por ejemplo si introducimos vdx, nuestro volumen corresponderá a /dev/vdx.
+* Selecciona instancia: Parámetro obligatorio. Se muestra una lista con las instancias existentes. 
+* Dispositivo disponible: Dentro del sistema de fichero indica el path que le corresponderá al volumen.
+* Selección manual: Si de la lista que se muestra en Dispositivo disponible no queremos colocar el volumen en ninguno de los path proporcionados podemos indicar el path donde queremos colocarlo. Al seleccionar esta opción se habilitará el campo de Selecciona bajo /dev/.
+* Selecciona bajo /dev/: En este campo indicamos el path que le corresponderá al volumen dentro del servidor virtual. Por ejemplo si introducimos vdx, nuestro volumen corresponderá a /dev/vdx.
 
 Asociar un volumen de los dispositivos disponibles
 
