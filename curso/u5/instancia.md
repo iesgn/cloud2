@@ -1,10 +1,9 @@
 ---
 layout: blog
-tittle: Utilización de OpenStack (4). APIS
+tittle: Creación de una instancia con la aplicación nova
 menu:
-  - Unidad 5
+  - Unidades
 ---
-##Creación de una instancia con la aplicación nova.
 
 El objetivo de esta demostración es la creación de una instancia usando el clinete nova. Partimo de un escenario donde tenemos instalado el cliente (paquete *python-covaclient*) y vamos a ver los distintos pasos que tenemos que realizar:
 
