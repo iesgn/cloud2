@@ -2,7 +2,7 @@
 layout: blog
 tittle: Rescate de instancias
 menu:
-  - Unidad 1
+  - Unidades
 ---
 
 Un usuario puede poner una máquina virtual en modo de rescate, de esta forma se puede acceder al servidor con una nueva contraseña y corregir cualquier sistema de fichero o errores de configuración.

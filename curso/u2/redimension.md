@@ -2,7 +2,7 @@
 layout: blog
 tittle: Redimensión de instancias
 menu:
-  - Unidad 1
+  - Unidades
 ---
 
 Esta acción sirve para cambiar las características hardware del servidor, a través de asociar un flavor diferente al mismo. Para Realizar estas operaciones el usuario deberá seleccionar el servidor y elegir la opción de **Redimensionar**.

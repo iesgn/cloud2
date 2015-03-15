@@ -2,7 +2,7 @@
 layout: blog
 tittle: Trabajo con instantáneas y copias de seguridad
 menu:
-  - Unidad 1
+  - Unidades
 ---
 
 ## Snapshot (Instantáneas)

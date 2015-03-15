@@ -2,7 +2,7 @@
 layout: blog
 tittle: Herramientas específicas de Cirrusflex
 menu:
-  - Unidad 2
+  - Unidades
 ---
 
 ### Facturación y Pagos
