@@ -1,11 +1,9 @@
 ---
 layout: blog
-tittle: Utilización de OpenStack (2)
+tittle: Instantáneas de volúmenes
 menu:
-  - Unidad 3
+  - Unidades
 ---
-
-##Instantáneas de volúmenes
 
 Al igual que podemos hacer instantáneas de nuestras instancias para posteriormente crear nuevas instancias a partir de esa copia, podemos hacer del mismo modo instantáneas de nuestro volúmenes, y crear nuevos volúmenes a partir de copias que hemos hecho anteriormente.
 
