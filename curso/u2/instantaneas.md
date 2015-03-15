@@ -5,7 +5,7 @@ menu:
   - Unidad 2
 ---
 
-### Snapshot (Instantáneas)
+## Snapshot (Instantáneas)
 
 En cualquier momento puedo crear una instantánea de una instancia, con lo que se creará una nueva imagen con el estado actual de la instancia. Puedo crear una nueva instancia a partir del snapshot. Veamos como se hace partiendo de una instancia Linux Debian que estamos corriendo.
 
@@ -26,7 +26,7 @@ En cualquier momento puedo crear una instantánea de una instancia, con lo que s
 
 	![snapshot](img/demo3_6.png)
 
-### Backups
+## Backups
 
 StackOps también nos ofrece la opción de Backup que nos permite programa la creación de snapshots cada cierto tiempo.
 
