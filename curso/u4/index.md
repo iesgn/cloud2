@@ -1,6 +1,6 @@
 ---
 layout: blog
-tittle: Utilización de OpenStack (3). Redes
+tittle: Utilización de OpenStack. Redes
 menu:
   - Unidades
 ---
