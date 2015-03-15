@@ -1,11 +1,9 @@
 ---
 layout: blog
-tittle: Utilización de OpenStack (2)
+tittle: Creación de instancia ejecutadas sobre volúmenes
 menu:
-  - Unidad 3
+  - Unidades
 ---
-
-## Creación de instancia ejecutadas sobre volúmenes.
 
 Las instancias que hemos cread hasta ahora poseen un disco (*/dev/vda*) efímeros, es decir, su ciclo de vida es exactamente igual al de la instancia, por tanto cunado terminamos la instancias, el disco se destruye.
 
