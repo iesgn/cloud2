@@ -2,7 +2,7 @@
 layout: blog
 tittle: Ejercicios
 menu:
-  - Unidad 2
+  - Unidades
 ---
 ## Ejercicio 1: Trabajar con instancias GNU/Linux
 
