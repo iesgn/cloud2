@@ -80,7 +80,7 @@ Utilización de IaaS:
 * Los alumnos no gestionan el software de IaaS
 
 
-![epoca3](epoca3.png)
+![epoca3](img/epoca3.png)
 
 
 Ventajas:
