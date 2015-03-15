@@ -1,11 +1,9 @@
 ---
 layout: blog
-tittle: Utilización de OpenStack (1)
+tittle: Herramientas específicas de Cirrusflex
 menu:
   - Unidad 2
 ---
-
-## Introducción a las herramientas específicas de StackOps Portal
 
 ### Facturación y Pagos
 
