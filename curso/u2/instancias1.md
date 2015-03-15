@@ -1,11 +1,9 @@
 ---
 layout: blog
-tittle: Utilización de OpenStack (1)
+tittle: Crear una instancia a partir de una imagen
 menu:
   - Unidades
 ---
-
-## Crear una instancia a partir de una imagen
 
 El objetivo de esta sección es mostrar es la creación de una instancia GNU/Linux
 a partir de una de las imágenes disponibles. Para ello accedemos al apartado
