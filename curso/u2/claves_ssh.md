@@ -5,7 +5,7 @@ menu:
   - Unidades
 ---
 
-Este apartado es opcional y recomendado para aquellos participantes del curso
+Este apartado es **opcional** y recomendado para aquellos participantes del curso
 que no estén habituados a trabajar con pares de claves RSA en conexiones ssh.
 Ssh es una maravilla de aplicación que permite acceder a sistemas tipo UNIX de
 forma remota y segura, pudiendo utilizar diferentes mecanismos para autenticar
