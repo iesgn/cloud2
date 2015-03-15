@@ -1,10 +1,9 @@
 ---
 layout: blog
-tittle: Utilización de OpenStack (4). APIS
+tittle: Creación de un volumen y asociación a una instancia con la aplicación nova
 menu:
-  - Unidad 5
+  - Unidades
 ---
-##Creación de un volumen y asociación a una instancia con la aplicación nova.
 
 En esta demostración vamos a crear un volumen y lo vamos a asociar a la instancia que hemos creado en la demostración anterior. Veamos los pasos:
 
