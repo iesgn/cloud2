@@ -68,7 +68,7 @@ asignar a la instancia una IP flotante, una IP Pública, para ello:
 ![ip](img/demo2_7.png)	
 
 
-* Recuerda que una vez que la IP pública no está asignada a una instancia se
+* Recuerda que una vez que la IP pública no esté asignada a una instancia se
 puede liberar.
 * El último paso es simplemente acceder a la instancia utilizando la clave 
 privada correspondiente a la clave pública que se ha inyectado en la
