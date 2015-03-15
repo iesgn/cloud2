@@ -53,7 +53,7 @@ siguientes datos:
     * vmdk : Formato de disco común, soportado por muchos monitores de
     servidores virtuales, en particular VMware 
     * aki : Una imagen kernel de Amazon EC2.
-	* ari: Una imagen de disco en RAM de Amazon EC2.
+    * ari: Una imagen de disco en RAM de Amazon EC2.
     * ami : Una imagen de máquina Amazon, que precisa de una imagen aki y
     habitualmente de otra ari para poder arrancar.
   * Imagen pública : Con este parámetro indicamos si queremos que la imagen
@@ -70,13 +70,13 @@ conocida como CirrOS que se utiliza para pruebas en entornos de IaaS.
   * Obtenemos la información de la imagen de CirrOS descargada:
 
     :~/Descargas$ qemu-img info cirros-0.3.3-x86_64-disk.img
-	image: cirros-0.3.3-x86_64-disk.img
-	file format: qcow2
-	virtual size: 39M (41126400 bytes)
-	disk size: 16M
-	cluster_size: 65536
-	Format specific information:
-	compat: 0.10
+    image: cirros-0.3.3-x86_64-disk.img
+    file format: qcow2
+    virtual size: 39M (41126400 bytes)
+    disk size: 16M
+    cluster_size: 65536
+    Format specific information:
+    compat: 0.10
 
 En el que podemos ver que se trata de una imagen en formato qcow2 con un disco
 virtual de tan solo 39 MB.
