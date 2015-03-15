@@ -28,7 +28,7 @@ Para ver las imágenes que inicialmente podemos utilizar abrimos el **Catálogo 
 Imágenes**:
 
 
-	![Imágenes](img/img3.png)
+![Imágenes](img/img3.png)
 
 
 ### Subir una imagen
@@ -89,5 +89,5 @@ que se enlaza en la siguiente sección.
 
 ### Enlaces interesantes
 
-    * [OpenStack Virtual Machine Image Guide](http://docs.openstack.org/image-guide/content/)
+  * [OpenStack Virtual Machine Image Guide](http://docs.openstack.org/image-guide/content/)
 
