@@ -1,11 +1,9 @@
 ---
 layout: blog
-tittle: Utilización de OpenStack (1)
+tittle: Trabajo con instantáneas y copias de seguridad
 menu:
   - Unidad 2
 ---
-
-## Demostración 3: Trabajar con Snapshots/Backup
 
 ### Snapshot (Instantáneas)
 
