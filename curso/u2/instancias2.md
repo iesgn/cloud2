@@ -35,3 +35,14 @@ Este apartado lo veremos más detenidamente cuando estudiemos la gestión de las
 * Podemos acceder a **la información de la clave pública que se ha usado al crear la instancia.**
 * Podemos **administrar los Grupos de Seguridad de nuestra instancia**, pudiendo abrir o cerrar un puerto determinado.
 
+### Acciones de la configuración del almacenamiento de la instancia
+
+![acciones](img/acciones5.png)
+
+Como estudiaremos en la unidad de [Volúmenes](http://iesgn.github.io/cloud2/curso/u3/), podemos **asociar o desasociar un volumen a una intancia**. Además cómo veremos en la segunda sesión de la unidad de *Instancias* podemos realizar una **instantánea o una copia de seguridad** de nuestra instancia.
+
+### Acciones de gestión de las instancias
+
+![acciones](img/acciones6.png)
+
+En la próxima sesión de esta unidad también estudiaremos la **redimensión y es recate de las intancias.
