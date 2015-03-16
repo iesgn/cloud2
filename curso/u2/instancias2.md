@@ -46,3 +46,12 @@ Como estudiaremos en la unidad de [Volúmenes](http://iesgn.github.io/cloud2/cur
 ![acciones](img/acciones6.png)
 
 En la próxima sesión de esta unidad también estudiaremos la **redimensión y es recate de las intancias.
+
+### Acceso a la información de las instancias
+
+![acciones](img/acciones7.png)
+
+* Podemos acceder al **log de arranque de la intancia**. 
+* También podemos acceder a las **tarifas de consumo de nuestra máquina**.
+* La opción **Detalles** nos muestra información detallada de nuestra instancia.
+* Por último, podemos acceder a una **consola VNC** para manejar nuestra instancia.
