@@ -15,33 +15,34 @@ crease, por lo que la solución más común en IaaS es utilizar pares de claves
 pública/privada para configurar de forma segura el acceso por ssh a las
 instancias.
 
-El usuario debe almacenar su o sus claves públicas en la nube de infraestructura
-que va a utilizar y cuando se crea una instancia se selecciona la clave pública
-que se desea utilizar para acceder a la misma, durante el proceso de
+El usuario debe almacenar la o las claves públicas que vaya a utilizar en la
+nube de infraestructura y cuando se crea una instancia se selecciona la clave
+pública que se desea utilizar para acceder a la misma, durante el proceso de
 instanciación, el sistema "inyecta" la clave pública en el usuario
 correspondiente del sistema, de manera que sólo el poseedor de la
-correspondiente clave privada podrá acceder al mismo.
+correspondiente clave privada podrá acceder al mismo. 
 
 Podemos optar por subir al sistema una clave pública que tengamos previamente o
 bien solicitar al sistema que cree un par de claves pública/privada. Es
 obviamente mucho más segura y recomendable la primera opción, ya que nadie
 gestiona ni tiene acceso en ningún caso a una clave privada, pero la segunda
-opción puede es muy sencilla y puede ser aceptable para pruebas o entornos donde
-la seguridad no es un aspecto fundamental como en el caso que nos ocupa en el
+opción es muy sencilla y puede ser aceptable para pruebas o entornos donde la
+seguridad no es un aspecto fundamental como en el caso que nos ocupa en el 
 que simplemente queremos aprender a utilizar este entorno.
 
 Para crear nuestro par de claves vamos a la sección **Administrador de
 Seguridad** -> **LLaves** -> **Crear nuevo par de claves**:
 
-Al crearse el par de claves, el sistema almacena la clave pública del usuario y envía al usuario la clave privada.
+Al crearse el par de claves, el sistema almacena la clave pública del usuario y
+envía al usuario la clave privada.
 	
 
 ![ssh](img/demo2_1.png)
 
 
-Nos descargamos la clave privada, almacenándola en nuestro (normalmente en el
+Nos descargamos la clave privada, almacenándola localmente (normalmente en el
 directorio ~/.ssh) y le asignamos los permisos adecuados para que ningún otro
-usuario pueda leerla (tanto 0400 como 0600 serían válidos):
+usuario pueda leerla (son válidos los modos 0400 o 0600):
 
 <pre>
 $ mv Descargas/mi_clave.pem ~/.ssh
@@ -93,13 +94,14 @@ otros equipos de su propia red o incluso de otras redes internas del cloud, pero
 si queremos acceder a la instancia desde el exterior es necesario asociar a la
 instancia lo que se denomina una IP flotante, o en el caso de Cirrusflex, una IP
 pública. Esta IP flotante o pública permite mediante el mecanismo de Destination
-NAT o DNAT acceder a la instancia ubicada en una red local desde Internet.
+NAT o DNAT acceder desde Internet a la instancia ubicada en una red interna del
+cloud.
 
 ### Reservar una IP flotante
 
 Elegimos la opción **IP públicas** en el apartado **Administrador de seguridad**
 y asignamos una nueva IP que podremos observar que está en el rango de
 direcciones IPv4 públicas. Es importante destacar que las direcciones IPv4
-tienen un coste de uso mientras estén reservadas, aunque no estén asignadas a
-una instancia, por eso sería conveniente liberar la IP pública si no se va a
-utilizar.
+tienen un coste de uso mientras estén reservadas, incluso aunque no estén
+asociadas a una instancia, por eso sería conveniente liberar la IP pública si no
+se va a utilizar.
