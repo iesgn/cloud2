@@ -14,7 +14,7 @@ Una vez que hemos creado la instancia podemos realizar las siguientes operacione
 ![acciones](img/acciones2.png)
 
 * **Pausar una instancia**: Paramos la ejecución de una instancia, guardando su estado en memoria RAM.
-* **Suspender una instancia**: Paramos la ejecución de una instancia, guardando su estado en disco. Es similar al estado de himbernación.
+* **Suspender una instancia**: Paramos la ejecución de una instancia, guardando su estado en disco. 
 * **Apagar una instancia**: Nos permite apagar la máuina virtual.
 * **Encerder la instancia**: Si tenemos una instancia apagada, nos permite encenderla.
 * **Reaunudar la instancia**: Si tenemos una intancia suspendida o pausada, no permite indicar que la máuina siga funcionando.
