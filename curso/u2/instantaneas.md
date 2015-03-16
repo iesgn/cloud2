@@ -33,6 +33,8 @@ nuevas instancias.
 
 
 ![snapshot](img/menu_instancias.png)
+
+
 ![snapshot](img/snap1.png)
 
 
