@@ -5,21 +5,33 @@ menu:
   - Unidades
 ---
 
-Esta acción sirve para cambiar las características hardware del servidor, a través de asociar un flavor diferente al mismo. Para Realizar estas operaciones el usuario deberá seleccionar el servidor y elegir la opción de **Redimensionar**.
+Esta acción sirve para cambiar las características hardware del
+servidor, modificando el tipo de instancia (sabor) asociado
+al mismo. Este proceso también se conoce como escalado vertical o
+*scale up*.
 
-Para terminar la operación se puede **Confirmar la redimensión**, o **Revertir la redimensión**. Para realizar estas operaciones el usuario deberá seleccionar el servidor en estado de VERIFY_RESIZE.
+Para Realizar estas operaciones el usuario deberá seleccionar el
+servidor y elegir la opción de **Redimensionar**.
 
-* Hemos creado una instancia con un flavor ssd.XXXS, y la vamos a redimensionar:
+Este proceso se realiza en dos pasos, ya que en un primer paso se
+verifica que es posible realizarlo y si se concluye satisfactoriamente
+el servidor para al estado VERIFY_RESIZE tras el que se le ofrecen al
+usuario dos opciones: **Confirmar la redimensión** o **Revertir la
+redimensión**.
+
+* Hemos creado una instancia con un flavor ssd.XXXS, y la vamos a
+  redimensionar:
 
 ![redimension](img/demo1_1.png)
 
-* Elegimos otro flavor.
+* Elegimos otro tipo de instancia (sabor):
 
 ![redimension](img/demo1_2.png)
 
-* Terminamos confirmando o revirtiendo la redimensión
+* Terminamos confirmando o revirtiendo la redimensión:
 
 ![redimension](img/demo1_3.png)
 
-Para más información puedes ver este [vídeo](https://www.youtube.com/watch?v=p-kNbawLd2U) de StackOps.
+Para más información puedes ver este
+[vídeo](https://www.youtube.com/watch?v=p-kNbawLd2U).
 
