@@ -15,7 +15,7 @@ servidor y elegir la opción de **Redimensionar**.
 
 Este proceso se realiza en dos pasos, ya que en un primer paso se
 verifica que es posible realizarlo y si se concluye satisfactoriamente
-el servidor para al estado VERIFY_RESIZE tras el que se le ofrecen al
+el servidor pasa al estado VERIFY_RESIZE tras el que se le ofrecen al
 usuario dos opciones: **Confirmar la redimensión** o **Revertir la
 redimensión**.
 
