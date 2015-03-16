@@ -5,20 +5,40 @@ menu:
   - Unidades
 ---
 
-Un usuario puede poner una máquina virtual en modo de rescate, de esta forma se puede acceder al servidor con una nueva contraseña y corregir cualquier sistema de fichero o errores de configuración.
-Se puede poner un servidor en modo rescate a un servidor que no permite acceder al sistema debido a diferentes errores. Cuándo se pone un servidor en modo rescate no se puede acceder a él hasta que este cambia de ACTIVE a RESCUE, esto proceso puede tardar un poco.
+Un usuario puede poner una instancia en modo de rescate cuando el
+sistema no sea accesible o no esté correctamente configurado, de esta
+forma se puede acceder al servidor y corregir los errores que
+hubiera.
 
-Cuando un usuario se pone en modo de rescate, se activa el siguiente proceso :
+Cuando se pone una instancia en modo rescate no se puede acceder a
+ella hasta que este cambia de ACTIVE a RESCUE, proceso que puede ser
+en ocasiones un poco lento.
 
-* El servidor virtual se apaga.
-* Un nuevo servidor virtual es creado con las siguientes imágenes enlazadas:
-    * Imagen primaria: Imagen desde la que se arrancó originalmente el servidor virtual, que será utilizada para arrancar el nuevo servidor para arreglar los problemas.
-    * Disco Secundario: Imagen del servidor que necesita ser rescatado.
+El proceso que ocurre cuando un usuario pone una instancia en modo
+rescate es el siguiente:
+
+* La instancia inicial se apaga.
+* Se crea una nueva instancia con dos discos virtuales:
+  * El primer disco se crea partiendo de una imagen preconfigurada
+  como imagen para rescate.
+  * El segundo disco contiene el sistema raíz que se quiere rescatar.
+
 
 ![rescatar](img/demo1_4.png)
 
-Después de resolver los problemas de un servidor en modo rescate, se puede detener este modo. Cuando se detiene el rescate del servidor, la imagen reparado se restaura a su estado de funcionamiento con su contraseña original.
+
+En el caso del sistema que estamos utilizando, el sistema de rescate
+que se utiliza en un Debian GNU/Linux con usuario "root" y contraseña
+"stackops".
+ 
+Después de resolver los problemas de un servidor en modo rescate, se
+puede detener este modo. Cuando se detiene el rescate del servidor, la
+instancia reparada se vuelve a su estado original.
+
 
 ![rescatar](img/demo1_5.png)
 
-Para más información puedes ver este [vídeo](https://www.youtube.com/watch?v=gTQaES8ri-Q) de StackOps.
+
+### Enlaces de interés
+
+[Tutorial - Cómo rescatar un servidor fallido con las instancias de recuperación de StackOps ](https://www.youtube.com/watch?v=gTQaES8ri-Q)
