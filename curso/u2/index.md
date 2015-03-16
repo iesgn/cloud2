@@ -7,7 +7,6 @@ menu:
 ###Objetivos
 
 * Introducir los conceptos fundamentales para utilizar OpenStack.
-* Introducir los conceptos fundamentales para el uso de StackOps Cirrusflex.
 * Trabajar con instancias, imágenes e instantáneas.
 * Redimensionar y rescatar instancias.
 
@@ -36,9 +35,8 @@ menu:
 
 ###Enlaces interesantes
 
-* [Imágenes en SytackOps Cirrusflex](https://docs.stackops.net/virtual-images-plugin-es.html)
+* [Imágenes en StackOps Cirrusflex](https://docs.stackops.net/virtual-images-plugin-es.html)
 * [Get images - Openstack](http://docs.openstack.org/image-guide/content/ch_obtaining_images.html)
-* [Administrar Servidor Virtuales (Instancias en StackOps Cirrusflex](https://docs.stackops.net/virtual-servers-plugin-es.html)
+* [Administrar Servidores Virtuales (Instancias en StackOps Cirrusflex)](https://docs.stackops.net/virtual-servers-plugin-es.html)
 * [Gestor de Seguridad en StackOps Cirrusflex](https://docs.stackops.net/security-plugin-es.html)
-* [Pay as you go - Pago por uso](https://docs.stackops.net/payasyougo-es.html)
 
