@@ -21,20 +21,36 @@ ejecutando.
 1. Vamos a acceder a la instancia y vamos a realizar un cambio sobre
 ella, lo mas sencillo es crear un fichero de texto.
 
+
 ![snapshot](img/demo3_5.png)
+
 
 2. A continuación vamos a realizar una instantánea de la instancia,
 con lo que se nos creará una nueva imagen desde la que podremos crear
 nuevas instancias.
 
-  * Creamos el snapshot escogiendo la opción de **Backups e Instantáneas**:
-![snapshot](img/demo3_1.png)
-![snapshot](img/demo3_2.png)	
-  * Y podemos observar que en **Catálogo de imágenes** encontramos una nueva imagen:
-![snapshot](img/demo3_3.png)
-  * A continuación podemos crear una nueva instancia a a partir de esta instantánea:
+  * Creamos la instantánea escogiendo la opción de **Instantánea**:
+
+
+![snapshot](img/menu_instancias.png)
+![snapshot](img/snap1.png)
+
+
+  * Y podemos observar que en **Catálogo de imágenes** encontramos una nueva
+  imagen de tipo *snapshot*:
+
+
+  ![snapshot](img/snap2.png)
+
+
+  * A continuación podemos crear una nueva instancia a a partir de esta
+  instantánea: 
+
+
 ![snapshot](img/demo3_4.png)
-  * Y por último podemos acceder a la nueva instancia (a la que le
+
+
+* Y por último podemos acceder a la nueva instancia (a la que le
 hemos asignado una nueva IP pública y a la que hemos asociado la
 clave SSH mi_clave.pem), y comprobar que tiene el fichero que
 creamos en la instancia anterior: 
@@ -49,7 +65,9 @@ para una gestión rudimentaria de copias de seguridad (ya que sólo se
 trataría de copias completas), se le asigna el nombre de copias de
 seguridad o *backup*.
 
-![snapshot](img/demo3_4.png)
+
+![snapshot](img/backup.png)
+
 
 El campo **Rotación** es el número máximo de instantáneas que se van a
 almacenar, superado ese número se eliminará la instantánea más antigua.
