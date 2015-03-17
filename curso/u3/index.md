@@ -8,7 +8,7 @@ menu:
 
 * Introducir los conceptos fundamentales para el uso de volúmenes.
 * Trabajar con volúmenes, asignación de volúmenes a instancias.
-* Gestión avanzada de volúmenes: instantáneas.
+* Instantáneas de volumen.
 * Creación de instancias ejecutadas sobre volúmenes.
 
 
@@ -16,7 +16,7 @@ menu:
 
 * [Presentación](presentacion)
 * [Creación de volúmenes, asociación a instancias.](volumen)
-* [Instantáneas de volúmenes.](instantaneas)
+* [Instantáneas de volumen.](instantaneas)
 * [Creación de instancia ejecutadas sobre volúmenes.](instancias_volumen)
 * [Aplicación didáctica](aula)
 * [Ejercicios](ejercicios)
