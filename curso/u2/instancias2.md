@@ -63,7 +63,7 @@ gestionar la asociación o desasociación de las IPs flotantes.
 * Podemos acceder a **la información de la clave pública que se ha usado al
   crear la instancia.**
 * Podemos **administrar los Grupos de Seguridad de nuestra instancia**, añadir o
-  quitar grupos se seguridad aplicados a la instancia.
+  quitar grupos de seguridad aplicados a la instancia.
 
 ### Acciones de la configuración del almacenamiento de la instancia
 
