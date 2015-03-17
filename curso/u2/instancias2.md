@@ -42,14 +42,12 @@ creada son las siguientes:
 
 ### Acciones de la configuración de red de la instancia
 
+![acciones](img/acciones3.png)
+
 Este apartado lo veremos más detenidamente cuando estudiemos la gestión de las
 redes en OpenStack, pero como podemos observar podemos añadir o eliminar nuevas
 interfaces de red a nuestra instancia, y cómo hemos visto anteriormente podemos
 gestionar la asociación o desasociación de las IPs flotantes.
-
-
-![acciones](img/acciones3.png)
-
 
 ### Acciones sobre la configuración de la seguridad de la instancia
 
