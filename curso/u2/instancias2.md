@@ -34,7 +34,7 @@ creada son las siguientes:
   necesario.
 * **Encender la instancia**: Si tenemos una instancia apagada, nos permite
   encenderla.
-* **Reanudar la instancia**: Si tenemos una instancia suspendida o pausada, no
+* **Reanudar la instancia**: Si tenemos una instancia suspendida o pausada, nos
   permite indicar que la máquina siga funcionando. 
 * **Reiniciar la instancia**: Ejecuta un comando *reboot* en la instancia.
 * **Terminar la instancia**: Destruye la instancia, liberando los recursos que
