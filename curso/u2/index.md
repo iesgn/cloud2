@@ -16,7 +16,7 @@ menu:
 
 * [Presentación: Sesión 1](presentacion1)
 * [Trabajo con claves ssh](claves_ssh)
-* [Conceptios previos](conceptos_previos)
+* [Conceptos previos](conceptos_previos)
 * [Pasos previos](previos)
 * [Creación de instancias a partir de una imagen](instancias1)
 * [Operaciones sobre la instancia](instancias2)
