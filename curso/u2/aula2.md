@@ -5,13 +5,11 @@ menu:
   - Unidades
 ---
 
-##
-
 La utilización de IaaS en el ámbito académico proporciona dos ventajas
 principalmente: agilidad a la hora de crear un entorno de trabajo y que la
 secuencia de aprendizaje no venga condicionada por una configuración previa.
 
-### Agilidad
+## Agilidad
 
 El proceso mediante el cual un alumno dispone de un entorno de trabajo
 completamente funcional es muy sencillo y apenas supone unos minutos. Este
@@ -23,7 +21,7 @@ En este tipo de entornos es muy sencillo eliminar las instancias que hubiera
 configuradas previamente y volver a tener un escenario limpio a partir de
 imágenes o instantáneas que el propio alumno vaya realizando.
 
-### Secuencia de aprendizaje
+## Secuencia de aprendizaje
 
 Un problema que habitualmente nos encontramos en el aprendizaje práctico de
 cualquier nueva tecnología es que es imprescindible contar con un escenario
@@ -41,7 +39,7 @@ creación previa de una imagen con toda la configuración necesaria por parte de
 profesor y el alumno se limita a utilizarla dentro de su propio entorno sin
 interferir con sus compañeros.
 
-### Otras ventajas
+## Otras ventajas
 
 * Se pueden crear fácilmente proyectos compartidos entre varios usuarios que
 faciliten el trabajo en grupo
@@ -52,7 +50,7 @@ seguimiento o la corrección por parte del profesor.
 están disponibles para el alumno en todo momento, con independencia del equipo
 que esté utilizando en cada momento.
 
-### Ejemplos
+## Ejemplos
 
 Veamos algunos ejemplos en los que la agilidad y una secuencia de aprendizaje
 más adecuada se ven beneficiados por la utilización de instancias de máquinas
@@ -108,7 +106,7 @@ dependencias adecuadamente instaladas, tal como estarían en un entorno real y
 que la tarea del alumno se centre exclusivamente en el despliegue de su
 aplicación web, no en la configuración del servidor que hay debajo.
 
-#### Conclusiones
+## Conclusiones
 
 Esto no son más que algunos ejemplos suficientemente diversos para ver las
 enormes posibilidades que se abren. En general, pueden plantearse prácticas más
