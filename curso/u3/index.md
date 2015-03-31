@@ -8,7 +8,6 @@ menu:
 
 * Introducir los conceptos fundamentales para el uso de volúmenes.
 * Trabajar con volúmenes, asignación de volúmenes a instancias.
-* Instantáneas de volumen.
 * Creación de instancias ejecutadas sobre volúmenes.
 
 
