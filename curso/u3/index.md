@@ -16,7 +16,6 @@ menu:
 
 * [Presentación](presentacion)
 * [Creación de volúmenes, asociación a instancias.](volumen)
-* [Instantáneas de volumen.](instantaneas)
 * [Creación de instancia ejecutadas sobre volúmenes.](instancias_volumen)
 * [Aplicación didáctica](aula)
 * [Ejercicios](ejercicios)
