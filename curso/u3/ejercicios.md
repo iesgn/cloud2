@@ -21,15 +21,18 @@ menu:
 
 4. Vuelve asociarlo a otra instancia que tengas ejecutándose y comprueba que la información del disco no se ha perdido.
 
-## Ejercicio 2: Trabajando con snapshots de volúmenes
+## Ejercicio 2: Instancias ejecutadas sobre volúmenes
 
-**Objetivo:** Vamos a crear un servidor con un disco persistente, es decir, vamos a crear un disco arrancable desde una imagen, lo vamos a configurar, y a continuación vamos a guardar un snapshot del disco. De esta manera podremos crear instancias con discos persistentes iguales de una manera muy sencilla.
+**Objetivo:** Vamos a crear un servidor con un disco persistente, es decir, vamos a crear un disco arrancable desde una imagen, y vamos a crear una instancia cuyo disco raíz sea el volumen que hemos creado. Vamos a comprobar que los cambios que realizamos sobre ese disco no se van a perder.lo vamos a configurar, 
 
-1. Crea un disco arrancable a partir de una imagen de un sistema operativo linux.
+1. Crea un volumen a partir de una imagen de un sistema operativo linux.
 
 2. Crea una instancia a partir de dicho disco, e instala el servidor web Apache2. Asigna a la instancia una IP pública y comprueba que podemos acceder al servidor web.
 
-3. Crea una **Imagen del volumen**.
+3. Termina la instancia.
 
-4. Crea otra instancia a partir del snapshot que acabos de crear, asigna a la nueva instancia otra IP pública y comprueba que tenemos acceso al servidor web.
+4. Crea otra instancia a partir del volumen que acabos de crear, asigna a la nueva instancia otra IP pública y comprueba que tenemos acceso al servidor web.
+
+5. Comprueba que el tamaño del disco de la instancia es el tamaño del volumen que hemos creado independientemente del sabor que hayamos elegido a la hora de crear la instancia.
+
 
