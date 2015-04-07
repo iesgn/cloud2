@@ -26,7 +26,7 @@ Para acceder a la configuración del balanceador de carga escogemos la opción *
 
 #### Monitores
 
-Un **monitor** determina si un miembro back-end del pool puede procesar una petición o no.
+Un **monitor** determina si un miembro del pool puede procesar una petición o no.
 Para que un miembro este activo, cada uno de los monitores del pool deberá declararlo como activo.
 
 Podemos tener varios monitores disponibles y entre ellos escoger los que queremos tener habilitados.
@@ -43,4 +43,18 @@ Al crear un monitor hay que indicar la siguiente información:
 * Retardo: Segundos de diferencia entre el envío de pruebas a los miembros.
 * Tiempo de espera: El número máximo de segundos que un monitor esperará para que se establezca la conexión antes de que aborte la conexión. Este valor debe ser menor que el retardo.
 * Intentos máximos: Con este valor se especifica el número de conexiones fallidas que se pueden producir antes de cambiar el estado de un miembro a INACTIVE.
+
+#### Miembros
+
+Un **miembro** representa el servicio que se ejecuta en el servidor, son responsables de atender las solicitudes recibidas a través de IP virtual del VIP.
+
+Podemos tener varios miembros disponibles y entre ellos escoger los mimebros habilitados.
+
+![balanceador](img/bal3.png)
+
+Al crear un nuevo miembro hay que indicar la siguiente información:
+
+* Dirección IP: En este campo se mostrará una lista con los servidores y sus IP pertenecientes al tenant. El usuario deberá especificar el nombre del servidor que quiere añadir al balanceador.
+* Peso: En este campo se determinará la carga de peticiones y conexiones a gestionar por este miembro.
+* Puerto del protocolo: En este campo el usuario deberá especificar el puerto en el que el miembro escuchará las peticiones y conexiones.
 
