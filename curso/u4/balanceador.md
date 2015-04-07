@@ -58,3 +58,22 @@ Al crear un nuevo miembro hay que indicar la siguiente información:
 * Peso: En este campo se determinará la carga de peticiones y conexiones a gestionar por este miembro.
 * Puerto del protocolo: En este campo el usuario deberá especificar el puerto en el que el miembro escuchará las peticiones y conexiones.
 
+#### VIP
+
+El VIP especifica la dirección IP virtual y puerto de un balanceador el el cual se recibirá todo el tráfico de los clientes. Hay que indicar una IP fija al balanceador y una IP flotante para que sea accesible desde el exterior.
+
+![balanceador](img/bal4.png)
+
+Para configurar la IP virtual tenemos que indicar la siguiente información:
+
+* Especifica un IP libre: En este combo se muestra una lista de las IP libres pertenecientes a la subred del balanceador. El usuario deberá seleccionar una, está será la IP privada del VIP.
+* Puerto del protocolo: El usuario deberá especificar el puerto en el que se escuchará el tráfico de los clientes.
+* Sesión persistente: Con este parámetro especificaremos que queremos aplicar una sesión para las peticiones es decir que los miembros pertenecientes a la misma sesión sean procesados por el mismo miembro. Los tipos de sesiones actualmente soportados son:
+
+	* HTTP COOKIE: En este caso el balanceador creará una cookie en la primera petición del cliente, de tal manera que las siguientes peticiones que contengas la misma cookie serán manejados por el mismo miembro del pool.
+	* Source IP: Todas las conexiones con la misma IP de origen serán manejadas por el mismo miembro del pool.
+	* APP COOKIE: El balanceador dependerá de una cookie establecida por la aplicación back-end. Todas las peticiones con la misma cookie serán procesadas por el mismo miembro del pool.
+	* Nombre de Cookie: Nombre de Cookie que solo será necesario para el tipo de sesión "APP_COOKIE".
+
+* Límite de conexión: Para controlar el tráfico entrante en la dirección IP del VIP asi como el tráfico recibido en cada miembro del pool, el usuario puede limitar el número de conexiones que se pueden realizar. Con el valor de -1 no existirá ningún límite.
+* IP Flotante: En este combo se muestran las IP públicas actualmente reservadas. Con este valor se le puede asignar al VIP una IP pública para que tenga acceso desde el exterior.
