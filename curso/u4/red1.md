@@ -25,5 +25,6 @@ En esta demostración vamos a crear una nueva red, una nueva subred y un nuevo r
 * Versión IP: Se especifica la versión de las direcciones IPs.
 * DHCP habilitado: Especificamos si queremos que el DHCP este activo.
 
-	![red](img/net2.png)
+![red](img/net2.png)
+
 
