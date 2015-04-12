@@ -17,7 +17,7 @@ menu:
 #### Sesión 1
 
 * [Presentación](presentacion1)
-* [Concpetos previos](conceptos_previos)
+* [Conceptos previos](conceptos_previos)
 * [Creación de una red privada y una subred asociada](red1)
 * [Creación de un router, conectarlo a la red externa y a la red anterior](router1)
 * [Creación de una nueva instancia en la nueva red](instancia1)
