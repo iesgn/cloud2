@@ -5,11 +5,6 @@ menu:
   - Unidades
 ---
 
-
-El esquema de red por defecto que nos encontramos en nuestro proyecto esta definido por un router conectado a la red externa, y una red interna donde se conectan las instancias. Podríamos resumirlo en el siguiente esquema:
-
-![red](img/red1.png)
-
 En esta demostración vamos a crear una nueva red, una nueva subred y un nuevo router. El router estará conectado a la red externa y a la nueva red creada. El esquema de red sería el siguiente:
 
 ![red](img/red3.png)
