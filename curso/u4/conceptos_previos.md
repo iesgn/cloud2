@@ -61,5 +61,11 @@ En nuestro escenario tenemos los siguientes dispositivos conectados a nuestra re
 
 Por lo tanto cómo veíamos en la primera pantalla tenemos 57 direcciones ip libres.
 
+Efectivamente en la siguiente imagen podemos ver la instancia que tenemos conectada a la red:
+
+![red](img/previo4.png)
+
+A dicha instancia le hemos asignado una ip flotante (185.45.73.232). Esa operación está creando una regla de cortafuegos tipo DNAT por cada uno de los puertos que hemos abierto en nuestro **grupo de seguridad**.
+
 
 
