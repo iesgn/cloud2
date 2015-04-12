@@ -11,6 +11,6 @@ En esta demostración vamos a crear una nueva red, una nueva subred y un nuevo r
 
 1. En el apartado **Administrador de redes** hemos creado una red nueva con un subred con direccionamiento 192.168.0.0/24 y un nuevo router. Al crear el router no he indicado la **Red externa**, por lo que no estará conectada a esa red.
 
-	![red](img/red8.png)
+	![red](img/net8.png)
 
 2. 
