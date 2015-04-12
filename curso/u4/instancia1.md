@@ -15,6 +15,4 @@ Una vez creado nuestra nueva red, conectada a un nuevo router vamos a crear una 
 
 	![red](img/net6.png)
 
-3. Por último vamos a comprobar que puede hacer ping a otra instancia conectada a la red por defecto y que tiene como ip fija la 10.0.15.68.
-
-	![red](img/net8.png)
+3. Por último podemos comprobar que la instancias no tienen conectividad. Si accedemos a una de ella, y hacemos ping a la ip fija de la otra, evidentemente, no tendremos conectividad.
