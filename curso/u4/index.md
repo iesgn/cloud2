@@ -10,7 +10,6 @@ menu:
 * Creación de red y subred.
 * Creación de routers
 * Conexión de redes y routers. Puertos.
-* Introducción a los balanceadores de carga. Elasticidad.
 
 ###Contenidos
 
@@ -23,18 +22,8 @@ menu:
 * [Creación de una nueva instancia en la nueva red](instancia1)
 * [Ejercicios](ejercicios1)
 
-#### Sesión 2
-
-* [Presentación: Sesión 2](presentacion2)
-* [Creación de un router y conectarlo entre dos redes internas](router2)
-* [Creación de una nueva instancia en la nueva red](red2)
-* [Balanceador de carga](balanceador)
-* [Aplicación didáctica](aula2)
-* [Ejercicios](ejercicios2)
 
 
 ###Enlaces interesantes
 
 * [Administrador de Redes definidas por Software](https://docs.stackops.net/sdn-plugin-es.html)
-* [Balanceador de carga](https://docs.stackops.net/lbaas-plugin-es.html)
-* [Balanceadores de carga. Vídeo.](http://youtu.be/Gc1hXiz86kU)
