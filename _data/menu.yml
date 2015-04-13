@@ -65,11 +65,13 @@
      url: /cloud2/curso/u2
    - name: Volúmenes
      url: /cloud2/curso/u3
-   - name: Redes
+   - name: Redes I
      url: /cloud2/curso/u4
    - name: CLI
      url: /cloud2/curso/u5
-   - name: Utilización
+   - name: Redes II
      url: /cloud2/curso/u6
+   - name: Utilización
+     url: /cloud2/curso/u7
 #   - name: Foro
 #     url: https://github.com/iesgn/cloud2/issues
