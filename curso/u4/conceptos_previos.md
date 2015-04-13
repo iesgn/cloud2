@@ -65,7 +65,7 @@ Efectivamente en la siguiente imagen podemos ver la instancia que tenemos conect
 
 ![red](img/previo4.png)
 
-A dicha instancia le hemos asignado una ip flotante (185.45.73.232). Esa operación está creando una regla de cortafuegos tipo DNAT por cada uno de los puertos que hemos abierto en nuestro **grupo de seguridad**.
+A dicha instancia le hemos asignado una ip flotante (185.45.73.232). Esa operación está creando las reglas de cortafuegos tipo NAT necesarias para que la instancia salga al exterior con la IP flotante asociada (SNAT) y para que podamos acceder a la instancia a través de los puertos abiertos en nuestro **grupo de seguridad** (DNAT).
 
 
 
