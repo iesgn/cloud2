@@ -1,43 +1,40 @@
 ---
 layout: blog
-tittle: Cloud Computing en Educación y en la Empresa
+tittle: Utilización de OpenStack. Redes
 menu:
-  - Unidad 6
+  - Unidades
 ---
+###Objetivos
 
-### Objetivos
+* Introducir los conceptos fundamentales para el uso de las redes.
+* Creación de red y subred.
+* Creación de routers
+* Conexión de redes y routers. Puertos.
+* Introducción a los balanceadores de carga. Elasticidad.
 
-* Estudiar las distintas formas para implantar OpenStack en un entorno de pruebas.
-* Realizar una introducción a la configuración de OpenStack.
-* Conocer la evolución de las aplicaciones propiciada por las tecnologías de cloud computing.
-* Debatir sobre las posibilidades didácticas del uso de tecnologías de cloud
-  computing en el aula.
-* Analizar las posibilidades reales de implantación de una nube privada en un
-  centro educativo.
-* Analizar las posibilidades de utilización de una nube pública gratuita o en
-  pago por uso en un centro educativo.
-* Comentar las ventajas e inconvenientes del uso de IaaS y PaaS en los
-  diferentes ciclos de formación profesional.
-* Presentar las distintas opciones de uso de una infraestructura de Cloud
-  Computing (IaaS y PaaS) público, para incorporar en los curriculum de los
-  distintos módulos de nuestro ciclos formativos.
-* Mostrar la evolución que ha tenido la metodología didáctica usada en los
-  ciclos formativos atendiendo a las posibilidades que nos ha aportado el uso de
-  la virtualización.
-* Debatir los nuevos cambios metodológicos que puede conllevar el uso de las
-  tecnologías de Cloud Computing en la práctica docente en los ciclos formativos
-  de la familia de informática.
-* Presentar las salidas profesionales que en los próximos años va a ofrecer las
-  tecnologías relacionadas con el Cloud Computing.
-* Presentar distintas posibilidades para la instalación de un entorno de prueba de OpenStack.
-* Hacer una introducción a la configuración de OpenStack.
+###Contenidos
 
-### Contenidos
+#### Sesión 1
 
-* [Evolución de las aplicaciones](presentacion_evol_aplicaciones.html)
-* [Cloud computing en el aula](presentacion_cloud_aula.html)
-* [IaaS en los estudios de Informática](presentacion_iaas_educacion.html)
-* [Implantación de una nube privada en un centro educativo](presentacion_implantacion.html)
-* [Alternativas al cloud privado de IaaS](presentacion_iaas_publico)
-* [Instalación y configuración de OpenStack](entornos)
+* [Presentación](presentacion1)
+* [Conceptos previos](conceptos_previos)
+* [Creación de una red privada y una subred asociada](red1)
+* [Creación de un router, conectarlo a la red externa y a la red anterior](router1)
+* [Creación de una nueva instancia en la nueva red](instancia1)
+* [Ejercicios](ejercicios1)
 
+#### Sesión 2
+
+* [Presentación: Sesión 2](presentacion2)
+* [Creación de un router y conectarlo entre dos redes internas](router2)
+* [Creación de una nueva instancia en la nueva red](red2)
+* [Balanceador de carga](balanceador)
+* [Aplicación didáctica](aula2)
+* [Ejercicios](ejercicios2)
+
+
+###Enlaces interesantes
+
+* [Administrador de Redes definidas por Software](https://docs.stackops.net/sdn-plugin-es.html)
+* [Balanceador de carga](https://docs.stackops.net/lbaas-plugin-es.html)
+* [Balanceadores de carga. Vídeo.](http://youtu.be/Gc1hXiz86kU)
