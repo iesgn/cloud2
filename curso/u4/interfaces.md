@@ -19,7 +19,7 @@ Tenemos dos formas de realizar esta operación:
 
 	![red](img/interface2.png)
 
-	y a continuación escoger la opción de **Añadir Nueva Interfaz** y luego escoger el puerto creado anteriormente.
+	y a continuación escoger la opción de **Añadir Nueva Interfaz** y luego seleccionamos el puerto creado anteriormente.
 
 	![red](img/interface3.png)
 
