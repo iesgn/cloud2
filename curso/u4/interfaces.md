@@ -11,11 +11,11 @@ Una vez que hemos estudiado como crear nuevas redes y routers, nos falta una car
 
 Tenemos dos formas de realizar esta operación:
 
-* Durante la creación de la instancia indicamos las redes a la que va a estar conectada la instancia, el orden de elección es importante, ya que la primera interfaz (en caso de linux eth0) estará conectada a la primera red que hayamos escogido, y así consecutivamente.
+1. Durante la creación de la instancia indicamos las redes a la que va a estar conectada la instancia, el orden de elección es importante, ya que la primera interfaz (en caso de linux eth0) estará conectada a la primera red que hayamos escogido, y así consecutivamente.
 
 	![red](img/interface1.png)
 
-* Si tenemos una instancia ejecutándose podemos añadir una interfaz en cualquier momento, para ello debemos crear un puerto en la red correspondiente:
+2. Si tenemos una instancia ejecutándose podemos añadir una interfaz en cualquier momento, para ello debemos crear un puerto en la red correspondiente:
 
 	![red](img/interface2.png)
 
