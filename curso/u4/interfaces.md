@@ -26,5 +26,5 @@ Tenemos dos formas de realizar esta operación:
 ### Posibles utilidades
 
 1. Crear una instancia que este conectada a dos redes internas. Esta instancia estará conectada a las instancias de una y otra red, y en ella se podrán configurar, por ejemplo, servicios de enrutamiento y cortafuegos.
-2. Crear una instancia que tenga dos interfaces conectas a una misma red, podemos obtener la posibilidad de tener una instancia con varias ip flotantes asignadas, y de este modo, por ejemplo configurar un servidor web, que sirva varios hosting virtuales en cada una de las ip públicas.
+2. Crear una instancia que tenga dos interfaces conectas a una misma red, por lo tanto tendremos una instancia con varias ip flotantes asignadas, y de este modo, por ejemplo configurar un servidor web, que sirva varios hosting virtuales en cada una de las ip públicas.
 
