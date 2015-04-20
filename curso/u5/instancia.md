@@ -95,7 +95,7 @@ Vamos a ver todos los pasos que necesitamos para crear una instancia:
 		$ nova boot --flavor ssd.XXXS --image 44288012-b805-455f-a21f-74ab36c46362 /
 		--security-groups gr_seguridad --key-name clave_acceso /
 		--nic net-id=d5d686b5-32fb-4e45-8809-98df3ee5ef3e instancia_nova
-		
+
 		+--------------------------------------+---------------------------------------------------------------------------------+
 		| Property                             | Value                                                                           |
 		+--------------------------------------+---------------------------------------------------------------------------------+
@@ -235,7 +235,10 @@ Vamos a ver todos los pasos que necesitamos para crear una instancia:
 		$ nova floating-ip-list		
 
 		# Asignar una IP flotante al proyecto
-		$ nova floating-ip-create		
+		$ nova floating-ip-create	
+
+		# Liberar una IP flotante
+		$ nova floating-ip-delete 185.x.x.x	
 
 		# Asociar una IP flotante a una instancia
 		$ nova floating-ip-associate instancia_prueba 185.x.x.x
