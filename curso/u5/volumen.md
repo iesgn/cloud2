@@ -77,10 +77,82 @@ En esta demostración vamos a crear un volumen y lo vamos a asociar a la instanc
 
 2. Creamos un volumen *bootable* desde una imagen:
 
-		nova boot --flavor 2 --block-device source=image,id=484e05af-a14d-4567-812b-d1c2260,dest=volume,size=10,shutdown=preserve,bootindex=0 myInstanceFromVolume
+		$ nova volume-create 8 --image-id 44288012-b805-455f-a21f-74ab36c46362 --display-name mi_disco
+		+---------------------+--------------------------------------+
+		| Property            | Value                                |
+		+---------------------+--------------------------------------+
+		| attachments         | []                                   |
+		| availability_zone   | nova                                 |
+		| bootable            | false                                |
+		| created_at          | 2015-04-20T10:40:57.964980           |
+		| display_description | -                                    |
+		| display_name        | mi_disco                             |
+		| id                  | 45f71394-2699-4c86-80da-cf8490f5a6c5 |
+		| image_id            | 44288012-b805-455f-a21f-74ab36c46362 |
+		| metadata            | {}                                   |
+		| size                | 8                                    |
+		| snapshot_id         | -                                    |
+		| source_volid        | -                                    |
+		| status              | creating                             |
+		| volume_type         | None                                 |
+		+---------------------+--------------------------------------+
 
-3. Comprobamos que hemos creado una nueva imagen y que podemos crear una nueva instancia:
 
-		$ nova image-list
+		
 
-		$ nova boot --flavor ssd.XXXS --image 44288012-b805-455f-a21f-74ab36c46362 --security-groups gr_seguridad --key-name clave_acceso --nic net-id=d5d686b5-32fb-4e45-8809-98df3ee5ef3e instancia_nova
+3. Creamos una nueva instancia
+
+		$ nova boot --flavor ssd.XXXS --boot-volume 45f71394-2699-4c86-80da-cf8490f5a6c5 --security-groups default --key-name mi_clave --nic net-id=d5d686b5-32fb-4e45-8809-98df3ee5ef3e instancia_nova
+		+--------------------------------------+----------------------------------------------------------+
+		| Property                             | Value                                                    |
+		+--------------------------------------+----------------------------------------------------------+
+		| OS-DCF:diskConfig                    | MANUAL                                                   |
+		| OS-EXT-AZ:availability_zone          | nova                                                     |
+		| OS-EXT-STS:power_state               | 0                                                        |
+		| OS-EXT-STS:task_state                | spawning                                                 |
+		| OS-EXT-STS:vm_state                  | building                                                 |
+		| OS-SRV-USG:launched_at               | -                                                        |
+		| OS-SRV-USG:terminated_at             | -                                                        |
+		| accessIPv4                           |                                                          |
+		| accessIPv6                           |                                                          |
+		| adminPass                            | 2zdcUn4oCCKJ                                             |
+		| config_drive                         |                                                          |
+		| created                              | 2015-04-20T10:45:46Z                                     |
+		| flavor                               | ssd.XXXS (20)                                            |
+		| hostId                               | 962db8c7b201499f39eeea5cb2c88d73cae9931aa8703e1d3e2c8027 |
+		| id                                   | c2b2c650-2f83-4c3e-b964-ebb916bf7e88                     |
+		| image                                | Attempt to boot from volume - no image supplied          |
+		| key_name                             | mi_clave                                                 |
+		| metadata                             | {}                                                       |
+		| name                                 | instancia_nova                                           |
+		| os-extended-volumes:volumes_attached | [{"id": "45f71394-2699-4c86-80da-cf8490f5a6c5"}]         |
+		| progress                             | 0                                                        |
+		| security_groups                      | default                                                  |
+		| status                               | BUILD                                                    |
+		| tenant_id                            | 44f5cb63ad34481aab5cc9c2809e4a76                         |
+		| updated                              | 2015-04-20T10:45:49Z                                     |
+		| user_id                              | 7a15970a225d41babb750da8a6f5e8d2                         |
+		+--------------------------------------+----------------------------------------------------------+
+
+
+### Resumen de comandos
+
+		# Listar volúmenes
+		$ nova volume-list		
+
+		# Crear un volumen
+		$ nova volume-create --display-name NOMBRE SIZE		
+
+		# Asociar un volumen a una instancia
+		$ nova volume-attach SERVIDOR_ID VOLUMEN_ID DISPOSITIVO		
+
+		# Desasociar un volumen de una instancia
+		$ nova volume-detach SERVIDOR_ID VOLUMEN_ID		
+
+		# Crear una instantánea de volumen
+		$ nova volume-snapshot-create [opciones] VOLUMEN_ID
+
+		# Crear un volumen a partir de una imagen
+		$ nova volume-create SIZE --image-id IMAGEN_ID --display-name NOMBRE
+
+
