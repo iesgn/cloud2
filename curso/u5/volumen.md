@@ -5,6 +5,8 @@ menu:
   - Unidades
 ---
 
+### Asociación de un volumen a una instancia
+
 En esta demostración vamos a crear un volumen y lo vamos a asociar a la instancia que hemos creado en la demostración anterior. Veamos los pasos:
 
 1. Vamos a crear un volumen de 1 Gb.
@@ -64,3 +66,21 @@ En esta demostración vamos a crear un volumen y lo vamos a asociar a la instanc
 
 		Disk /dev/vdb doesn't contain a valid partition table
 		ubuntu@instancia-nova:~$ 
+
+### Creación de una instancia ejecutada sobre volumen
+
+1. Visualizamos la lista de imágenes y de sabores que tenemos en nuestro sistema:
+
+		$ nova image-list
+
+		$ nova flavor-list
+
+2. Creamos un volumen *bootable* desde una imagen:
+
+		nova boot --flavor 2 --block-device source=image,id=484e05af-a14d-4567-812b-d1c2260,dest=volume,size=10,shutdown=preserve,bootindex=0 myInstanceFromVolume
+
+3. Comprobamos que hemos creado una nueva imagen y que podemos crear una nueva instancia:
+
+		$ nova image-list
+
+		$ nova boot --flavor ssd.XXXS --image 44288012-b805-455f-a21f-74ab36c46362 --security-groups gr_seguridad --key-name clave_acceso --nic net-id=d5d686b5-32fb-4e45-8809-98df3ee5ef3e instancia_nova
