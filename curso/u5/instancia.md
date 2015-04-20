@@ -255,7 +255,7 @@ Vamos a ver todos los pasos que necesitamos para crear una instancia:
 		$ nova secgroup-list		
 
 		# Crear un grupo de seguridad
-		$ nova secgroup-create cortafuegos		
+		$ nova secgroup-create cortafuegos 'Descripción'		
 
 		# Listar reglas de un grupo de seguridad
 		$ nova secgroup-list-rules default		
