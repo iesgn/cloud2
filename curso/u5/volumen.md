@@ -11,7 +11,7 @@ En esta demostración vamos a crear un volumen y lo vamos a asociar a la instanc
 
 1. Vamos a crear un volumen de 1 Gb.
 
-		$ nova volume-create --display-name disco1 1
+		$ nova volume-create 1 --display-name disco1
 		+---------------------+--------------------------------------+
 		| Property            | Value                                |
 		+---------------------+--------------------------------------+
@@ -141,7 +141,7 @@ En esta demostración vamos a crear un volumen y lo vamos a asociar a la instanc
 		$ nova volume-list		
 
 		# Crear un volumen
-		$ nova volume-create --display-name NOMBRE SIZE		
+		$ nova volume-create SIZE --display-name NOMBRE 
 
 		# Asociar un volumen a una instancia
 		$ nova volume-attach SERVIDOR_ID VOLUMEN_ID DISPOSITIVO		
