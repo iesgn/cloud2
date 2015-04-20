@@ -232,7 +232,7 @@ Vamos a ver todos los pasos que necesitamos para crear una instancia:
 		$ nova floating-ip-pool-list		
 
 		# Listar las ip flotantes que asignadas al proyecto
-		$ nova floating-ip-list		
+		$ nova floating-ip-list	ext-net	
 
 		# Asignar una IP flotante al proyecto
 		$ nova floating-ip-create	
