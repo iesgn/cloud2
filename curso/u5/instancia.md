@@ -92,7 +92,10 @@ Vamos a ver todos los pasos que necesitamos para crear una instancia:
 
 4. Ya podemos crear nuestra instancia. Vamos a crear una instancia *instancia_nova*) Ubuntu 14.04, con un sabor ssd.XXXS, el grupo de seguridad y las claves ssh que hemos creado anteriormente y conectado a la red 00000061-net.
 
-		$ nova boot --flavor ssd.XXXS --image 44288012-b805-455f-a21f-74ab36c46362 --security-groups gr_seguridad --key-name clave_acceso --nic net-id=d5d686b5-32fb-4e45-8809-98df3ee5ef3e instancia_nova
+		$ nova boot --flavor ssd.XXXS --image 44288012-b805-455f-a21f-74ab36c46362 /
+		--security-groups gr_seguridad --key-name clave_acceso /
+		--nic net-id=d5d686b5-32fb-4e45-8809-98df3ee5ef3e instancia_nova
+		
 		+--------------------------------------+---------------------------------------------------------------------------------+
 		| Property                             | Value                                                                           |
 		+--------------------------------------+---------------------------------------------------------------------------------+
