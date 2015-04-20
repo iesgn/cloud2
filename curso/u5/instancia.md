@@ -173,3 +173,103 @@ Vamos a ver todos los pasos que necesitamos para crear una instancia:
 
 		ubuntu@instancia-nova:~$ 
 
+### Resumen de comandos
+
+#### Consultar parámetros
+
+		#Listar de imágenes
+		$ nova image-list		
+
+		# Listar sabores
+		$ nova flavor-list		
+
+		# Listar las redes que tenemos definidas
+		$ nova net-list		
+
+		# Listar grupos de seguridad
+		$ nova secgroup-list		
+
+		# Listar claves ssh
+		$ nova keypair-list
+
+#### Instancias
+
+		# Creamos una instancia
+		$ nova boot --flavor FLAVOR_ID --image IMAGE_ID
+            --security-groups SEC_GROUP --key-name KEY_NAME \
+	    --nic net-id=NET_ID \
+	    INSTANCE_NAME
+
+		# Ejemplo
+		$ nova boot --flavor m1.tiny --image cirros-0.3.1-x86_64-uec \
+            --security-groups default --key-name mis_claves 
+            --nic net-id=d8d4d80e-923f-47fc-ac88-b9079328080b \
+            instancia_prueba
+
+        # Pausar instancia
+		$ nova pause INSTANCE_NAME 
+		$ nova unpause INSTANCE_NAME 		
+
+		# Suspender/resumir
+		$ nova suspend INSTANCE_NAME
+		$ nova resume INSTANCE_NAME		
+
+		# Reiniciar
+		$ nova reboot --hard SERVER		
+
+		# Borrar
+		$ nova delete INSTANCE_NAME		
+
+		# Acceder por consola
+		$ nova get-vnc-console INSTANCE_NAME novnc
+
+#### IP flotante
+
+		# Listar el pool de ip flotantes
+		$ nova floating-ip-pool-list		
+
+		# Listar las ip flotantes que asignadas al proyecto
+		$ nova floating-ip-list		
+
+		# Asignar una IP flotante al proyecto
+		$ nova floating-ip-create		
+
+		# Asociar una IP flotante a una instancia
+		$ nova floating-ip-associate instancia_prueba 185.x.x.x
+
+		# Desasociar una IP flotante de una instancia
+		$ nova floating-ip-disassociate instancia_prueba 185.x.x.x
+
+#### Grupo de seguridad
+
+		# Listar grupos de seguridad
+		$ nova secgroup-list		
+
+		# Crear un grupo de seguridad
+		$ nova secgroup-create cortafuegos		
+
+		# Listar reglas de un grupo de seguridad
+		$ nova secgroup-list-rules default		
+
+		# Añadir una regla a un grupo de seguridad
+		$ nova secgroup-add-rule default tcp 22 22 0.0.0.0/0		
+
+#### Claves ssh
+
+		# Crear un par de claves ssh
+		$ nova keypair-add mi_claves > mi_claves.pem
+		$ chmod 600 mi_clave.pem		
+
+		# Listar las claves ssh
+		$ nova keypair-list
+
+#### Instantáneas
+
+		# Crear una instantánea de una instancia
+		$ nova image-create --poll instancia_prueba snapshot_prueba		
+
+		# Listar instantáneas (e imágenes)
+		$ nova image-list		
+
+		# Para crear una nueva instancia se puede usar esta instantánea como cualquier
+		# otra imagen
