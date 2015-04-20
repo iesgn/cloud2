@@ -5,227 +5,33 @@ tema: white
 ---
 
 <section>
-	    <h2>Introducción al uso de OpenStack (StackOps Portal) (4) APIS</h2>
-	    <p>
-	      <small><a href="http://albertomolina.wordpress.com">Alberto Molina
-	      Coballes</a> / <a
-	      href="http://twitter.com/alberto_molina">@alberto_molina</a> y <a
-	      href="http://josedomingo.org">José Domingo Muñoz
-	      Rodríguez</a> / <a
-	      href="http://twitter.com/Pledin_JD">@Pledin_JD</a> </small>
-	    </p>
-	    <p><small>
-		<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="../../img/cc_by_sa.png"
-		width="100px" border="0"/></a></small></p>
-	</section>
+      <h2>Utilización de Openstack. CLI</h2>
+      <p>
+        <small><a href="http://albertomolina.wordpress.com">Alberto Molina
+        Coballes</a> / <a
+        href="http://twitter.com/alberto_molina">@alberto_molina</a> y <a
+        href="http://josedomingo.org">José Domingo Muñoz
+        Rodríguez</a> / <a
+        href="http://twitter.com/Pledin_JD">@Pledin_JD</a> </small>
+      </p>
+      <p><small>
+    <a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="../../img/cc_by_sa.png"
+    width="100px" border="0"/></a></small></p>
+    </section>
+    
+
+   <section data-background="#FFCC99">
   <section>
-  <section>
-    <h3>Instancias con OpenStack CLI</h3>
+    <h2>Índice de la sesión</h2>
     <ul>
-      <li>Cada componente de OpenStack tiene su propio cliente de línea de
-      comandos con toda las funcionalidades</li>
-      <li>Existe un cliente "unificado" (nova) que permite utilizar las
-      funcionalidades básicas de los componentes principales</li>
-    </ul>
-  </section>
-  <section>
-    <h3>Configuración del entorno</h3>
-    <ul>
-      <li>Obtenemos el fichero de credenciales de StackOps Portal: <strong>Endpoints Portal Plugins->Descargar Variables</strong></li>
-      <li>Instalamos en el equipo el cliente de línea de comandos de OpenStack
-      (con este método instalamos la última versión):
-  <pre><code>
-# apt-get install python-pip
-# pip install python-novaclient
-  </code></pre></li>
-      <li>Iniciamos la sesión del usuario:
-  <pre><code>
-$ source values.sh
-  </code></pre></li>
-      <li>Comprobamos que funciona correctamente:
-  <pre><code>
-$ nova flavor-list
-        </code></pre></li>
+      <li>Pasos previos</li>
+      <li>Creación de una instancia con la aplicación nova</li>
+      <li>Creación de un volumen y asociación a una instancia con la aplicación nova</li>
+      <li>Creación de redes y routers con la aplicación neutron</li>
+      <li>Aplicación didáctica</li>
+      <li>Utilización desde un lenguaje de programación</li> 
+      <li>Ejercicios</li>
     </ul>
   </section>
 
-<section>
-  <h2>Instancias (1)</h2>
-  <pre><code>
-#Listar de imágenes
-$ nova image-list
-
-# Listar sabores
-$ nova flavor-list
-
-# Listar las redes que tenemos definidas
-$ nova net-list
-
-# Listar grupos de seguridad
-$ nova secgroup-list
-
-# Listar claves ssh
-$ nova keypair-list
-  </code></pre>
-</section>
-<section>
-  <h2>Instancias (2)</h2>
-  <pre><code>
-# Creamos una instancia
-$ nova boot --flavor FLAVOR_ID --image IMAGE_ID
-            --security-groups SEC_GROUP --key-name KEY_NAME \
-      --nic net-id=NET_ID \
-      INSTANCE_NAME
-
-# Ejemplo
-$ nova boot --flavor m1.tiny --image cirros-0.3.1-x86_64-uec \
-            --security-groups default --key-name mis_claves 
-            --nic net-id=d8d4d80e-923f-47fc-ac88-b9079328080b \
-            instancia_prueba
-  </code></pre>
-</section>
-
-<section>
-  <h2>Instancias (3)</h2>
-  <pre><code>
-# Pausar instancia
-$ nova pause INSTANCE_NAME 
-$ nova unpause INSTANCE_NAME 
-
-# Suspender/resumir
-$ nova suspend INSTANCE_NAME
-$ nova resume INSTANCE_NAME
-
-# Reiniciar
-$ nova reboot --hard SERVER
-
-# Borrar
-$ nova delete INSTANCE_NAME
-
-# Acceder por consola
-$ nova get-vnc-console INSTANCE_NAME novnc
-  </code></pre>
-</section>
-
-<section>
-  <h2>IPs Flotantes</h2>
-  <pre><code>
-# Listar el pool de ip flotantes
-$ nova floating-ip-pool-list
-
-# Listar las ip flotantes que asignadas al proyecto
-$ nova floating-ip-list
-
-# Asignar una IP flotante al proyecto
-$ nova floating-ip-create ext-net
-
-# Asociar una IP flotante a una instancia
-$ nova floating-ip-associate instancia_prueba 172.24.4.227
-
-# Desasociar una IP flotante de una instancia
-$ nova floating-ip-disassociate instancia_prueba 172.24.4.227
-  </code></pre>
-</section>
-<section>
-  <h2>Grupos de seguridad</h2>
-  <pre><code>
-# Listar grupos de seguridad
-$ nova secgroup-list
-
-# Crear un grupo de seguridad
-$ nova secgroup-create cortafuegos descripción
-
-# Listar reglas de un grupo de seguridad
-$ nova secgroup-list-rules default
-
-# Añadir una regla a un grupo de seguridad
-$ nova secgroup-add-rule default tcp 22 22 0.0.0.0/0
-  </code></pre>
-</section>
-<section>
-  <h2>Claves SSH</h2>
-  <pre><code>
-# Crear un par de claves ssh
-$ nova keypair-add mi_claves > mi_claves.pem
-$ chmod 600 mi_clave.pem
-
-# Listar las claves ssh
-$ nova keypair-list
-  </code></pre>
-</section>
-<section>
-  <h2>Instantáneas</h2>
-  <pre><code>
-# Crear una instantánea de una instancia
-$ nova image-create --poll instancia_prueba snapshot_prueba
-
-# Listar instantáneas (e imágenes)
-$ nova image-list
-
-# Para crear una nueva instancia se puede usar esta instantánea como cualquier
-# otra imagen
-  </code></pre>
-</section>
-</section>
-
-<section>
-  <section>
-    <h3>Volúmenes con OpenStack CLI</h3>
   </section>
-  <section>
-    <h2>Volúmenes</h2>
-    <pre><code>
-#Listar volúmenes
-$ nova volume-list
-#Crear un volumen
-$ nova volume-create --display-name NOMBRE SIZE
-#Asociar un volumen a una instancia
-$ nova volume-attach SERVIDOR_ID VOLUMEN_ID DISPOSITIVO
-#Desasociar un volumen de una instancia
-$ nova volume-detach SERVIDOR_ID VOLUMEN_ID
-#Crear una instantánea de volumen
-$ nova volume-snapshot-create [opciones] VOLUMEN_ID
-    </code></pre>
-  </section>
-
-</section>
-
-<section>
-  <section>
-    <h3>Redes con OpenStack CLI</h3>
-    <ul>
-    <li>Instalación de python-neutronclient</li>
-    </ul>
-    <pre><code>
-
-# pip install python-neutronclient
-  </code></pre>
-  </section>
-  <section>
-    <h2>Redes</h2>
-    <pre><code>
-#Listar redes
-$ nova net-list
-$ neutron net-list
-#Listar subredes
-$ neutron subnet-list
-#Listar routers
-$ neutron router-list
-# Crear una nueva red
-$ neutron net-create NOMBRE_RED
-# Crear una subred
-$ neutron subnet-create NOMBRE_RED CIDR
-# Establecer puerta de enlace de un router
-$ neutron router-gateway-set ROUTER_ID EXTERNAL_NETWORK_ID
-# Conectar un router a una red privada
-$ neutron router-interface-add ROUTER_ID SUBNET_ID
-    </code></pre>
-  </section>
-</section>
-<section>
-          <h3>Demostración</h3>
-          <ol>
-            <li>Creación de una instancia con la aplicación nova.</li>
-            <li>Creación de un volumen y asociación a una instancia con la aplicación nova.</li>
-            <li>Creación de redes y routers con la aplicación nova.</li>
-      </section>
