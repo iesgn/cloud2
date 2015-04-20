@@ -6,9 +6,10 @@ menu:
 ---
 ###Objetivos
 
-* Conocer las distintas opciones que tenemos ara interactual con la infraestructura de cloud: aplicación web, cliente python, API.
+* Conocer las distintas opciones que tenemos ara interactual con la infraestructura de cloud: aplicación web, CLI, librerías de lenguajes de programación.
 * Utilizar el cliente *nova* para interactual con el cloud.
 * Trabajar con instancias, imágenes y snapshots desde la aplicación *nova*.
+* Trabajar con volúmenes desde la aplicación *nova*.
 * Trabajar con redes desde la aplicación *neutron*.
 
 ###Contenidos
