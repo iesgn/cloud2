@@ -190,7 +190,10 @@ Vamos a ver todos los pasos que necesitamos para crear una instancia:
 		$ nova net-list		
 
 		# Listar grupos de seguridad
-		$ nova secgroup-list		
+		$ nova secgroup-list	
+
+		# Listar reglas de un grupo de seguridad
+		$ nova secgroup-list-rules default		
 
 		# Listar claves ssh
 		$ nova keypair-list
