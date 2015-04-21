@@ -6,7 +6,7 @@ IMAGEN='44288012-b805-455f-a21f-74ab36c46362'
 
 NET_ID1=$(neutron net-create red1|grep ' id '|awk '{print $4}')
 NET_ID2=$(neutron net-create red2|grep ' id '|awk '{print $4}')
-NET_ID3=$(neutron net-create red3|grep ' id '|awk '{print $4}')
+NET_ID3=$(neutron net-create red3|grep ' id '|awk '{print $4} ')
 
 # Creamos tres routers
 
