@@ -63,14 +63,14 @@ nova boot --flavor ssd.XXXXS --image $IMAGEN \
 nova boot --flavor ssd.XXXXS --image $IMAGEN \
             --security-groups default\
          --key-name clave_demo \
-            --nic net-id=$NET_ID1 \
+            --nic net-id=$NET_ID2 \
             pc2
 
 
 nova boot --flavor ssd.XXXXS --image $IMAGEN \
             --security-groups default\
          --key-name clave_demo \
-            --nic net-id=$NET_ID1 \
+            --nic net-id=$NET_ID3 \
             pc3
 
 
@@ -78,6 +78,7 @@ nova boot --flavor ssd.XXXXS --image $IMAGEN \
 ## Asignamos una IP flotante a pc1#
 
 IP=$(nova floating-ip-create ext-net|awk 'NR==4'|awk '{print $2}')
+echo 'IP flotante asignada '$IP
 nova floating-ip-associate pc1 $IP
 
 ## Añadimos una ruta de encaminamiento en r2 para que poueda acceder a la red3
