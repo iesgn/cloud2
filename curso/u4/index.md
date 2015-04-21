@@ -10,6 +10,8 @@ menu:
 * Creación de red y subred.
 * Creación de routers
 * Conexión de redes y routers. Puertos.
+* Introducción a la seguridad en el trabajo de redes.
+* Creación de un servidor VPN.
 
 ###Contenidos
 
@@ -29,3 +31,5 @@ menu:
 ###Enlaces interesantes
 
 * [Administrador de Redes definidas por Software](https://docs.stackops.net/sdn-plugin-es.html)
+* [Seguridad OpenStack en Cirrusflex: 5 consejos](https://cirrusflex.com/2015/03/31/seguridad-openstack-en-cirrusflex-5-consejos/)
+* [Instalar una OpenVPN con Turnkey](https://cirrusflex.com/2015/02/13/instalar-una-openvpn-con-turnkey/)
