@@ -16,6 +16,7 @@ Una visión amplia de la administración de la infraestructura desde la
 línea de comandos o la gestión de la infraestructura como código está
 fuera de los objetivos de este curso, pero sí consideramos adecuado
 una breve introducción a estos conceptos.
+
 ## API REST
 Las API REST son un tipo de arquitecturas de desarrollo que utilizan
 el protocolo HTTP y son ampliamente utilizadas hoy en día en Internet
@@ -80,6 +81,7 @@ OpenStack es un proyecto modular formado por diferentes componentes
 independientes que ofrecen a los usuarios y al resto de componentes de
 OpenStack una API REST con la cual interactuar. Los principales
 componentes de OpenStack utilizados en este curso son:
+
 |Nombre|Componente|Función|
 |......|..........|.......|
 |Nova|OpenStack Compute|Gestión de las instancias|
