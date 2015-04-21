@@ -24,7 +24,7 @@ Instala el cliente *nova*, usa el fichero de credenciales para autentificarte en
 
 Instala el cliente *neutron* y crea el escenario de red que vimos en la tema anterior.
 
-![red](img/red3.png)
+![red](http://iesgn.github.io/cloud2/curso/u4/img/red3.png)
 
 1. Crea una nueva red y una subred asociada.
 2. Crea un router conectado a la red exterior.
