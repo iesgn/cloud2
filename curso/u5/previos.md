@@ -8,10 +8,10 @@ menu:
 Hasta ahora hemos utilizado un entorno web para gestionar nuestra
 infraestructura ya que es más cómodo al principio para comprender
 conceptos y es más adecuado en un curso como éste de iniciación a la
-nube de infraestructura, pero en muchas ocasiones es más adecuado
-utilizar la línea de comandos o incluso programar con un lenguaje de
-alto nivel la gestión de la infraestructura, por ejemplo cuando
-tenemos que realizar tareas repetitivas o automáticas.
+nube de infraestructura, pero en situaciones más reales es muy habitual utilizar
+la línea de comandos o incluso programar con un lenguaje de alto nivel la
+gestión de la infraestructura, principalmente cuando tenemos que realizar tareas
+repetitivas o automáticas.
 Una visión amplia de la administración de la infraestructura desde la
 línea de comandos o la gestión de la infraestructura como código está
 fuera de los objetivos de este curso, pero sí consideramos adecuado
@@ -38,11 +38,10 @@ cada vez se utiliza más JSON.
 ### Ejemplo de API REST
 <a href="http://openweathermap.org/">OpenWeatherMap</a> es un sitio
 web que ofrece una API REST pública sobre información meteorológica
-muy sencilla de utilizar.
-Para obtener la información meteorológica actual de la ciudad de
-Málaga basta hacer:
+muy sencilla de utilizar. Para obtener la información meteorológica actual de la
+ciudad de Málaga basta hacer:
 
-    curl "api.openweathermap.org/data/2.5/weather?q=Malaga,spain&units=metric"
+    wget -qO- "api.openweathermap.org/data/2.5/weather?q=Malaga,spain&units=metric"
     
 En la petición incluimos la URL de la API y utilizamos un método GET
 pasando como parámetros la ciudad y el formato de las unidades. Como
@@ -83,7 +82,7 @@ OpenStack una API REST con la cual interactuar. Los principales
 componentes de OpenStack utilizados en este curso son:
 
 |Nombre|Componente|Función|
-|......|..........|.......|
+|------|----------|-------|
 |Nova|OpenStack Compute|Gestión de las instancias|
 |Glance|OpenStack Image|Gestión de las imágenes|
 |Keystone|OpenStack Identity|Gestión de usuarios, permisos y proyectos|
@@ -95,9 +94,18 @@ componentes de OpenStack utilizados en este curso son:
 Cada componente de OpenStack tiene su propio cliente de línea de
 comandos con toda las funcionalidades, por lo que en principio
 tendríamos que instalar los correspondientes a los cinco componentes
-anteriores. Esto no va a ser necesario porque para los ejercicios que
-vamos a realizar solo necesitamos utilizar los clientes de nova y
+anteriores. Esto no va a ser necesario porque para el tipo de ejercicios que
+vamos a realizar, en nuestro caso sólo vamos a utilizar los clientes de nova y
 neutron.
+
+### Instalación fácil
+Si estás utilizando 
+
+    # apt-get install python-novaclient python-neutronclient
+
+Ya que
+
+## Endpoints
 
 Instalamos en el equipo el cliente de línea de comandos de OpenStack (con este método instalamos la última versión):
 
