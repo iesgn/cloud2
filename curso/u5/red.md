@@ -1,6 +1,6 @@
 ---
 layout: blog
-tittle: Creación de redes y routers con la aplicación neutron
+tittle: Gestión de redes con la aplicación neutron
 menu:
   - Unidades
 ---

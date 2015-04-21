@@ -1,6 +1,6 @@
 ---
 layout: blog
-tittle: Creación de una instancia con la aplicación nova
+tittle: Gestión de instancias con la aplicación nova
 menu:
   - Unidades
 ---
