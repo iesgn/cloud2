@@ -144,9 +144,6 @@ nuestro sistema:
 		# Desasociar un volumen de una instancia
 		$ nova volume-detach SERVIDOR_ID VOLUMEN_ID		
 
-		# Crear una instantánea de volumen
-		$ nova volume-snapshot-create [opciones] VOLUMEN_ID
-
 		# Crear un volumen a partir de una imagen
 		$ nova volume-create SIZE --image-id IMAGEN_ID --display-name NOMBRE
 
