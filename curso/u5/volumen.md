@@ -13,24 +13,24 @@ pasos:
 
 1. Vamos a crear un volumen de 1 GiB:
 
-    nova volume-create 1 --display-name disco1
-    +---------------------+--------------------------------------+
-    | Property            | Value                                |
-    +---------------------+--------------------------------------+
-    | attachments         | []                                   |
-    | availability_zone   | nova                                 |
-    | bootable            | false                                |
-    | created_at          | 2015-04-22T12:24:01.861077           |
-    | display_description | -                                    |
-    | display_name        | disco1                               |
-    | id                  | b4da8031-6748-49ee-a02a-47df9980d6b7 |
-    | metadata            | {}                                   |
-    | size                | 1                                    |
-    | snapshot_id         | -                                    |
-    | source_volid        | -                                    |
-    | status              | creating                             |
-    | volume_type         | None                                 |
-    +---------------------+--------------------------------------+
+    	nova volume-create 1 --display-name disco1
+	    +---------------------+--------------------------------------+
+	    | Property            | Value                                |
+	    +---------------------+--------------------------------------+
+	    | attachments         | []                                   |
+	    | availability_zone   | nova                                 |
+	    | bootable            | false                                |
+	    | created_at          | 2015-04-22T12:24:01.861077           |
+	    | display_description | -                                    |
+	    | display_name        | disco1                               |
+	    | id                  | b4da8031-6748-49ee-a02a-47df9980d6b7 |
+	    | metadata            | {}                                   |
+	    | size                | 1                                    |
+	    | snapshot_id         | -                                    |
+	    | source_volid        | -                                    |
+	    | status              | creating                             |
+	    | volume_type         | None                                 |
+	    +---------------------+--------------------------------------+
 
 Es curioso observar que desde la aplicación web sólo se permiten crear
 volúmenes mayores de 16 GiB, mientras que desde la línea de comandos
@@ -40,25 +40,25 @@ Cirrusflex, sino por la propia aplicación web.
 
 2. A continuación vamos a asociarlo a nuestra instancia:
 
-    nova volume-attach instancia_nova
-    b4da8031-6748-49ee-a02a-47df9980d6b7 /dev/vdb
-    +----------+--------------------------------------+
-    | Property | Value                                |
-    +----------+--------------------------------------+
-    | device   | /dev/vdb                             |
-    | id       | b4da8031-6748-49ee-a02a-47df9980d6b7 |
-    | serverId | b6fc4b18-8c24-4099-b97e-8d5e799982a8 |
-    | volumeId | b4da8031-6748-49ee-a02a-47df9980d6b7 |
-    +----------+--------------------------------------+
+    	nova volume-attach instancia_nova
+	    b4da8031-6748-49ee-a02a-47df9980d6b7 /dev/vdb
+	    +----------+--------------------------------------+
+	    | Property | Value                                |
+	    +----------+--------------------------------------+
+	    | device   | /dev/vdb                             |
+	    | id       | b4da8031-6748-49ee-a02a-47df9980d6b7 |
+	    | serverId | b6fc4b18-8c24-4099-b97e-8d5e799982a8 |
+	    | volumeId | b4da8031-6748-49ee-a02a-47df9980d6b7 |
+	    +----------+--------------------------------------+
 
 3. Comprobamos que el volumen aparece asociado a la instancia:
 
-    nova volume-list
-    +--------------------------------------+--------+--------------+------+-------------+--------------------------------------+
-    | ID                                   | Status | Display Name | Size | Volume Type | Attached to                          |
-    +--------------------------------------+--------+--------------+------+-------------+--------------------------------------+
-    | b4da8031-6748-49ee-a02a-47df9980d6b7 | in-use | disco1       | 1    | None        | b6fc4b18-8c24-4099-b97e-8d5e799982a8 |
-    +--------------------------------------+--------+--------------+------+-------------+--------------------------------------+
+    	nova volume-list
+	    +--------------------------------------+--------+--------------+------+-------------+--------------------------------------+
+	    | ID                                   | Status | Display Name | Size | Volume Type | Attached to                          |
+	    +--------------------------------------+--------+--------------+------+-------------+--------------------------------------+
+	    | b4da8031-6748-49ee-a02a-47df9980d6b7 | in-use | disco1       | 1    | None        | b6fc4b18-8c24-4099-b97e-8d5e799982a8 |
+	    +--------------------------------------+--------+--------------+------+-------------+--------------------------------------+
 
     Y podemos acceder a la instancia y comprobarlo con lsblk o fdisk.
     
@@ -67,8 +67,8 @@ Cirrusflex, sino por la propia aplicación web.
 1. Visualizamos la lista de imágenes y de sabores que tenemos en
 nuestro sistema: 
 
-    nova image-list
-    nova flavor-list
+    	nova image-list
+    	nova flavor-list
 
 2. Creamos un volumen *arrancable* que contenga la imagen:
 
