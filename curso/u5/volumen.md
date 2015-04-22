@@ -1,81 +1,76 @@
 ---
 layout: blog
-tittle: Gestión de instancias con la aplicación nova
+tittle: Gestión de volúmenes con la aplicación nova
 menu:
   - Unidades
 ---
 
 ### Asociación de un volumen a una instancia
 
-En esta demostración vamos a crear un volumen y lo vamos a asociar a la instancia que hemos creado en la demostración anterior. Veamos los pasos:
+En esta demostración vamos a crear un volumen y lo vamos a asociar a
+la instancia que hemos creado en la demostración anterior. Veamos los
+pasos: 
 
-1. Vamos a crear un volumen de 1 Gb.
+1. Vamos a crear un volumen de 1 GiB:
 
-		$ nova volume-create 1 --display-name disco1
-		+---------------------+--------------------------------------+
-		| Property            | Value                                |
-		+---------------------+--------------------------------------+
-		| attachments         | []                                   |
-		| availability_zone   | nova                                 |
-		| bootable            | false                                |
-		| created_at          | 2014-10-23T07:43:51.245111           |
-		| display_description | -                                    |
-		| display_name        | disco1                               |
-		| id                  | 99138e3f-8a21-4da3-a50c-4ff4f6cecf5c |
-		| metadata            | {}                                   |
-		| size                | 1                                    |
-		| snapshot_id         | -                                    |
-		| source_volid        | -                                    |
-		| status              | creating                             |
-		| volume_type         | None                                 |
-		+---------------------+--------------------------------------+
+    nova volume-create 1 --display-name disco1
+    +---------------------+--------------------------------------+
+    | Property            | Value                                |
+    +---------------------+--------------------------------------+
+    | attachments         | []                                   |
+    | availability_zone   | nova                                 |
+    | bootable            | false                                |
+    | created_at          | 2015-04-22T12:24:01.861077           |
+    | display_description | -                                    |
+    | display_name        | disco1                               |
+    | id                  | b4da8031-6748-49ee-a02a-47df9980d6b7 |
+    | metadata            | {}                                   |
+    | size                | 1                                    |
+    | snapshot_id         | -                                    |
+    | source_volid        | -                                    |
+    | status              | creating                             |
+    | volume_type         | None                                 |
+    +---------------------+--------------------------------------+
+
+Es curioso observar que desde la aplicación web sólo se permiten crear
+volúmenes mayores de 16 GiB, mientras que desde la línea de comandos
+podemos elegir cualquier tamaño mayor de 1 GiB, por tanto la
+restricción no viene impuesta por el sistema de volúmenes de
+Cirrusflex, sino por la propia aplicación web.
 
 2. A continuación vamos a asociarlo a nuestra instancia:
 
-		$ nova volume-attach instancia_nova 99138e3f-8a21-4da3-a50c-4ff4f6cecf5c /dev/vdb
-		+----------+--------------------------------------+
-		| Property | Value                                |
-		+----------+--------------------------------------+
-		| device   | /dev/vdb                             |
-		| id       | 99138e3f-8a21-4da3-a50c-4ff4f6cecf5c |
-		| serverId | 592d3bcf-a62e-4e0c-947f-64f09aa73ea4 |
-		| volumeId | 99138e3f-8a21-4da3-a50c-4ff4f6cecf5c |
-		+----------+--------------------------------------+
+    nova volume-attach instancia_nova
+    b4da8031-6748-49ee-a02a-47df9980d6b7 /dev/vdb
+    +----------+--------------------------------------+
+    | Property | Value                                |
+    +----------+--------------------------------------+
+    | device   | /dev/vdb                             |
+    | id       | b4da8031-6748-49ee-a02a-47df9980d6b7 |
+    | serverId | b6fc4b18-8c24-4099-b97e-8d5e799982a8 |
+    | volumeId | b4da8031-6748-49ee-a02a-47df9980d6b7 |
+    +----------+--------------------------------------+
 
-3. Accedemos a la instancia y comprobamos que el disco se ha conectado:
+3. Comprobamos que el volumen aparece asociado a la instancia:
 
-		ubuntu@instancia-nova:~$ sudo fdisk -l
-		sudo: unable to resolve host instancia-nova		
+    nova volume-list
+    +--------------------------------------+--------+--------------+------+-------------+--------------------------------------+
+    | ID                                   | Status | Display Name | Size | Volume Type | Attached to                          |
+    +--------------------------------------+--------+--------------+------+-------------+--------------------------------------+
+    | b4da8031-6748-49ee-a02a-47df9980d6b7 | in-use | disco1       | 1    | None        | b6fc4b18-8c24-4099-b97e-8d5e799982a8 |
+    +--------------------------------------+--------+--------------+------+-------------+--------------------------------------+
 
-		Disk /dev/vda: 17.2 GB, 17179869184 bytes
-		4 heads, 32 sectors/track, 262144 cylinders, total 33554432 sectors
-		Units = sectors of 1 * 512 = 512 bytes
-		Sector size (logical/physical): 512 bytes / 512 bytes
-		I/O size (minimum/optimal): 512 bytes / 512 bytes
-		Disk identifier: 0x00013818		
+    Y podemos acceder a la instancia y comprobarlo con lsblk o fdisk.
+    
+### Creación de una instancia con el disco raíz sobre un volumen.
 
-		   Device Boot      Start         End      Blocks   Id  System
-		/dev/vda1   *        2048    33554431    16776192   83  Linux		
+1. Visualizamos la lista de imágenes y de sabores que tenemos en
+nuestro sistema: 
 
-		Disk /dev/vdb: 1073 MB, 1073741824 bytes
-		16 heads, 63 sectors/track, 2080 cylinders, total 2097152 sectors
-		Units = sectors of 1 * 512 = 512 bytes
-		Sector size (logical/physical): 512 bytes / 512 bytes
-		I/O size (minimum/optimal): 512 bytes / 512 bytes
-		Disk identifier: 0x00000000		
+    nova image-list
+    nova flavor-list
 
-		Disk /dev/vdb doesn't contain a valid partition table
-		ubuntu@instancia-nova:~$ 
-
-### Creación de una instancia ejecutada sobre volumen
-
-1. Visualizamos la lista de imágenes y de sabores que tenemos en nuestro sistema:
-
-		$ nova image-list
-
-		$ nova flavor-list
-
-2. Creamos un volumen *bootable* desde una imagen:
+2. Creamos un volumen *arrancable* que contenga la imagen:
 
 		$ nova volume-create 8 --image-id 44288012-b805-455f-a21f-74ab36c46362 --display-name mi_disco
 		+---------------------+--------------------------------------+
