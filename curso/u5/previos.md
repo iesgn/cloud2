@@ -26,6 +26,7 @@ también se están convirtiendo en elementos cada vez más comunes en las
 arquitecturas de sistemas ya que facilitan la programación de tareas y
 la conexión sencilla entre diferentes aplicaciones.
 Las principales características de REST son:
+
 * Se define una o varias URIs para la comunicación entre el cliente y
 el servidor, que proporciona una sintaxis universal para identificar
 los recursos
