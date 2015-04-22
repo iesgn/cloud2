@@ -40,7 +40,7 @@ Cirrusflex, sino por la propia aplicación web.
 
 2. A continuación vamos a asociarlo a nuestra instancia:
 
-    	nova volume-attach instancia_nova b4da8031-6748-49ee-a02a-47df9980d6b7 /dev/vdb
+		nova volume-attach instancia_nova b4da8031-6748-49ee-a02a-47df9980d6b7 /dev/vdb
 	    +----------+--------------------------------------+
 	    | Property | Value                                |
 	    +----------+--------------------------------------+
@@ -52,7 +52,7 @@ Cirrusflex, sino por la propia aplicación web.
 
 3. Comprobamos que el volumen aparece asociado a la instancia:
 
-    	nova volume-list
+		nova volume-list
 	    +--------------------------------------+--------+--------------+------+-------------+--------------------------------------+
 	    | ID                                   | Status | Display Name | Size | Volume Type | Attached to                          |
 	    +--------------------------------------+--------+--------------+------+-------------+--------------------------------------+
