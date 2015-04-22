@@ -96,7 +96,9 @@ nuestro sistema:
 
 3. Creamos una nueva instancia
 
-		$ nova boot --flavor ssd.XXXS --boot-volume 45f71394-2699-4c86-80da-cf8490f5a6c5 --security-groups default --key-name mi_clave --nic net-id=d5d686b5-32fb-4e45-8809-98df3ee5ef3e instancia_nova
+		$ nova boot --flavor ssd.XXXS --boot-volume 45f71394-2699-4c86-80da-cf8490f5a6c5 /
+		--security-groups default --key-name mi_clave /
+		--nic net-id=d5d686b5-32fb-4e45-8809-98df3ee5ef3e instancia_nova
 		+--------------------------------------+----------------------------------------------------------+
 		| Property                             | Value                                                    |
 		+--------------------------------------+----------------------------------------------------------+
