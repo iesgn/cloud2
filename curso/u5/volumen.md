@@ -40,8 +40,7 @@ Cirrusflex, sino por la propia aplicación web.
 
 2. A continuación vamos a asociarlo a nuestra instancia:
 
-    	nova volume-attach instancia_nova
-	    b4da8031-6748-49ee-a02a-47df9980d6b7 /dev/vdb
+    	nova volume-attach instancia_nova b4da8031-6748-49ee-a02a-47df9980d6b7 /dev/vdb
 	    +----------+--------------------------------------+
 	    | Property | Value                                |
 	    +----------+--------------------------------------+
