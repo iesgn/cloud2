@@ -67,8 +67,8 @@ Cirrusflex, sino por la propia aplicación web.
 1. Visualizamos la lista de imágenes y de sabores que tenemos en
 nuestro sistema: 
 
-    	nova image-list
-    	nova flavor-list
+		nova image-list
+		nova flavor-list
 
 2. Creamos un volumen *arrancable* que contenga la imagen:
 
