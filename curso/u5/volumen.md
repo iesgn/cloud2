@@ -112,42 +112,42 @@ contener un sistema operativo:
       
 3. Creamos una nueva instancia con este volumen
 
-    nova boot --flavor ssd.XXXS \
-    --boot-volume 45f71394-2699-4c86-80da-cf8490f5a6c5 \
-    --security-groups default \
-    --key-name mi_clave \
-    --nic net-id=d5d686b5-32fb-4e45-8809-98df3ee5ef3e \
-    instancia_nova
-    +--------------------------------------+----------------------------------------------------------+
-    | Property                             | Value                                                    |
-    +--------------------------------------+----------------------------------------------------------+
-    | OS-DCF:diskConfig                    | MANUAL                                                   |
-    | OS-EXT-AZ:availability_zone          | nova                                                     |
-    | OS-EXT-STS:power_state               | 0                                                        |
-    | OS-EXT-STS:task_state                | spawning                                                 |
-    | OS-EXT-STS:vm_state                  | building                                                 |
-    | OS-SRV-USG:launched_at               | -                                                        |
-    | OS-SRV-USG:terminated_at             | -                                                        |
-    | accessIPv4                           |                                                          |
-    | accessIPv6                           |                                                          |
-    | adminPass                            | 2zdcUn4oCCKJ                                             |
-    | config_drive                         |                                                          |
-    | created                              | 2015-04-20T10:45:46Z                                     |
-    | flavor                               | ssd.XXXS (20)                                            |
-    | hostId                               | 962db8c7b201499f39eeea5cb2c88d73cae9931aa8703e1d3e2c8027 |
-    | id                                   | c2b2c650-2f83-4c3e-b964-ebb916bf7e88                     |
-    | image                                | Attempt to boot from volume - no image supplied          |
-    | key_name                             | mi_clave                                                 |
-    | metadata                             | {}                                                       |
-    | name                                 | instancia_nova                                           |
-    | os-extended-volumes:volumes_attached | [{"id": "45f71394-2699-4c86-80da-cf8490f5a6c5"}]         |
-    | progress                             | 0                                                        |
-    | security_groups                      | default                                                  |
-    | status                               | BUILD                                                    |
-    | tenant_id                            | 44f5cb63ad34481aab5cc9c2809e4a76                         |
-    | updated                              | 2015-04-20T10:45:49Z                                     |
-    | user_id                              | 7a15970a225d41babb750da8a6f5e8d2                         |
-    +--------------------------------------+----------------------------------------------------------+
+        nova boot --flavor ssd.XXXS \
+		--boot-volume 45f71394-2699-4c86-80da-cf8490f5a6c5 \
+		--security-groups default \
+		--key-name mi_clave \
+		--nic net-id=d5d686b5-32fb-4e45-8809-98df3ee5ef3e \
+		instancia_nova
+		+--------------------------------------+----------------------------------------------------------+
+		| Property                             | Value                                                    |
+		+--------------------------------------+----------------------------------------------------------+
+		| OS-DCF:diskConfig                    | MANUAL                                                   |
+		| OS-EXT-AZ:availability_zone          | nova                                                     |
+		| OS-EXT-STS:power_state               | 0                                                        |
+		| OS-EXT-STS:task_state                | spawning                                                 |
+		| OS-EXT-STS:vm_state                  | building                                                 |
+		| OS-SRV-USG:launched_at               | -                                                        |
+		| OS-SRV-USG:terminated_at             | -                                                        |
+		| accessIPv4                           |                                                          |
+		| accessIPv6                           |                                                          |
+		| adminPass                            | 2zdcUn4oCCKJ                                             |
+		| config_drive                         |                                                          |
+		| created                              | 2015-04-20T10:45:46Z                                     |
+		| flavor                               | ssd.XXXS (20)                                            |
+		| hostId                               | 962db8c7b201499f39eeea5cb2c88d73cae9931aa8703e1d3e2c8027 |
+		| id                                   | c2b2c650-2f83-4c3e-b964-ebb916bf7e88                     |
+		| image                                | Attempt to boot from volume - no image supplied          |
+		| key_name                             | mi_clave                                                 |
+		| metadata                             | {}                                                       |
+		| name                                 | instancia_nova                                           |
+		| os-extended-volumes:volumes_attached | [{"id": "45f71394-2699-4c86-80da-cf8490f5a6c5"}]         |
+		| progress                             | 0                                                        |
+		| security_groups                      | default                                                  |
+		| status                               | BUILD                                                    |
+		| tenant_id                            | 44f5cb63ad34481aab5cc9c2809e4a76                         |
+		| updated                              | 2015-04-20T10:45:49Z                                     |
+		| user_id                              | 7a15970a225d41babb750da8a6f5e8d2                         |
+		+--------------------------------------+----------------------------------------------------------+
 
 ### Resumen de comandos
 
