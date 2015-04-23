@@ -53,14 +53,14 @@ pasos:
 
 3. Comprobamos que el volumen aparece asociado a la instancia:
 
-    nova volume-list
-    +--------------------------------------+--------+--------------+------+-------------+--------------------------------------+
-    | ID                                   | Status | Display Name | Size | Volume Type | Attached to                          |
-    +--------------------------------------+--------+--------------+------+-------------+--------------------------------------+
-    | b4da8031-6748-49ee-a02a-47df9980d6b7 | in-use | disco1       | 1    | None        | b6fc4b18-8c24-4099-b97e-8d5e799982a8 |
-    +--------------------------------------+--------+--------------+------+-------------+--------------------------------------+
+        nova volume-list
+		+--------------------------------------+--------+--------------+------+-------------+--------------------------------------+
+		| ID                                   | Status | Display Name | Size | Volume Type | Attached to                          |
+		+--------------------------------------+--------+--------------+------+-------------+--------------------------------------+
+		| b4da8031-6748-49ee-a02a-47df9980d6b7 | in-use | disco1       | 1    | None        | b6fc4b18-8c24-4099-b97e-8d5e799982a8 |
+		+--------------------------------------+--------+--------------+------+-------------+--------------------------------------+
 
-Y podemos acceder a la instancia y comprobarlo con lsblk o fdisk.
+    Y podemos acceder a la instancia y comprobarlo con lsblk o fdisk.
     
 ### Creación de una instancia con el disco raíz sobre un volumen.
 
@@ -72,43 +72,39 @@ nuestro sistema:
 
 2. Creamos un volumen *arrancable* de 8 GiB que contenga la imagen:
 
-    nova volume-create 8 \
-    --image-id 44288012-b805-455f-a21f-74ab36c46362 \
-    --display-name mi_disco
-    +---------------------+--------------------------------------+
-    | Property            | Value                                |
-    +---------------------+--------------------------------------+
-    | attachments         | []                                   |
-    | availability_zone   | nova                                 |
-    | bootable            | false                                |
-    | created_at          | 2015-04-20T10:40:57.964980           |
-    | display_description | -                                    |
-    | display_name        | mi_disco                             |
-    | id                  | 45f71394-2699-4c86-80da-cf8490f5a6c5 |
-    | image_id            | 44288012-b805-455f-a21f-74ab36c46362 |
-    | metadata            | {}                                   |
-    | size                | 8                                    |
-    | snapshot_id         | -                                    |
-    | source_volid        | -                                    |
-    | status              | creating                             |
-    | volume_type         | None                                 |
-    +---------------------+--------------------------------------+
+        nova volume-create 8 \
+		--image-id 44288012-b805-455f-a21f-74ab36c46362 \
+		--display-name mi_disco
+		+---------------------+--------------------------------------+
+		| Property            | Value                                |
+		+---------------------+--------------------------------------+
+		| attachments         | []                                   |
+		| availability_zone   | nova                                 |
+		| bootable            | false                                |
+		| created_at          | 2015-04-20T10:40:57.964980           |
+		| display_description | -                                    |
+		| display_name        | mi_disco                             |
+		| id                  | 45f71394-2699-4c86-80da-cf8490f5a6c5 |
+		| image_id            | 44288012-b805-455f-a21f-74ab36c46362 |
+		| metadata            | {}                                   |
+		| size                | 8                                    |
+		| snapshot_id         | -                                    |
+		| source_volid        | -                                    |
+		| status              | creating                             |
+		| volume_type         | None                                 |
+		+---------------------+--------------------------------------+
 
-Aunque inicialmente al crearse el volumen nos muestra el parámetro
-*booteable* con el valor *false*, una vez se ha terminado de crear
-podemos comprobar que OpenStack reconoce el volumen como arrancable al
-contener un sistema operativo:
+    Aunque inicialmente al crearse el volumen nos muestra el parámetro *booteable* con el valor *false*, una vez se ha terminado de crear podemos comprobar que OpenStack reconoce el volumen como arrancable al contener un sistema operativo:
 
-    nova volume-show 45f71394-2699-4c86-80da-cf8490f5a6c5
-
-    +-----------------------+----------------------------------------+
-    | Property              | Value                                  |
-    +-----------------------+----------------------------------------+
-    | attachments           | []                                     |
-    | availability_zone     | nova                                   |
-    | bootable              | true                                   |
-    ...
-    +-----------------------+----------------------------------------+
+        nova volume-show 45f71394-2699-4c86-80da-cf8490f5a6c5
+		+-----------------------+----------------------------------------+
+		| Property              | Value                                  |
+		+-----------------------+----------------------------------------+
+		| attachments           | []                                     |
+		| availability_zone     | nova                                   |
+		| bootable              | true                                   |
+		...
+		+-----------------------+----------------------------------------+
       
 3. Creamos una nueva instancia con este volumen
 
