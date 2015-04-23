@@ -312,4 +312,4 @@ asignamos a la instancia para poder acceder a ella desde el exterior:
 
 Y la instrucción *más importante de todas*:
 
-    nova --help
+    nova help
