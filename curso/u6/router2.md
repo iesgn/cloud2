@@ -70,3 +70,12 @@ La conexión del router (mi_router) al puerto que acabamos de crear **no se pued
 	neutron router-interface-add mi_router port=5138b3e0-6a88-4f79-8804-01d7c50c020f
 
 En la instrucción anterior hemos utilizado el id del puerto que acabamos de crear.
+
+Si visualizamos la lista de puerto desde cirrusflex:
+
+![red](img/red10.png)
+
+Podemos ver:
+
+* Que la red que acabamos de crear tiene un puerto conectado a una interfaz del router (192.168.0.1)
+* Que la otra red está conectada a dos routers (10.0.15.65, al router original del proyecto y a 10.0.15.69 a nuestro nuevo router.)
