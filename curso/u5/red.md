@@ -94,6 +94,9 @@ red externa y con la subred anteriormente creada:
 
         neutron router-interface-add mi_router mi_subred
 
+    Para listar los puertos:
+
+    	neutron port-list
 
 4. Creamos una nueva instancia conectada a la nueva red y le asignamos
 una ip pública.
