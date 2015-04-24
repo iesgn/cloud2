@@ -73,7 +73,7 @@ En la instrucción anterior hemos utilizado el id del puerto que acabamos de cre
 
 Si visualizamos la lista de puerto desde cirrusflex:
 
-![red](img/red10.png)
+![red](img/net10.png)
 
 Podemos ver:
 
