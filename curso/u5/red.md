@@ -52,7 +52,7 @@ proyecto:
 		| tenant_id      | 44f5cb63ad34481aab5cc9c2809e4a76     |
 		+----------------+--------------------------------------+
 
-        neutron subnet-create mi_red 192.168.0.0/24
+        neutron subnet-create mi_red 192.168.0.0/24 --name mi_subred
 		Created a new subnet:
 		+------------------+--------------------------------------------------+
 		| Field            | Value                                            |
@@ -86,13 +86,14 @@ red externa y con la subred anteriormente creada:
 		| tenant_id             | 44f5cb63ad34481aab5cc9c2809e4a76     |
 		+-----------------------+--------------------------------------+
 
+	Coenctamos el router a la red externa:
+
         neutron router-gateway-set mi_router ext-net
-		Set gateway for router mi_router
+		
+    Conectamos el router a la red:
 
-        neutron router-interface-add mi_router e0e4b108-ac13-4827-86fd-a8ea325057cc
-		Added interface f7fa31da-c95e-4336-a3c7-e95ea5a13f6f to router mi_router.
+        neutron router-interface-add mi_router mi_subred
 
-    Si no supiéramos el identificador de la nueva subred, podemos obtenerlo con la instrucción *neutron subnet-list*.
 
 4. Creamos una nueva instancia conectada a la nueva red y le asignamos
 una ip pública.

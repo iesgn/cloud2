@@ -17,12 +17,22 @@ Tenemos que tener en cuenta los siguientes aspectos:
 
 Vamos a ello:
 
+### Creación de la red y el router
 
-1. En el apartado **Administrador de redes** hemos creado una red nueva con un subred con direccionamiento 192.168.0.0/24 y un nuevo router. Al crear el router no he indicado la **Red externa**, por lo que no estará conectada a esa red.
+En el apartado **Administrador de redes** hemos creado una red nueva con un subred con direccionamiento 192.168.0.0/24 y un nuevo router. Al crear el router no he indicado la **Red externa**, por lo que no estará conectada a esa red. La red la hemos conectado al nuevo router.
 
 	![red](img/net8_1.png)
 
-2. Vamos a conectar el nuevo router a nuestra primera red, para ello vamos a crear un nuevo puerto en la subred.
+Utilizando *neutron* sería:
+
+		neutron net-create mi_red
+		neutron subnet-create mi_red 192.168.0.0/24
+		neutron router-create mi_router
+		neutron router-interface-add mi_router <ID_SUBRED>
+
+### Añadir una nueva interfaz al router
+
+Vamos a conectar el nuevo router a nuestra primera red, para ello vamos a crear un nuevo puerto en la subred.
 
 	![red](img/net9.png)
 
