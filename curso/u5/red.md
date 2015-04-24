@@ -96,7 +96,7 @@ red externa y con la subred anteriormente creada:
 
     Para listar los puertos:
 
-    	neutron port-list
+		neutron port-list
 
 4. Creamos una nueva instancia conectada a la nueva red y le asignamos
 una ip pública.
