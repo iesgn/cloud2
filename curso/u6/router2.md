@@ -23,7 +23,7 @@ En el apartado **Administrador de redes** hemos creado una red nueva con un subr
 
 ![red](img/net8_1.png)
 
-Utilizando *neutron* sería:
+	Utilizando *neutron* sería:
 
 		neutron net-create mi_red
 		neutron subnet-create mi_subred 192.168.0.0/24
@@ -44,7 +44,7 @@ Al crear un puerto tenemos que indicar los siguientes datos:
 
 Actualmente tenemos un puerto que no está conectado a ningún dispositivo.
 
-Utilizando *neutron* tendráimos que ejecutar:
+	Utilizando *neutron* tendráimos que ejecutar:
 
 		neutron port-create 00000061-net --fixed-ip ip_address=10.0.15.69
 		Created a new port:
@@ -65,7 +65,7 @@ Utilizando *neutron* tendráimos que ejecutar:
 		| tenant_id             | 44f5cb63ad34481aab5cc9c2809e4a76                                                  |
 		+-----------------------+-----------------------------------------------------------------------------------+
 
-La conexión del router (mi_router) al puerto que acabamos de crear **no se puede realizar desde la aplicación web Cirrusflex**, por lo tanto la única forma de hacerlo es a través del cliente *neutron*:
+	La conexión del router (mi_router) al puerto que acabamos de crear **no se puede realizar desde la aplicación web Cirrusflex**, por lo tanto la única forma de hacerlo es a través del cliente *neutron*:
 
 		neutron router-interface-add mi_router port=5138b3e0-6a88-4f79-8804-01d7c50c020f
 
