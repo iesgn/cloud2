@@ -23,12 +23,12 @@ En el apartado **Administrador de redes** hemos creado una red nueva con un subr
 
 ![red](img/net8_1.png)
 
-	Utilizando *neutron* sería:
+Utilizando *neutron* sería:
 
-		neutron net-create mi_red
-		neutron subnet-create mi_subred 192.168.0.0/24
-		neutron router-create mi_router
-		neutron router-interface-add mi_router mi_subred
+	neutron net-create mi_red
+	neutron subnet-create mi_subred 192.168.0.0/24
+	neutron router-create mi_router
+	neutron router-interface-add mi_router mi_subred
 
 ### Añadir una nueva interfaz al router
 
@@ -44,29 +44,29 @@ Al crear un puerto tenemos que indicar los siguientes datos:
 
 Actualmente tenemos un puerto que no está conectado a ningún dispositivo.
 
-	Utilizando *neutron* tendráimos que ejecutar:
+Utilizando *neutron* tendráimos que ejecutar:
 
-		neutron port-create 00000061-net --fixed-ip ip_address=10.0.15.69
-		Created a new port:
-		+-----------------------+-----------------------------------------------------------------------------------+
-		| Field                 | Value                                                                             |
-		+-----------------------+-----------------------------------------------------------------------------------+
-		| admin_state_up        | True                                                                              |
-		| allowed_address_pairs |                                                                                   |
-		| device_id             |                                                                                   |
-		| device_owner          |                                                                                   |
-		| fixed_ips             | {"subnet_id": "4751dc7e-6b54-4284-ba02-6c1a44deb076", "ip_address": "10.0.15.69"} |
-		| id                    | 5138b3e0-6a88-4f79-8804-01d7c50c020f                                              |
-		| mac_address           | fa:16:3e:2a:92:99                                                                 |
-		| name                  |                                                                                   |
-		| network_id            | d5d686b5-32fb-4e45-8809-98df3ee5ef3e                                              |
-		| security_groups       | 6b8e211b-51d3-482c-9865-6b6e0bb3c94b                                              |
-		| status                | DOWN                                                                              |
-		| tenant_id             | 44f5cb63ad34481aab5cc9c2809e4a76                                                  |
-		+-----------------------+-----------------------------------------------------------------------------------+
+	neutron port-create 00000061-net --fixed-ip ip_address=10.0.15.69
+	Created a new port:
+	+-----------------------+-----------------------------------------------------------------------------------+
+	| Field                 | Value                                                                             |
+	+-----------------------+-----------------------------------------------------------------------------------+
+	| admin_state_up        | True                                                                              |
+	| allowed_address_pairs |                                                                                   |
+	| device_id             |                                                                                   |
+	| device_owner          |                                                                                   |
+	| fixed_ips             | {"subnet_id": "4751dc7e-6b54-4284-ba02-6c1a44deb076", "ip_address": "10.0.15.69"} |
+	| id                    | 5138b3e0-6a88-4f79-8804-01d7c50c020f                                              |
+	| mac_address           | fa:16:3e:2a:92:99                                                                 |
+	| name                  |                                                                                   |
+	| network_id            | d5d686b5-32fb-4e45-8809-98df3ee5ef3e                                              |
+	| security_groups       | 6b8e211b-51d3-482c-9865-6b6e0bb3c94b                                              |
+	| status                | DOWN                                                                              |
+	| tenant_id             | 44f5cb63ad34481aab5cc9c2809e4a76                                                  |
+	+-----------------------+-----------------------------------------------------------------------------------+
 
-	La conexión del router (mi_router) al puerto que acabamos de crear **no se puede realizar desde la aplicación web Cirrusflex**, por lo tanto la única forma de hacerlo es a través del cliente *neutron*:
+La conexión del router (mi_router) al puerto que acabamos de crear **no se puede realizar desde la aplicación web Cirrusflex**, por lo tanto la única forma de hacerlo es a través del cliente *neutron*:
 
-		neutron router-interface-add mi_router port=5138b3e0-6a88-4f79-8804-01d7c50c020f
+	neutron router-interface-add mi_router port=5138b3e0-6a88-4f79-8804-01d7c50c020f
 
 En la instrucción anterior hemos utilizado el id del puerto que acabamos de crear.
