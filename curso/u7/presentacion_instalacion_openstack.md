@@ -32,3 +32,14 @@ tema: white
 
 </section>
 
+<section>
+  <h2>Instalación manual</h2>
+  <ul>
+    <li>Elegir una distribución Linux que incluya en sus repositorios los páquetes de OpenStack:</li>
+      <ul>
+        <li>Debian, Ubuntu, openSUSE, Red Hat, Centos, Fedora</li>
+      </ul>
+    <li>Realiza una instalación manual siguiendo la <a href="http://docs.openstack.org/">documentación oficial</a></li>
+  </ul>
+
+</section>
