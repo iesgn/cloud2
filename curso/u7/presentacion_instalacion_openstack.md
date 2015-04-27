@@ -62,8 +62,9 @@ tema: white
       <ul>
         <li>Mirantis: <a href="https://software.mirantis.com/openstack-download-form/">Fuel</a>, the open source OpenStack control plane, to make it easier to deploy and manage your cloud.</li>
         <li><a href="http://www.rackspace.com/cloud/private/openstack/software/">Rackspace Private Cloud Version 10</a></li>
+        <li><a href="http://www.ubuntu.com/download/cloud/install-ubuntu-openstack">Ubuntu OpenStack</a>
       </ul>
-    <li>Desventaja: Se pierden los detalles de la instalación, por lo que se puede perder el control de lo que se está haciendo.</li>
+    
   </ul>
 </section>
 
