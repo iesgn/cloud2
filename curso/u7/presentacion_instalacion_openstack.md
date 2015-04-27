@@ -1,10 +1,10 @@
 ---
 layout: presentacion
-title: Implantación de Openstack
+title: Introducción a la implantación de Openstack
 tema: white
 ---
 <section>
-  <h1>Implantación de OpenStack</h1>
+  <h1>Introducción a la implantación de OpenStack</h1>
   <p>
     <small><a href="http://albertomolina.wordpress.com">Alberto Molina
 	Coballes</a> / <a
@@ -23,17 +23,12 @@ tema: white
   </p>
 </section>
 <section>
-  <h2>¿Objetivo o herramienta?</h2>
+  <h2>Por dónde empezar...</h2>
   <ul>
-    <li>La creación, despliegue y utilización de aplicaciones nativas de cloud
-    debe ser en sí mismo un objetivo para las enseñanzas profesionales de
-    informática.</li>
-    <li>El uso, instalación, configuración y administración de plataformas de
-    gestión de cloud es cada vez más importante en los perfiles profesionales de
-    TIC</li>
-    <li>Las tecnologías de cloud computing, particularmente IaaS, proporcionan
-    un banco de pruebas excepcional para aprendizaje basado en la práctica, tal 
-    como debe ser la formación profesional</li>
+    <li>Si hemos decidio la implantación de un cloud privado IaaS con OpenStack tenemos que decidir cómo vamos a realizar la instalación y configuración del mismo.</li>
+    <li>Tenemos la posibilidad de instalar un entorno de prueba (no para su explotación) en un equipo para tener una primera experiencia de cómo funciona OpenStack</li>
+    <li>La administración y gestión de Openstack es un proceso "complejo".
   </ul>
+
 </section>
 
