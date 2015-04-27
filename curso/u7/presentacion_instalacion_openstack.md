@@ -41,3 +41,17 @@ tema: white
     <li>Realiza una instalación manual siguiendo la <a href="http://docs.openstack.org/">documentación oficial</a></li>
   </ul>
 </section>
+
+<section>
+  <h2>Instalación automática</h2>
+  <ul>
+    <li>Existen recetas elaboradas con las herramientas de automatización de la configuración más populares:</li>
+      <ul>
+        <li><a href="http://docs.opscode.com/openstack.html">Chef</a> - <a href="https://github.com/stackforge/openstack-chef-repo">Repositorio GitHub</a></li>
+        <li><a href="http://github.com/puppetlabs/puppetlabs-openstack">Puppet</a> - Ejemplo: <a href="https://www.rdoproject.org/Main_Page">RDO</a> </li>
+        <li>Ansible: Hay muchas recetas desarrolladas. Por ejemplo la nuestra: <a href="https://github.com/iesgn/openstack-debian-ansible">https://github.com/iesgn/openstack-debian-ansible</a></li>
+      </ul>
+    <li></li>
+  </ul>
+</section>
+
