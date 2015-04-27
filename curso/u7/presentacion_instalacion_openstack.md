@@ -68,3 +68,24 @@ tema: white
   </ul>
 </section>
 
+<section>
+  <h2>Instalación de un entorno de pruebas</h2>
+  <ul>
+    <li><a href="http://docs.openstack.org/developer/devstack/">Devstack: es un conjunto de script bash que nos permiten instalar OpenStack de forma automática. </li>
+    <li>Es el entorno que usan los desarrolladores de OpenStack para tener una instalación limpia</li>
+    <li>No sirve para entornos en producción</li>
+    <li>Tutorial: <a href="http://www.josedomingo.org/pledin/2014/11/instalar-open-stack-juno-con-devstack/">Instalar Open Stack Juno con devstack</a></li>
+    
+  </ul>
+</section>
+
+
+
+<section>
+  <h2>Para seguir investigando</h2>
+  <ul>
+    <li>Curso: Fundamentos de Cloud Computing con OpenStack y OpenShift (Cádiz Abril -mayo 2014)</li>
+  </ul>
+  <center><a href="http://iesgn.github.io/cloud/">http://iesgn.github.io/cloud/</a></center>
+</section>
+
