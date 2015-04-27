@@ -27,7 +27,7 @@ tema: white
   <ul>
     <li>Si hemos decidio la implantación de un cloud privado IaaS con OpenStack tenemos que decidir cómo vamos a realizar la instalación y configuración del mismo.</li>
     <li>Tenemos la posibilidad de instalar un entorno de prueba (no para su explotación) en un equipo para tener una primera experiencia de cómo funciona OpenStack</li>
-    <li>La administración y gestión de Openstack es un proceso "complejo".
+    <li>La administración y gestión de Openstack es un proceso "complejo".</li>
   </ul>
 </section>
 
@@ -51,7 +51,7 @@ tema: white
         <li><a href="http://github.com/puppetlabs/puppetlabs-openstack">Puppet</a> - Ejemplo: <a href="https://www.rdoproject.org/Main_Page">RDO</a> </li>
         <li>Ansible: Hay muchas recetas desarrolladas. Por ejemplo la nuestra: <a href="https://github.com/iesgn/openstack-debian-ansible">https://github.com/iesgn/openstack-debian-ansible</a></li>
       </ul>
-    <li></li>
+    <li>Desventaja: Se pierden los detalles de la instalación, por lo que se puede perder el control de lo que se está haciendo.</li>
   </ul>
 </section>
 
