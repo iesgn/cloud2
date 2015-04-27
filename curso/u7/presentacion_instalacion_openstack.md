@@ -29,7 +29,6 @@ tema: white
     <li>Tenemos la posibilidad de instalar un entorno de prueba (no para su explotación) en un equipo para tener una primera experiencia de cómo funciona OpenStack</li>
     <li>La administración y gestión de Openstack es un proceso "complejo".
   </ul>
-
 </section>
 
 <section>
@@ -41,5 +40,4 @@ tema: white
       </ul>
     <li>Realiza una instalación manual siguiendo la <a href="http://docs.openstack.org/">documentación oficial</a></li>
   </ul>
-
 </section>
