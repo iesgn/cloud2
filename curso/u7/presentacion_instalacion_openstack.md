@@ -55,3 +55,15 @@ tema: white
   </ul>
 </section>
 
+<section>
+  <h2>Instalación usando herramientas específicas</h2>
+  <ul>
+    <li>Existen muchas <a href="https://www.openstack.org/marketplace/distros/">distribuciones de OpenStack</a>, muchas de ellas te ofrecen herramientas específicas para realizar una implantación, por ejemplo:</li>
+      <ul>
+        <li>Mirantis: <a href="https://software.mirantis.com/openstack-download-form/">Fuel</a>, the open source OpenStack control plane, to make it easier to deploy and manage your cloud.</li>
+        <li><a href="http://www.rackspace.com/cloud/private/openstack/software/">Rackspace Private Cloud Version 10</a></li>
+      </ul>
+    <li>Desventaja: Se pierden los detalles de la instalación, por lo que se puede perder el control de lo que se está haciendo.</li>
+  </ul>
+</section>
+
