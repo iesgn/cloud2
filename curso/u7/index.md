@@ -45,7 +45,7 @@ realiza un documento o un vídeo donde describes los pasos para realizar los sig
 	* Crea una red interna con direccionamiento 192.168.10.0/24.
 	* Crea un router que conecta la red interna con la red pública.
 	* Crea un par de claves ssh.
-	* Crea una instancia, apartir del snapshot que hiciste en el ejercicio 1, a la que podamos acceder usando la clave ssh anteriormente creada y conectada a la red que has creado.
+	* Crea una instancia, a partir del snapshot que hiciste en el ejercicio 1, a la que podamos acceder usando la clave ssh anteriormente creada y conectada a la red que has creado.
 	* Comprueba que tiene corriendo un servidor web accediendo con un cliente web. 
 	* Conecta un volumen a la instancia.
 	* Utiliza el cliente nova para mostrar la lista de instancias, la lista de redes y la lista de volúmenes.
