@@ -23,8 +23,7 @@ switches, routers, redes físicas, vlans, cortafuegos, etc. En cada
 hipervisor hay definida una o varias redes virtuales y éstas son
 gestionadas de forma independiente unas de otras.
 
-## Virtualización de redes, redes definidas por software y
-   virtualización de las funciones de red.
+## Virtualización de redes, redes definidas por software y virtualización de las funciones de red.
 
 El campo de las redes está últimamente revolucionado y se escuchan por
 todos sitios tres términos o sus equivalentes siglas en inglés:
