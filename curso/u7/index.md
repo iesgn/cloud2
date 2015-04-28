@@ -2,7 +2,7 @@
 layout: blog
 tittle: Cloud Computing en Educación y en la Empresa
 menu:
-  - Unidadades
+  - Unidades
 ---
 
 ### Objetivos
