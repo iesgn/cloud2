@@ -6,7 +6,7 @@ menu:
 ---
 ###Objetivos
 
-* Introducir los conceptos fundamentales para el uso de las redes.
+* Introducción a la virtualización de redes
 * Creación de red y subred.
 * Creación de routers
 * Conexión de redes y routers. Puertos.
@@ -17,6 +17,7 @@ menu:
 #### Sesión 2
 
 * [Presentación: Sesión 2](presentacion2)
+* [Introducción](intro)
 * [Creación de un router y conectarlo entre dos redes internas](router2)
 * [Creación de una nueva instancia en la nueva red](red2)
 * [Balanceador de carga](balanceador)
