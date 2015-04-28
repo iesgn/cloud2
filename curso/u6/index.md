@@ -18,8 +18,7 @@ menu:
 
 * [Presentación: Sesión 2](presentacion2)
 * [Introducción](intro)
-* [Creación de un router y conectarlo entre dos redes internas](router2)
-* [Creación de una nueva instancia en la nueva red](red2)
+* [Creación de una red interna](router2)
 * [Balanceador de carga](balanceador)
 * [Creación automática de un escenario de red en OpenStack](demofinal)
 * [Aplicación didáctica](aula2)
