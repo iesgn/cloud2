@@ -57,6 +57,12 @@ hasta ahora. Algunas de estas diferencias son:
   pueden definir por software, ubicar en cualquier punto de la red y
   controlar centralizadamente.
 
+En la siguiente imagen podemos ver una representación del
+desacoplamiento entre la topología física y la lógica a nivel de toda
+la red de una organización:
+
+![midonet1](img/midonet1.PNG)
+
 Todo esto es bastante revolucionario y choca en muchos casos con los
 intereses de  las empresas que han dominado determinados sectores, así
 tenemos por ejemplo que la empresa VMware, especializada en vender
