@@ -85,3 +85,15 @@ nova floating-ip-associate pc1 $IP
 neutron router-update r2 --routes type=dict list=true destination=192.168.30.0/24,nexthop=192.168.20.254
 ## Añadimos una ruta de encaminamiento en r3 para que poueda acceder a la red1
 neutron router-update r3 --routes type=dict list=true destination=192.168.10.0/24,nexthop=192.168.20.1
+
+echo ""
+echo "###############################################################################"
+echo "# Pasados unos instantes estará creado el escenario completo y podrás acceder #"
+echo "# a pc1 con:                                                                  #"
+echo "#                                                                             #"
+echo "# ssh -i clave_demo $IP                                                       #"
+echo "#                                                                             #"
+echo "# Hay que tener un poco de paciencia porque al crear redes nuevas las         #"
+echo "# instancias tardan un poco más en iniciarse                                  #"
+echo "###############################################################################"
+echo ""
