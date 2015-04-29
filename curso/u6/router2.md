@@ -161,3 +161,19 @@ la primera:
     64 bytes from 10.0.15.68: icmp_req=1 ttl=63 time=1.12 ms
     64 bytes from 10.0.15.68: icmp_req=2 ttl=63 time=0.703 ms
 
+### Añadir reglas de encaminamiento al router
+
+La instrucción para añadir una regla de encaminamiento al primer
+router para que pueda acceder a la nueva red interna es: 
+
+    neutron router-update mi_router --routes type=dict list=true destination=192.168.0.0/24,nexthop=10.0.15.69
+
+### Borrar las reglas de encaminamiento
+
+Para poder eliminar los elementos de red que hemos creado hay que
+borrar manualmente antes las reglas de encaminamiento estático que se
+han definido, que se hace con las instrucciones:
+
+    neutron router-update mi_router --routes action=clear
+    neutron subnet-update 00000061-subnet --host_routes action=clear
+
