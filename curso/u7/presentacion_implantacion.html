@@ -24,18 +24,14 @@ tema: white
   </p>
 </section>
 <section>
-  <h2>Equipamiento inicial</h2>
+  <h2>Hardware</h2>
   <ul>
-    <li>Al optar por software libre, la principal inversión son los
-      servidores que formarán el cloud de infraestructura.</li>
-    <li>Configuración mínima: 3 servidores (1 gestión del cloud y 2
-      para ejecución de instancias).</li>
-    <li>Podría plantearse una configuración aún más básica de un solo
-      servidor por aula</li> 
-    <li>Configuración recomendada: 2 servidores para gestión (en HA),
-      1 para almacenamiento y 4 o más para ejecución de instancias.</li> 
-    <li>Para la gestión del cloud es suficiente un equipo de
-      características mínimas.</li>
+    <li>Al optar por software libre, la principal inversión son los equipos que
+      formarán el cloud de infraestructura.</li>
+    <li>Vamos a mostrar una descripción de las principales características que
+      deben tener estos equipos</li>
+    <li>Vamos a dar unas orientaciones sobre algunos montajes tipos y la forma
+    en que, a nuestro entender, debería ir creciendo esta nube.</li>
   </ul>
 </section>
 <section>
@@ -82,10 +78,15 @@ tema: white
     <li>En el extremo contrario, para aplicaciones de alto consumo de
     CPU (clústers de alto rendimiento por ejemplo), nos iríamos a 1
       GiB de RAM por cada núcleo.</li>
+    <li>La capacidad de almacenamiento del nodo de almacenamiento dependerá
+    mucho del uso que se le vaya a dar y si se incluye o no almacenamiento de
+    objetos</li>
   </ul>
 </section>
 <section>
-  <h2>Construyendo una nube ...</h2>
+  <section>
+    <h2>Construyendo una nube ...</h2>
+  </section>
   <section>
     <h2>1 nodo</h2>
     <ul>

@@ -20,8 +20,8 @@ menu:
 
 * [Cloud computing en el aula](presentacion_cloud_aula.html)
 * [Alternativas al cloud privado de IaaS](presentacion_iaas_publico)
-* [Implantación de una nube privada en un centro educativo](presentacion_implantacion.html)
-* [Introducción a la implantación de OpenStack](presentacion_instalacion_openstack.html)
+* [Implantación de una nube privada](presentacion_implantacion.html)
+* [Introducción a la instalación de OpenStack](presentacion_instalacion_openstack.html)
 
 ### Tarea final del curso
 
