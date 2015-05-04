@@ -5,7 +5,7 @@ tema: white
 ---
 <section>
   <h1>IaaS en educación</h1>
-  <h2>Implantación de una nube privada en un centro educativo</h2>
+  <h2>Implantación de una nube privada</h2>
   <p>
     <small><a href="http://albertomolina.wordpress.com">Alberto Molina
 	Coballes</a> / <a
@@ -24,19 +24,18 @@ tema: white
   </p>
 </section>
 <section>
-<section>
   <h2>Equipamiento inicial</h2>
   <ul>
     <li>Al optar por software libre, la principal inversión son los
-    servidores que formarán el cloud de infraestructura.</li>
+      servidores que formarán el cloud de infraestructura.</li>
     <li>Configuración mínima: 3 servidores (1 gestión del cloud y 2
-    para ejecución de instancias).</li>
+      para ejecución de instancias).</li>
     <li>Podría plantearse una configuración aún más básica de un solo
-    servidor por aula</li> 
+      servidor por aula</li> 
     <li>Configuración recomendada: 2 servidores para gestión (en HA),
-    1 para almacenamiento y 4 o más para ejecución de instancias.</li> 
+      1 para almacenamiento y 4 o más para ejecución de instancias.</li> 
     <li>Para la gestión del cloud es suficiente un equipo de
-    características mínimas.</li>
+      características mínimas.</li>
   </ul>
 </section>
 <section>
@@ -46,16 +45,13 @@ tema: white
     <li><strong>Nodo controlador:</strong>Equipo que gestiona el
     cloud, es al que suelen conectarse los clientes. Contiene la base
     de datos, el servidor AMQP, los planificadores y los componentes
-    "centrales" de OpenStack. Es el nodo más complejo de
-      configurar.</li>
-    <li><strong>Nodo de red:</strong>En el caso de utilizar neutron,
-    es recomendable utilizar un equipo específico para todo el tráfico
-      de red</li>
+    "centrales" de OpenStack.</li>
+    <li><strong>Nodo de red:</strong>Con neutron es recomendable
+      utilizar un equipo específico para todo el tráfico de red</li>
     <li><strong>Nodo de computación</strong>Equipo en el que se
       ejecutan las instancias</li>
-    <li><strong>Nodo de almacenamiento</strong>Las opciones de
-    almacenamiento son muy variables, pero sería un nodo que se
-      utilizar para almacenamiento de volúmenes y/o objetos.</li>
+    <li><strong>Nodo de almacenamiento</strong>Múltiples
+      opciones. Almacenamiento de volúmenes y/o objetos.</li>
   </ul>
 </section>
 <section>
@@ -149,60 +145,60 @@ tema: white
   </section>
 </section>    
 
-<section>
-  <h2>Equipamiento inicial (2)</h2>
-  <ul>
-    <li>Para la ejecución de instancias es necesario procesadores potentes y mucha memoria RAM (entre 0,5 y 2 GiB por instancia).</li>
-    <li>El almacenamiento depende del número de imágenes, instantáneas y volúmenes que sea necesario guardar.</li>
-    <li>Sistema fácilmente escalable, se puede empezar por una configuración mínima e ir añadiendo componentes año a año.</li>
-  </ul>
-</section>
-</section>
-<section>
-  <h3>Equipamiento inicial: Ejemplo</h3>
-  <p>Supongamos que tenemos poco presupuesto y queremos construir un cloud IaaS poco a poco. Comenzaremos por elegir:</p><br/>
-  <ul>
-    <li>Dispositivos SATA convencionales en lugar de discos SATA enterprise. Descartamos SAS o SD inicialmente.</li>
-    <li>Memoria RAM DDR3 no registrada.</li>
-    <li>Procesadores normales con el mismo socket que procesadores de ultima generación.</li>
-    <li>Adquirimos una placa base multisocket.</li>
-  </ul>
-  <br/><p>Posteriormente iremos cambiando componentes por otros de mayores prestaciones o ampliando el número de equipos. Es un sistema fácilmente ampliable.</p>
+<!-- <section> -->
+<!--   <h2>Equipamiento inicial (2)</h2> -->
+<!--   <ul> -->
+<!--     <li>Para la ejecución de instancias es necesario procesadores potentes y mucha memoria RAM (entre 0,5 y 2 GiB por instancia).</li> -->
+<!--     <li>El almacenamiento depende del número de imágenes, instantáneas y volúmenes que sea necesario guardar.</li> -->
+<!--     <li>Sistema fácilmente escalable, se puede empezar por una configuración mínima e ir añadiendo componentes año a año.</li> -->
+<!--   </ul> -->
+<!-- </section> -->
+<!-- </section> -->
+<!-- <section> -->
+<!--   <h3>Equipamiento inicial: Ejemplo</h3> -->
+<!--   <p>Supongamos que tenemos poco presupuesto y queremos construir un cloud IaaS poco a poco. Comenzaremos por elegir:</p><br/> -->
+<!--   <ul> -->
+<!--     <li>Dispositivos SATA convencionales en lugar de discos SATA enterprise. Descartamos SAS o SD inicialmente.</li> -->
+<!--     <li>Memoria RAM DDR3 no registrada.</li> -->
+<!--     <li>Procesadores normales con el mismo socket que procesadores de ultima generación.</li> -->
+<!--     <li>Adquirimos una placa base multisocket.</li> -->
+<!--   </ul> -->
+<!--   <br/><p>Posteriormente iremos cambiando componentes por otros de mayores prestaciones o ampliando el número de equipos. Es un sistema fácilmente ampliable.</p> -->
 
-</section>
-<section>
-  <section>
-    <h2>Ejemplos de equipamientos</h2>
-  </section>
-<section>
-  <h3>Equipamiento inicial: diferentes componentes</h3>
-  <ul>
-    <li>Carcasa (200 $)</li>
-    <li>Placa base Supermicro A+ H8DGU (369 $)</li>
-    <li>16 GiB (4 x 4GiB) de RAM DDR3 (200 $)</li>
-    <li>4 TiB (2 x 2 TiB) HD convencional (200 $)</li>
-    <li>1 procesador AMD Opteron 6128 8 cores a 2GHz (291,5 $)</li>
-    <li>Resto de componentes + montaje (200 $)</li>
-  </ul>
-  <br/><br/>
-  Total aprox: <strong>1.600 $</strong>
-  <br/><br/>
-  <small>Precios obtenidos de <a href="http://www.acmemicro.com">acmemicro.com</a></small>
+<!-- </section> -->
+<!-- <section> -->
+<!--   <section> -->
+<!--     <h2>Ejemplos de equipamientos</h2> -->
+<!--   </section> -->
+<!-- <section> -->
+<!--   <h3>Equipamiento inicial: diferentes componentes</h3> -->
+<!--   <ul> -->
+<!--     <li>Carcasa (200 $)</li> -->
+<!--     <li>Placa base Supermicro A+ H8DGU (369 $)</li> -->
+<!--     <li>16 GiB (4 x 4GiB) de RAM DDR3 (200 $)</li> -->
+<!--     <li>4 TiB (2 x 2 TiB) HD convencional (200 $)</li> -->
+<!--     <li>1 procesador AMD Opteron 6128 8 cores a 2GHz (291,5 $)</li> -->
+<!--     <li>Resto de componentes + montaje (200 $)</li> -->
+<!--   </ul> -->
+<!--   <br/><br/> -->
+<!--   Total aprox: <strong>1.600 $</strong> -->
+<!--   <br/><br/> -->
+<!--   <small>Precios obtenidos de <a href="http://www.acmemicro.com">acmemicro.com</a></small> -->
 
-</section>
+<!-- </section> -->
 
-<section>
-  <h3>Equipamiento inicial: diferentes componentes (2)</h3>
-  <ul>
-    <li>Carcasa (200 $)</li>
-    <li>Placa base Supermicro A+ H8DGU (389 $)</li>
-    <li>64 GiB (16 x 4GiB) de RAM DDR3 ECC (800 $)</li>
-    <li>8 TiB (4 x 2 TiB) HD Enterprise (760 $)</li>
-    <li>2 procesador AMD Opteron 6272 16 cores 2.1GHz (1142 $)</li>
-    <li>Resto de componentes + montaje (200 $)</li>
-  </ul>
-  <br/><br/>
-  Total aprox: <strong>3.500 $</strong>
-  <br/><br/>
-  <small>Precios obtenidos de <a href="http://www.acmemicro.com">acmemicro.com</a></small>
-</section>
+<!-- <section> -->
+<!--   <h3>Equipamiento inicial: diferentes componentes (2)</h3> -->
+<!--   <ul> -->
+<!--     <li>Carcasa (200 $)</li> -->
+<!--     <li>Placa base Supermicro A+ H8DGU (389 $)</li> -->
+<!--     <li>64 GiB (16 x 4GiB) de RAM DDR3 ECC (800 $)</li> -->
+<!--     <li>8 TiB (4 x 2 TiB) HD Enterprise (760 $)</li> -->
+<!--     <li>2 procesador AMD Opteron 6272 16 cores 2.1GHz (1142 $)</li> -->
+<!--     <li>Resto de componentes + montaje (200 $)</li> -->
+<!--   </ul> -->
+<!--   <br/><br/> -->
+<!--   Total aprox: <strong>3.500 $</strong> -->
+<!--   <br/><br/> -->
+<!--   <small>Precios obtenidos de <a href="http://www.acmemicro.com">acmemicro.com</a></small> -->
+<!-- </section> -->
