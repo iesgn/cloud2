@@ -27,16 +27,127 @@ tema: white
 <section>
   <h2>Equipamiento inicial</h2>
   <ul>
-    <li>Al optar por software libre, la principal inversión son los servidores que formarán el cloud de infraestructura.</li>
-    <li>Configuración mínima: 3 servidores (1 gestión del cloud y 2 para
-    ejecución de instancias).</li>
-    <li>Podría plantearse una configuración aún más básica de un solo servidor por aula</li>
-    <li>Configuración recomendada: 2 servidores para gestión (en HA), 1 para almacenamiento y 4 o más para ejecución de instancias.</li>
-    <li>Para la gestión del cloud es suficiente un equipo de características mínimas.</li>
+    <li>Al optar por software libre, la principal inversión son los
+    servidores que formarán el cloud de infraestructura.</li>
+    <li>Configuración mínima: 3 servidores (1 gestión del cloud y 2
+    para ejecución de instancias).</li>
+    <li>Podría plantearse una configuración aún más básica de un solo
+    servidor por aula</li> 
+    <li>Configuración recomendada: 2 servidores para gestión (en HA),
+    1 para almacenamiento y 4 o más para ejecución de instancias.</li> 
+    <li>Para la gestión del cloud es suficiente un equipo de
+    características mínimas.</li>
   </ul>
 </section>
-
-
+<section>
+  <h2>Tipos de nodos</h2>
+  <p>Los roles típicos dentro de OpenStack son:</p>
+  <ul>
+    <li><strong>Nodo controlador:</strong>Equipo que gestiona el
+    cloud, es al que suelen conectarse los clientes. Contiene la base
+    de datos, el servidor AMQP, los planificadores y los componentes
+    "centrales" de OpenStack. Es el nodo más complejo de
+      configurar.</li>
+    <li><strong>Nodo de red:</strong>En el caso de utilizar neutron,
+    es recomendable utilizar un equipo específico para todo el tráfico
+      de red</li>
+    <li><strong>Nodo de computación</strong>Equipo en el que se
+      ejecutan las instancias</li>
+    <li><strong>Nodo de almacenamiento</strong>Las opciones de
+    almacenamiento son muy variables, pero sería un nodo que se
+      utilizar para almacenamiento de volúmenes y/o objetos.</li>
+  </ul>
+</section>
+<section>
+  <h2>Características de los nodos</h2>
+  <ul>
+    <li><strong>Nodo controlador:</strong>Servidor convencional, para
+    una nube pequeña podríamos utilizar un equipo con 8 GiB de
+      RAM</li>
+    <li><strong>Nodo de red:</strong>Servidor de características
+    similares al nodo controlador. Mínimo con 2 interfaces de
+      red.</li>
+    <li><strong>Nodo de almacenamiento: </strong>Dependiendo de la
+    opción de almacenamiento a utilizar tendrá que tener discos
+      adicionales</li>
+    <li><strong>Nodo de computación:</strong>Equipo de altas
+    prestaciones con procesadores potentes y mucha RAM. Los discos a
+    utilizar depende de si las instancias utilizan o no disco
+      local.</li>
+  </ul>
+</section>
+<section>
+  <h2>Escalado de los nodos de computación</h2>
+  <ul>
+    <li>A priori el factor más importante es la cantidad de RAM y los
+      procesadores de los nodos de computación</li>
+    <li>Para servidores estándar y prácticas un ratio adecuado podría
+      ser de 16 GiB RAM por cada núcleo del procesador</li>
+    <li>En el extremo contrario, para aplicaciones de alto consumo de
+    CPU (clústers de alto rendimiento por ejemplo), nos iríamos a 1
+      GiB de RAM por cada núcleo.</li>
+  </ul>
+<section>
+  <h2>Construyendo una nube ...</h2>
+  <section>
+    <h2>1 nodo</h2>
+    <ul>
+      <li>Supongamos que vamos a empezar por una nube con un solo
+	nodo</li>
+      <li>Ese nodo deberá ser nodo controlador + red + computación +
+	almacenamiento</li>
+      <li>Puede ser adecuado para un centro educativo con pocos
+	recursos</li>
+      <li>¿Nube de aula?</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Ejemplo 1: Supermicro 5018D-MF</h2>
+    <ul>
+      <li>Intel Xeon Processor E3-1220 v3 3.10GHz (4 cores)<li>
+      <li>32 GiB de RAM DDR3</li>
+      <li>2 HD SATA 500 GiB</li>
+      <li>Precio estimado: 1400 €</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Ejemplo 2: Supermicro 6017B-URF</h2>
+    <ul>
+      <li>Intel® Xeon® Processor E5-2420 v2 2.20GHz (6 cores/12
+	hilos)</li>
+      <li>96 GiB de RAM registrada DDR3</li>
+      <li>2 HD SATA 1 TiB</li>
+      <li>Precio estimado: 3500 €</li>
+    </ul>
+  </section>
+  <section>
+    <h2>2 o 3 nodos</h2>
+    <ul>
+      <li>Primera ampliación sobre el anterior</li>
+      <li>1 nodo controlador + red + almacenamiento</li>
+      <li>1 o 2 nodos de computación</li>
+      <li>1 servidor convencional para controlador y 1 ó 2 servidores
+      potentes para los nodos de computación</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Entre 4 y 6 nodos</h2>
+    <ul>
+      <li>1 nodo controlador + almacenamiento</li>
+      <li>1 nodo de red</li>
+      <li>Entre 2 y 4 nodos de computación</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Alta disponibilidad</h2>
+    <ul>
+      <li>2 nodos controladores</li>
+      <li>2 nodos de red</li>
+      <li>3 nodos de almacenamiento</li>
+      <li>4 o más nodos de computación</li>
+    </ul>
+  </section>
+</section>    
 
 <section>
   <h2>Equipamiento inicial (2)</h2>
