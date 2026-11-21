@@ -4,7 +4,7 @@ tittle: Utilización de OpenStack. Redes
 menu:
   - Unidades
 ---
-###Objetivos
+### Objetivos
 
 * Introducción a la virtualización de redes
 * Creación de red y subred.
@@ -12,7 +12,7 @@ menu:
 * Conexión de redes y routers. Puertos.
 * Introducción a los balanceadores de carga. Elasticidad.
 
-###Contenidos
+### Contenidos
 
 #### Sesión 2
 
@@ -25,7 +25,7 @@ menu:
 * [Ejercicios](ejercicios2)
 
 
-###Enlaces interesantes
+### Enlaces interesantes
 
 * [Balanceador de carga](https://docs.stackops.net/lbaas-plugin-es.html)
 * [Balanceadores de carga. Vídeo.](http://youtu.be/Gc1hXiz86kU)

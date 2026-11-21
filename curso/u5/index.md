@@ -4,7 +4,7 @@ tittle: Utilización de OpenStack. CLI
 menu:
   - Unidades
 ---
-###Objetivos
+### Objetivos
 
 * Conocer las distintas opciones que tenemos para interactuar con la
   infraestructura de cloud: aplicación web, CLI, bibliotecas de
@@ -14,7 +14,7 @@ menu:
 * Trabajar con volúmenes desde *nova*.
 * Trabajar con redes desde *neutron*.
 
-###Contenidos
+### Contenidos
 
 * [Presentación](presentacion)
 * [Conceptos previos](previos)
@@ -24,7 +24,7 @@ menu:
 * [Aplicación didáctica](aula)
 * [Ejercicios](ejercicios)
 
-###Enlaces interesantes
+### Enlaces interesantes
 
 * [Acceso API / Endpoints](https://docs.stackops.net/endpoints-plugin-es.html)
 * [OpenStack End User Guide](http://docs.openstack.org/user-guide/content/index.html)

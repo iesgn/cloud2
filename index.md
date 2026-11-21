@@ -35,7 +35,7 @@ durante el curso 2011-12 en un
 [proyecto de innovación](http://www.gonzalonazareno.org/cloud) para incluir las
 tecnologías de cloud computing en el currículo de los ciclos formativos.
 
-###Objetivos
+### Objetivos
 * Conocer las principales características del cloud computing y su aplicación en
   el aula, principalmente la capas de infraestructura (IaaS)
 * Utilizar el software OpenStack (IaaS). Software libre que permite gestionar
@@ -44,14 +44,14 @@ tecnologías de cloud computing en el currículo de los ciclos formativos.
   implantación o uso de tecnologías de cloud computing 
 
 
-###Contenidos
+### Contenidos
 * Introducción al cloud computing.
 * Utilización del software para IaaS OpenStack: instancias, almacenamiento y
   redes.
 * Utilización de OpenStack desde la línea de comandos.
 * Uso de las tecnologías de cloud computing en educación y en las empresas
 
-###Calendario
+### Calendario
 
 
 |Fecha|Contenido|
@@ -65,7 +65,7 @@ tecnologías de cloud computing en el currículo de los ciclos formativos.
 |30/04/2015|**Sesión online**<br/>Unidad 7: Utilización de línea de comandos|
 |4/05/2015|**Sesión online**<br/>Unidad 8: Cloud computing en la educación y en la empresa. Tarea final|
 
-###Licencia
+### Licencia
 
 ![cc_by_sa](https://iesgn.github.io/cloud/img/cc_by_sa.png)
 

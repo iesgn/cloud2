@@ -4,7 +4,7 @@ tittle: Utilización de OpenStack. Redes
 menu:
   - Unidades
 ---
-###Objetivos
+### Objetivos
 
 * Introducir los conceptos fundamentales para el uso de las redes.
 * Creación de red y subred.
@@ -13,7 +13,7 @@ menu:
 * Introducción a la seguridad en el trabajo de redes.
 * Creación de un servidor VPN.
 
-###Contenidos
+### Contenidos
 
 #### Sesión 1
 
@@ -28,7 +28,7 @@ menu:
 
 
 
-###Enlaces interesantes
+### Enlaces interesantes
 
 * [Administrador de Redes definidas por Software](https://docs.stackops.net/sdn-plugin-es.html)
 * [Seguridad OpenStack en Cirrusflex: 5 consejos](https://cirrusflex.com/2015/03/31/seguridad-openstack-en-cirrusflex-5-consejos/)

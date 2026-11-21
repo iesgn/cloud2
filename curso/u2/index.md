@@ -4,13 +4,13 @@ tittle: Utilización de OpenStack. Instancias
 menu:
   - Unidades
 ---
-###Objetivos
+### Objetivos
 
 * Introducir los conceptos fundamentales para utilizar OpenStack.
 * Trabajar con instancias, imágenes e instantáneas.
 * Redimensionar y rescatar instancias.
 
-###Contenidos
+### Contenidos
 
 #### Sesión 1
 
@@ -34,7 +34,7 @@ menu:
 * [Aplicación didáctica](aula2)
 * [Ejercicios](ejercicios2)
 
-###Enlaces interesantes
+### Enlaces interesantes
 
 * [Imágenes en StackOps Cirrusflex](https://docs.stackops.net/virtual-images-plugin-es.html)
 * [Get images - Openstack](http://docs.openstack.org/image-guide/content/ch_obtaining_images.html)

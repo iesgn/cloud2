@@ -6,7 +6,7 @@ menu:
 ---
 ## Introducción al Cloud Computing
 
-###Objetivos
+### Objetivos
 * Conocer las principales características del Cloud Computing.
 * Conocer las capas principales, principalmente la capa de infraestructura (IaaS).
 * Conocer los distintos tipos de Cloud Computing: públicos, privados o híbridos.
@@ -16,11 +16,11 @@ menu:
 proporcionar IaaS tanto en clouds públicos como privados.
 * Conocer las características principales de OpenStack.
 
-###Contenidos
+### Contenidos
 
 * [Presentación: Introducción al Cloud Computing](presentacion)
 
-###Enlaces interesantes
+### Enlaces interesantes
 
 IaaS:
 

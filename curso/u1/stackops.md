@@ -6,7 +6,7 @@ menu:
 ---
 ## Introducción a StackOps Cirrusflex
 
-###Contenidos
+### Contenidos
 
 * [Presentación: Introducción a StackOps Cirrusflex](presentacion_stackops)
 
