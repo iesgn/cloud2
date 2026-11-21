@@ -38,7 +38,7 @@ tecnologías de cloud computing en el currículo de los ciclos formativos.
 
 ###Licencia
 
-![cc_by_sa](http://iesgn.github.io/cloud/img/cc_by_sa.png)
+![cc_by_sa](https://iesgn.github.io/cloud/img/cc_by_sa.png)
 
 Se permite el uso comercial de la obra y de las posibles obras derivadas, la
 distribución de las cuales se debe hacer con una licencia igual a la que regula
